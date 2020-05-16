@@ -10,7 +10,7 @@ status: publish
 tags: []
 title: Active Directory Users Password Report
 ---
-This is a test
+
 I was working with a customer; all their admin users had at least three accounts, a regular account, a domain admin account and a "server admin" account, some even had a "client admin" account as well per domain.
 
 In a discussion with security, they told me that now, everything was good, and they were more secure. I told them that in theory, they were more secure, but what if their admins just used the same password for all their accounts.
