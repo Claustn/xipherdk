@@ -29,6 +29,8 @@ paginate = 10
   # set all headings to their default size (depending on browser settings)
   # it's set to `true` by default
   # oneHeadingSize = false
+  
+  disqusShortname = "xipher-1"
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -55,8 +57,8 @@ paginate = 10
 
     [languages.en.menu]
       [[languages.en.menu.main]]
-        identifier = "about"
-        name = "About"
+        identifier = "RSS"
+        name = "RSS"
         url = "/about"
       [[languages.en.menu.main]]
         identifier = "Github"
