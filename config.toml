@@ -6,7 +6,7 @@ title = "XenoBlog"
 theme = "hyde-hyde"
 
 ## Hugo Built-in Features
-# disqusShortname = "your-disqus-shortname"
+  disqusShortname = "xipher-1"
 # googleAnalytics = "your-google-analytics-id"
 # enableRobotsTXT = true
 
@@ -16,10 +16,10 @@ theme = "hyde-hyde"
 
 ## Site Settings
 [params]
-    author = "Author"
-    title = "Title"
-    # description = "..."
-    authorimage = "/img/hugo.png"
+    author = "Claus T Nielsen"
+    title = "XenoBlog"
+    # description = "Random ramblings"
+    authorimage = "/assets/images/logo.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
@@ -31,7 +31,7 @@ theme = "hyde-hyde"
 
     # https://highlightjs.org
     highlightjs = true
-    highlightjsstyle = "github"
+    highlightjsstyle = "dracula"
     
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."
@@ -45,16 +45,16 @@ theme = "hyde-hyde"
 ## Social Accounts
 [params.social]
     github = "claustn"
-    instagram = "<username>"
-    xing = "<username>"
-    linkedin = "<username>"
-    twitter = "<username>"
-    facebook = "<username>"
-    stackoverflow = "<username>"
-    telegram = "<username>"
+    #instagram = "<username>"
+    #xing = "<username>"
+    linkedin = "claustn"
+    twitter = "claustn"
+    facebook = "claus.t.nielsen.37"
+    #stackoverflow = "<username>"
+    #telegram = "<username>"
     # orcid = "<xxxx-xxxx-xxxx-xxxx>"
-    email = "your-email@example.com"
-    # gravatar = "your-email@example.com"
+    email = "claustnspam@gmail.com"
+    # gravatar = "claustn@gmail.com"
 
 ## Main Menu
 [[menu.main]]
