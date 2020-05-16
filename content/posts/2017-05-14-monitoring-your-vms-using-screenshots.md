@@ -24,7 +24,7 @@ So I started thinking if there was an automated way that I could test for this, 
 
 So I wrote a PowerShell script that would take a screenshot of all our running VM's in our build farm, then at least I had some documentation of what the "state" of the machines were.
 
-<pre><code class="powershell">
+```powershell
 # This script 'takes' a screenshot of all running VMs, and outputs a jpeg file to a local folder (C:\Temp\VMImages) 
 # This script requires a credential object called $cred # In this case I am reading it from a file, in order to make an encrypted file containing username and password you can do 
 # $Cred = Get-Credential 
@@ -67,7 +67,7 @@ $VMs | Split-Pipeline -Variable cred, session -Count 2 -Begin {
     }
   }
 }
-</code></pre>
+```
 
 In the above example am creating a "session" to reuse for the calls against Vcenter, so we will not see 100's of connections in Vcenter.
 
