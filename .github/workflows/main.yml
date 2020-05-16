@@ -30,4 +30,4 @@ jobs:
           user_name: claustn
           user_email: claustn@gmail.com
           publish_branch: master
-        #   cname: example.com
+          cname: xipher.dk
