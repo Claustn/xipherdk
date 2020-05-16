@@ -32,6 +32,7 @@ theme = "hyde-hyde"
     # https://highlightjs.org
     highlightjs = true
     highlightjsstyle = "dracula"
+    highlightjslanguages = ["powershell", "sql"]
     
     # please choose either GraphComment or Disqus or Utterances
     #GraphCommentId = "..."

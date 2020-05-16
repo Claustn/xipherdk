@@ -45,7 +45,7 @@ In the sample data, I am using for this blog post, I created an AD and created 5
 
 [![](/assets/images/mstsc_2017-06-11_22-51-08-1024x695.png)](http://www.xipher.dk/WordPress/wp-content/uploads/mstsc_2017-06-11_22-51-08.png)
 
-(/assets/images/mstsc_2017-06-11_22-51-08-1024x695.png)](http://www.xipher.dk/WordPress/wp-content/uploads/mstsc_2017-06-11_22-51-08.png)
+
 
 
 After creating the users I randomly assigned them as a password from a list of known passwords, I created a list of passwords MuchoSecuros1 through MuchoSecuros2000, I assigned these password to users at random, I did this just to make sure I had users with the same password. Again this was chosen for easy recognition of the results.
@@ -95,13 +95,13 @@ To get more detailed data I also wrote a small snippet of code, to change the pa
 
 First I generate a list of 2000 passwords, and load them into a variable:
 
-```powershell
+```
 1..2000 | % { "MuchoSecuros$\_" | Out-file C:\temp\PasswordChange\Passwords.txt -Append } $Passwords = Get-Content C:\temp\PasswordChange\Passwords.txt
 ```
 
 Then I use ADSI to get information about the domain:
 
-```powershell
+```
 $ADDomain = [ADSI]"WinNT://$env:userdomain"
 ```
 
