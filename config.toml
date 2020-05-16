@@ -30,7 +30,7 @@ paginate = 10
   # it's set to `true` by default
   # oneHeadingSize = false
   
-  disqusShortname = "xipher-1"
+  #disqusShortname = "xipher-1"
 
 [params.twitter]
   # set Twitter handles for Twitter cards
@@ -59,7 +59,7 @@ paginate = 10
       [[languages.en.menu.main]]
         identifier = "RSS"
         name = "RSS"
-        url = "/about"
+        url = "/index.xml"
       [[languages.en.menu.main]]
         identifier = "Github"
         name = "github"
