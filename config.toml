@@ -12,7 +12,7 @@ theme = "hyde-hyde"
 
  summarylength = 30
 
- paginate = 5
+ paginate = 10
 
 ## Site Settings
 [params]
