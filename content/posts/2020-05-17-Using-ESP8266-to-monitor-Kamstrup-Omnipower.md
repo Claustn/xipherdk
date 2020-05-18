@@ -14,7 +14,9 @@ Over the years as the kids have gotten older, our electrical bill has just gone 
 
 My initial setup looked like this.
 
-![](/assets/images/oldsetup.png)
+[![](/assets/images/oldsetup.png)](https://www.xipher.dk/assets/images/oldsetup.png)
+
+
 
 A Raspberry Pi connected to a webcam and a relay to turn on a little LED so the camera could read the LCD when the lights were off. Then sending the pictures to Azure to do OCR to get the reading of the display so that I could measure power consumption over time.  
 (This was more to play with IoT than anything else, and the WAF was very low)

@@ -19,12 +19,12 @@ theme = "hyde-hyde"
     author = "Claus T Nielsen"
     title = "XenoBlog"
     # description = "Random ramblings"
-    authorimage = "https://xipher.dk/assets/images/logo.jpg"
+    authorimage = "/assets/images/logo.jpg"
     dateformat = "Jan 2, 2006"
 
     # sidebar, copyright & license
-    copyright = "htr3n"
-    since = 2019
+    copyright = "Xenophane"
+    since = 2007
     license = "CC BY-SA 4.0"
     licenseURL = "https://creativecommons.org/licenses/by-sa/4.0"
     showBuiltWith = true
