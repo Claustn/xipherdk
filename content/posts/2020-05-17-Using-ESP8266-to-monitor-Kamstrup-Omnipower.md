@@ -1,7 +1,7 @@
 ---
 date: 'Sunday, May 17, 2020'
 title: 'Using ESP8266 to Monitor Kamstrup Omnipower'
-draft: false
+
 ---
 
 (This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)
