@@ -13,16 +13,16 @@ title: MSTSC Util
 A while back I needed to connect to different servers quite often via mstsc, and a lot of the times I needed a console connection to the specific server, so I decided to write a small app, so I did not have to type Mstsc /v:server /console all the time.
 
 I decided to make a small AutoIT app, that would dock in the systray.  
-[![Systray icon](/assets/images/2008-03-12_1630.thumbnail.png)](http://www.xipher.dk/assets/images/uploads/2008-03-12_1630.png "Systray icon")
+[![Systray icon](/assets/images/2008-03-12_1630.thumbnail.png)](http://www.xipher.dk/assets/images/2008-03-12_1630.png "Systray icon")
 
 What it does is, it reads a list of servers from an .ini file, you need to prepopulate the list with the servers in your own environment like this.
 
-[![Servers.INI](/assets/images/2008-03-12_1620.thumbnail.png)](http://www.xipher.dk/assets/images/uploads/2008-03-12_1620.png "Servers.INI")
+[![Servers.INI](/assets/images/2008-03-12_1620.thumbnail.png)](http://www.xipher.dk/assets/images/2008-03-12_1620.png "Servers.INI")
 
 [So what it ends up looking like in "production" is something like this...](http://screencast.com/t/f5dqaHkGmZe)
 
 You can download the compiled app here...  
-[Flex Console connect app by Xenophane](http://www.xipher.dk/assets/images/uploads/mstsc-tray-flex1.exe "Flex Console connect app by Xenophane")
+[Flex Console connect app by Xenophane](http://www.xipher.dk/assets/images/mstsc-tray-flex1.exe "Flex Console connect app by Xenophane")
 
 For the paranoid I will attach the AutoIT source code, so you can compile it your self :)
 

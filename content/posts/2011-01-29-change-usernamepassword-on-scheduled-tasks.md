@@ -17,16 +17,16 @@ title: Change username/password on scheduled tasks.
 <p>The script is assuming you have&#160; Powershell V2, and Quest AD cmdlets.</p>
 <p>Here is a picture of the GUI when you run the script.</p>
 <p>The Quest AD cmdlets are used to connect to AD, to get a list of computers to check for scheduled tasks</p>
-<p><a href="http://www.xipher.dk/assets/images/uploads/image12.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb12.png" width="244" height="162" /></a></p>
+<p><a href="http://www.xipher.dk/assets/images/image12.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb12.png" width="244" height="162" /></a></p>
 <p><strong>Search Account</strong>:&#160; Search for scheduled tasks running under the supplied account, you can use wildcards. If you supply DomainName\* (Default value), then it will search for scheduled tasks running under a domain account, you <strong>Search Root:</strong> The DN path from where you want to build your computer list</p>
 <p>OSName: Default value is *server* it’s the value that is the same for all windows servers… So with this value set, it will only return servers from AD</p>
 <p><strong>Filter MachineName: </strong>Default value is “*” which returns all servers,&#160; example “Exchan*” would return all servers whose names start with “Exchan”</p>
 <p>The Run scheduled tasks with current credentials is not working, since it is not supported against 2003 servers and below, so I remove the functionality.</p>
 <p>&#160;</p>
 <p>Here is an example of a result.</p>
-<p><a href="http://www.xipher.dk/assets/images/uploads/image16.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb16.png" width="244" height="77" /></a></p>
+<p><a href="http://www.xipher.dk/assets/images/image16.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb16.png" width="244" height="77" /></a></p>
 <p>You can click on one and edit the username if you like, otherwise you can just mark the ones you want to change password on, holding down ctrl and click each one.</p>
-<p><a href="http://www.xipher.dk/assets/images/uploads/image15.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb15.png" width="244" height="78" /></a></p>
+<p><a href="http://www.xipher.dk/assets/images/image15.png" rel="lightbox"><img style="background-image: none; border-bottom: 0px; border-left: 0px; margin: 0px; padding-left: 0px; padding-right: 0px; display: inline; border-top: 0px; border-right: 0px; padding-top: 0px" title="image" border="0" alt="image" src="/assets/images/image_thumb15.png" width="244" height="78" /></a></p>
 <p>Press Change PWD</p>
 <p>&#160;</p>
 <p>As stated above, there is no particular error handling,and it takes a while to run depending on how many servers you have.&#160; (I hope to find some time to update the script, to a more “production” ready state soon)</p>

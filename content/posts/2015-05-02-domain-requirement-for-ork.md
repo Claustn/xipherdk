@@ -13,7 +13,7 @@ I was playing around with Microsoft ORK (Operational Readiness Kit), which is a 
 
 I wanted to try to do a greenfield install, using a clean Server 2012R2 machine, which had not been joined to any domain, and run everything off that machine. I had downloaded all the pre reqs, and started the install, but it kept failing.
 
-[![2015-05-02_22-18-41](/assets/images/2015-05-02_22-18-41-300x81.png)](http://www.xipher.dk/assets/images/uploads/2015-05-02_22-18-41.png)  
+[![2015-05-02_22-18-41](/assets/images/2015-05-02_22-18-41-300x81.png)](http://www.xipher.dk/assets/images/2015-05-02_22-18-41.png)  
 It entered an infinite loop, trying to access the PowerShell AD provider, so my first thought is that I will just turn off the autoload of the AD provider, by setting an environment variable
 
 ```
