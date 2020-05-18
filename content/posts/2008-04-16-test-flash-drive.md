@@ -17,7 +17,7 @@ I did some quick googeling and found a nice little utility called&nbsp; Chkflsh,
 
 It is a very nice little tool, that allows you to check the speed of the drive, and make sure all areas of memory works as it should.
 
-[![ChkFlash](/assets/images/chkflash1-300x232.jpg "Check Flash")](http://www.xipher.dk/WordPress/wp-content/uploads/chkflash1.jpg)
+[![ChkFlash](/assets/images/chkflash1-300x232.jpg "Check Flash")](http://www.xipher.dk/assets/images/uploads/chkflash1.jpg)
 
 I have just gotten an 8GB Kingston DataTraveler, which I am currently testing.... I am getting Read speed around 16MB/s and Write Speeds averaging just above 10MB/s. Pretty decent speed compared to price, it costs around 170Kr (35USD)
 

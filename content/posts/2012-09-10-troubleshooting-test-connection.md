@@ -68,7 +68,7 @@ In&nbsp; Winsock Error Codes I found:
 
 Then I did some additional testing.
 
-[![PingPowerShell](/assets/images/PingPowerShell_thumb.png "PingPowerShell")](http://www.xipher.dk/WordPress/wp-content/uploads/PingPowerShell.png)  
+[![PingPowerShell](/assets/images/PingPowerShell_thumb.png "PingPowerShell")](http://www.xipher.dk/assets/images/uploads/PingPowerShell.png)  
 If you do a Trace-Command on the example with TimeToLive = 11 which gives the error: Error due to lack of ressources, you will see that the error code is 11010 which corresponds to:
 
 <dl>
@@ -94,5 +94,5 @@ The request timed out.
 
 Which you can confirm using ping from the command prompt:
 
-[![PingDOS](/assets/images/PingDOS_thumb.png "PingDOS")](http://www.xipher.dk/WordPress/wp-content/uploads/PingDOS.png)
+[![PingDOS](/assets/images/PingDOS_thumb.png "PingDOS")](http://www.xipher.dk/assets/images/uploads/PingDOS.png)
 

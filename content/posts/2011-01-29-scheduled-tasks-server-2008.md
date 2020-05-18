@@ -17,13 +17,13 @@ So I had to dig a little deeper, and figure out what was happening, and how to w
 
 The first picture here is a scheduled task created from the command line.
 
-[![image](/assets/images/image_thumb10.png "image")](http://www.xipher.dk/WordPress/wp-content/uploads/image10.png)
+[![image](/assets/images/image_thumb10.png "image")](http://www.xipher.dk/assets/images/uploads/image10.png)
 
 &nbsp;
 
 This one is from a scheduled task created from the Task scheduler GUI (Notice the date format contains 6 or 7 decimals)
 
-[![image](/assets/images/image_thumb11.png "image")](http://www.xipher.dk/WordPress/wp-content/uploads/image11.png)
+[![image](/assets/images/image_thumb11.png "image")](http://www.xipher.dk/assets/images/uploads/image11.png)
 
 Apparently schtasks.exe does not like the date/time format in a task created in the GUI, but if you export the scheduled task to XML change remove the “decimals” and reimport the scheduled task, you can now manage it from the command line with schtasks.exe (How was this not caught in testing ??)
 

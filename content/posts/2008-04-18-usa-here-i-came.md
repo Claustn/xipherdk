@@ -19,7 +19,7 @@ Men jeg nåede frem til Washington ca 20 min tidligere end beregnet, på grund a
 Da vi var kommet ud af flyveren blev vi kørt over til hovedterminalen, hvor vi skulle hente vores baggage, og igennem tolden.. For engangs skyld skete det hurtigt og smerte frit, min kuffert var en af de første, og der var ikke kø i tolden...
 
 Så skulle jeg ud og finde en bus, der kunne køre mig over til biludlejningsfirmaet... Da jeg så blev sat af derovre, spurgte chaufføren, hvad det var for en bil jeg havde booket... det sagde jeg så, så fortalte han at jeg bare skulle sætte mig ind og tage en af dem som holdt på pladsen...Det syntes jeg lød lidt for specielt, så jeg stillede mig alligevel i kø til skranken,og fik mere eller mindre at vide, at jeg bare skulle gå ud og vælge en bil.. Nøglen sad i dem alle sammen... Så jeg tog en knaldrød Cadillac DTS.  
-[![](/assets/images/cimg15471-300x225.jpg "cimg15471")](http://www.xipher.dk/WordPress/wp-content/uploads/cimg15471.jpg)  
+[![](/assets/images/cimg15471-300x225.jpg "cimg15471")](http://www.xipher.dk/assets/images/uploads/cimg15471.jpg)  
 Det er en stor bil, skulle jeg lige hilse at sige... Skal nok lige lægge nogle billeder på lidt senere...  
-[![](/assets/images/cimg1553-300x225.jpg "cimg1553")](http://www.xipher.dk/WordPress/wp-content/uploads/cimg1553.jpg)
+[![](/assets/images/cimg1553-300x225.jpg "cimg1553")](http://www.xipher.dk/assets/images/uploads/cimg1553.jpg)
 

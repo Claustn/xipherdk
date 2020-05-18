@@ -21,7 +21,7 @@ title: Updating UPN names in Active Directory
 <p>It will load a tree view of the current directory (Requires AD cmdlets to be present on the system), then you can select each OU you want to change the containing users UPN name, it will also let you choose to recurse through multiple OU's.</p>
 <p>Be aware this is version 1, so there are no "are you sure prompts", proceed with caution.. </p>
 <p>I have exported the code from PowerShell studio with recovery info, so you can load the form, and work with it.</p>
-<p><a href="http://www.xipher.dk/WordPress/wp-content/uploads/UPNChanger.jpg"><img src="/assets/images/UPNChanger-258x300.jpg" alt="UPNChanger" width="258" height="300" class="alignnone size-medium wp-image-747" /></a></p>
+<p><a href="http://www.xipher.dk/assets/images/uploads/UPNChanger.jpg"><img src="/assets/images/UPNChanger-258x300.jpg" alt="UPNChanger" width="258" height="300" class="alignnone size-medium wp-image-747" /></a></p>
 <p>The treeview code is based on code from Thepip3r:<br />
 http://thepip3r.blogspot.dk/2011/06/powershell-guis-active-directory.html</p>
 <pre class="lang:ps decode:true ">#------------------------------------------------------------------------

@@ -19,11 +19,11 @@ There are some examples in the code on how to use the function
 
 I do not know what has happened to code highlighter, but it has suddenly decided to mess up the code, so it is not working on the site, so here is a link to the file.
 
-[Out-HTMLTable](http://www.xipher.dk/WordPress/wp-content/uploads/Out-HTMLTable.txt)
+[Out-HTMLTable](http://www.xipher.dk/assets/images/uploads/Out-HTMLTable.txt)
 
 Example of output:
 
-[![Out-HTMLTable example](/assets/images/table.bmp "table")](http://www.xipher.dk/WordPress/wp-content/uploads/table.bmp)
+[![Out-HTMLTable example](/assets/images/table.bmp "table")](http://www.xipher.dk/assets/images/uploads/table.bmp)
 
 <script type="text/javascript" src="http://PoshCode.org/embed/1903"></script>download | new post
 

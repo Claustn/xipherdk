@@ -15,5 +15,5 @@ En Chevrolet Impala 2007, den er lidt større end Toyotaen derhjemme... Og meget
 
 Ellers er der rigtigt mange knapper man kan trykke på, ganske som det skal være...
 
-[![Chevy](/assets/images/cimg1037.thumbnail.JPG)](http://xipher.dk/WordPress/wp-content/cimg1037.JPG "Chevy")
+[![Chevy](/assets/images/cimg1037.thumbnail.JPG)](http://xipher.dk/assets/images/cimg1037.JPG "Chevy")
 

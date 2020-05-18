@@ -17,7 +17,7 @@ Det skal dog siges at der er fri internet og 40 forskellige TV kanaler, så helt
 
 Man skal heller ikke forglemme, den fanstastike grønne recliner stol, den er ikke køn men rar, men sådan er der jo så mange :)
 
-[![Værelse Ramada Norfolk](/assets/images/cimg1038.thumbnail.JPG)](http://xipher.dk/WordPress/wp-content/cimg1038.JPG "Værelse Ramada Norfolk")[![Værelse Ramada Norfolk 2](/assets/images/cimg1039.thumbnail.JPG)](http://xipher.dk/WordPress/wp-content/cimg1039.JPG "Værelse Ramada Norfolk 2")[![Den grønne recliner](/assets/images/cimg1040.thumbnail.JPG)](http://xipher.dk/WordPress/wp-content/cimg1040.JPG "Den grønne recliner")
+[![Værelse Ramada Norfolk](/assets/images/cimg1038.thumbnail.JPG)](http://xipher.dk/assets/images/cimg1038.JPG "Værelse Ramada Norfolk")[![Værelse Ramada Norfolk 2](/assets/images/cimg1039.thumbnail.JPG)](http://xipher.dk/assets/images/cimg1039.JPG "Værelse Ramada Norfolk 2")[![Den grønne recliner](/assets/images/cimg1040.thumbnail.JPG)](http://xipher.dk/assets/images/cimg1040.JPG "Den grønne recliner")
 
 Det første jeg gør da jeg kommer ind på værelset, er at tænde fjernsynet.. Den første nyhed der løber over skærmen er en ung mand, som er blevet skudt i hovedet nogle gader fra hotellet. (Mental note, lad være med at køre i den retning). Så kører jeg til Wendy's for at se om, de skulle have en burger til mig... Det havde de.
 

@@ -9,5 +9,5 @@ tags:
 title: Man MÅ altså ikke bande her!
 ---
 De har simpelthen skilte for alt muligt herovre....  
-[![Ingen banden!](/assets/images/cimg1062.thumbnail.JPG)](http://xipher.dk/WordPress/wp-content/cimg1062.JPG "Ingen banden!")
+[![Ingen banden!](/assets/images/cimg1062.thumbnail.JPG)](http://xipher.dk/assets/images/cimg1062.JPG "Ingen banden!")
 

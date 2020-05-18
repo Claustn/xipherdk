@@ -5,7 +5,7 @@ date: "2017-06-10T09:02:28Z"
 meta:
   _edit_last: "1"
   dsq_thread_id: "6102033477"
-  enclosure: "http://www.xipher.dk/WordPress/wp-content/uploads/Password-report.mp4\r\n24309219\r\nvideo/mp4\r\n"
+  enclosure: "http://www.xipher.dk/assets/images/uploads/Password-report.mp4\r\n24309219\r\nvideo/mp4\r\n"
 status: publish
 tags: []
 title: Active Directory Users Password Report
@@ -43,7 +43,7 @@ The first thing I did was to compile a short list of very easily guessable passw
 
 In the sample data, I am using for this blog post, I created an AD and created 500 accounts using a modified version of Helge Kleins tool here: [https://helgeklein.com/blog/2015/02/creating-realistic-test-user-accounts-active-directory/](https://helgeklein.com/blog/2015/02/creating-realistic-test-user-accounts-active-directory/) This way of using "real names" the users are more easily told apart than if I had just created random strings.
 
-[![](/assets/images/mstsc_2017-06-11_22-51-08-1024x695.png)](http://www.xipher.dk/WordPress/wp-content/uploads/mstsc_2017-06-11_22-51-08.png)
+[![](/assets/images/mstsc_2017-06-11_22-51-08-1024x695.png)](http://www.xipher.dk/assets/images/uploads/mstsc_2017-06-11_22-51-08.png)
 
 
 
@@ -57,7 +57,7 @@ In the database I created three tables:
  • PWDTranslation (All the "known" passwords and their generated hash value)  
  • Users (All the user's data)
 
-[![](/assets/images/DB-Overview.png)](http://www.xipher.dk/WordPress/wp-content/uploads/DB-Overview.png)
+[![](/assets/images/DB-Overview.png)](http://www.xipher.dk/assets/images/uploads/DB-Overview.png)
 
 By putting it in a database like this, I made it very easy (fast) to query, and as an added benefit I could add data to this over time, to store more than the 20 last password hashes.
 
@@ -112,7 +112,7 @@ Measure-Command -Expression { 1..$($ADDomain.PasswordHistoryLength) | % { Get-AD
 ```
 
 Here is a video showing the scripts in action. (Be gentle this is my first attempt at creating a video)  
-[video width="1920" height="1080" mp4="http://www.xipher.dk/WordPress/wp-content/uploads/Password-report.mp4"][/video]
+[video width="1920" height="1080" mp4="http://www.xipher.dk/assets/images/uploads/Password-report.mp4"][/video]
 
 Link to the files on Github [https://github.com/Claustn/Password-Report](https://github.com/Claustn/Password-Report)
 

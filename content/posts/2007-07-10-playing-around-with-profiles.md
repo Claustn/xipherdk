@@ -76,5 +76,5 @@ Write-Host "My PoSh:" $(get-location) -nonewline
 `  
 One other thing to be aware of is that PowerShell by default will not let you run scripts, so in order to run scripts like profile.ps1 you need to loosen up the security, to get help you can type the command "get-help about\_signing" in a powershell command prompt. I have chosen to use RemotedSigned which will let me run scripts locally on the machine. But you can read about the different security levels in the help file.
 
-[Profile txt file](http://www.xipher.dk/WordPress/wp-content/uploads/2007/07/profile-published.txt "Profile txt file")
+[Profile txt file](http://www.xipher.dk/assets/images/uploads/2007/07/profile-published.txt "Profile txt file")
 
