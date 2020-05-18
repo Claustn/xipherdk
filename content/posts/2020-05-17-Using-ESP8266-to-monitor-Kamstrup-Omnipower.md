@@ -79,6 +79,8 @@ You need to change the following in the file before you can use it
 
 When the sketch is successfully loaded, you can connect the NodeMCU to your power meter and power it on, it should connect to your wifi/MQTT server and start receiving data from the power meter, then decrypt it and send the data to your MQTT server. You can verify that it connects to wifi and MQTT from the serial monitor in Arduino.
 
+You can find the code here: https://github.com/Claustn/esp8266-kamstrup-mqtt
+
 I the following post I will look at getting that data from MQTT into InfluxDB and use Grafana Dashboards to monitor your power usage.
 
 ![](/assets/images/powerusage_grafana.png)
