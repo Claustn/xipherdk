@@ -1,7 +1,12 @@
 ---
+categories:
+- Everyday
 date: 'Sunday, May 17, 2020'
+meta: null
+status: publish
+tags: []
 title: 'Using ESP8266 to Monitor Kamstrup Omnipower'
-
+---
 ---
 
 (This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)
