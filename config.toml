@@ -1,6 +1,6 @@
 ## Basic Configuration
-baseurl = "https://xipher.dk"
-languageCode = "en"
+baseurl = "/"
+languageCode = "en-us"
 
 title = "XenoBlog"
 theme = "hyde-hyde"

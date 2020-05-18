@@ -14,7 +14,7 @@ Over the years as the kids have gotten older, our electrical bill has just gone 
 
 My initial setup looked like this.
 
-![](../../static/assets/images/oldsetup.png)
+![](/assets/images/oldsetup.png)
 
 A Raspberry Pi connected to a webcam and a relay to turn on a little LED so the camera could read the LCD when the lights were off. Then sending the pictures to Azure to do OCR to get the reading of the display so that I could measure power consumption over time.  
 (This was more to play with IoT than anything else, and the WAF was very low)
@@ -33,21 +33,21 @@ With Radius you have to ask for the “DIY” keys (DLMS/COSEM). This means you 
 Your meter also needs to have a special firmware, which is supposed to be rolled out to everyone by summer 2020, but when you ask for the keys, I assume the validate you have the correct firmware.  
 The new firmware outputs the measurement data every 10 seconds to the serial pins behind the “blinder” on the top of the meter
 
-![](../../static/assets/images/kamstrupblinder.png)
+![](/assets/images/kamstrupblinder.png)
  
 Under that you will find 6 pins in the upper left corner, and we will use Pin 5 and 6, which are “Ground” and “Data_OUT”
 
- ![](../../static/assets/images/pinout.png)
+ ![](/assets/images/pinout.png)
 
 I received my encryption keys in an email after about 5 days, the email also contains a very basic description of how to decrypt the data. 
 
 Now I had my keys and was eager to get started so I  went and got my 2$ Lolin NodeMCU v3 , and hooked it up to my computer via USB.
 
-![](../../static/assets/images/lolinesp8266.png)
+![](/assets/images/lolinesp8266.png)
 
 In the Arduino IDE I connect it as an “Node MCU 1.0 (ESP-12E Module)
 
-![](../../static/assets/images/arduino_ide_lolin.png)
+![](/assets/images/arduino_ide_lolin.png)
 
 As stated above I tried to use Asbjørn’s code directly, but  for some reason I could not get the MQTT part working.(Also be aware that the code is in the development branch)   
 It simply did not connect to my mosquito MQTT server, which I run as part of my Home Assistant setup  
@@ -59,7 +59,7 @@ I’m not going to go through all the code here, but one thing to notice is that
   Serial.swap();
 
 First we set the Serial Port configuration, and then call Serial.swap(); which remaps the UART0 ports from GPIO1 (TX) and GPIO3 (RX) to GPIO15 (TXD2) and GPIO13 (RXD2), from looking at the schematic below we then need to use “D7” to connect to the (TX) port on the Kamstrup Meter (Pin 5)
-![](../../static/assets/images/lolin_pinout.png)
+![](/assets/images/lolin_pinout.png)
 
 You need to change the following in the file before you can use it
 
@@ -79,4 +79,4 @@ When the sketch is successfully loaded, you can connect the NodeMCU to your powe
 
 I the following post I will look at getting that data from MQTT into InfluxDB and use Grafana Dashboards to monitor your power usage.
 
-![](../../static/assets/images/powerusage_grafana.png)
+![](/assets/images/powerusage_grafana.png)
