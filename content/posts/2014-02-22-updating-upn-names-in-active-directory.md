@@ -16,17 +16,18 @@ status: publish
 tags: []
 title: Updating UPN names in Active Directory
 ---
-<p>We are in the process of testing out Office 365, to see if it will be useful for us, so initially we are just going to use DirSync for some specific users, instead of setting up the complete ADFS solution. I have been extremely busy lately, so I decided to hire someone to come in and setup the DirSync and change the UPN's for the users who are going to the cloud.</p>
-<p>Everything went fine, I gave him a list of OU's which contained the users who needed the change, and he started opening each user going in and changing the UPN from the GUI.. But apparently I have gotten allergic to doing stuff in the GUI, so I ended writing a small script for him. Which after some procrastinating ended up with a GUI.</p>
-<p>It will load a tree view of the current directory (Requires AD cmdlets to be present on the system), then you can select each OU you want to change the containing users UPN name, it will also let you choose to recurse through multiple OU's.</p>
-<p>Be aware this is version 1, so there are no "are you sure prompts", proceed with caution.. </p>
-<p>I have exported the code from PowerShell studio with recovery info, so you can load the form, and work with it.</p>
-<p><a href="http://www.xipher.dk/assets/images/UPNChanger.jpg"><img src="/assets/images/UPNChanger-258x300.jpg" alt="UPNChanger" width="258" height="300" class="alignnone size-medium wp-image-747" /></a></p>
-<p>The treeview code is based on code from Thepip3r:<br />
-http://thepip3r.blogspot.dk/2011/06/powershell-guis-active-directory.html</p>
+We are in the process of testing out Office 365, to see if it will be useful for us, so initially we are just going to use DirSync for some specific users, instead of setting up the complete ADFS solution. I have been extremely busy lately, so I decided to hire someone to come in and setup the DirSync and change the UPN's for the users who are going to the cloud.
+Everything went fine, I gave him a list of OU's which contained the users who needed the change, and he started opening each user going in and changing the UPN from the GUI.. But apparently I have gotten allergic to doing stuff in the GUI, so I ended writing a small script for him. Which after some procrastinating ended up with a GUI.
+It will load a tree view of the current directory (Requires AD cmdlets to be present on the system), then you can select each OU you want to change the containing users UPN name, it will also let you choose to recurse through multiple OU's.
+Be aware this is version 1, so there are no "are you sure prompts", proceed with caution.. 
+I have exported the code from PowerShell studio with recovery info, so you can load the form, and work with it.
+<a href="http://www.xipher.dk/assets/images/UPNChanger.jpg"><img src="/assets/images/UPNChanger-258x300.jpg" alt="UPNChanger" width="258" height="300" class="alignnone size-medium wp-image-747" /></a>
+
+The treeview code is based on code from Thepip3r:
+
+http://thepip3r.blogspot.dk/2011/06/powershell-guis-active-directory.html
 
 {{< highlight powershell "linenos=table,linenostart=1" >}}
-<pre class="lang:ps decode:true ">#------------------------------------------------------------------------
 # Source File Information (DO NOT MODIFY)
 # Source ID: c420d64b-72fd-475f-8ca7-939cd9a6285e
 # Source File: C:\Users\ctn\Documents\SAPIEN\PowerShell Studio 2012\Files\OU Picker.pff
