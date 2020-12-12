@@ -28,8 +28,14 @@ So what I did was to create a callback function (Just named it Callback, could b
 
 Instead of using -Replace I use the .Net type accelerator [Regex] to define the regex, and call the ::Replace method in that, which does support callbacks
 
-```
-$CallBack = { param($match) HexConvert -HEX $($match.Groups[1].Value) } $Regex = [regex]'(?ismx)\[([0-9A-F]+)\]' $Text = (Get-Content C:\temp\Input.txt -Raw ) [Regex]::Replace($Text,$Regex,$CallBack) | Set-Content C:\temp\Output.txt}
+```powershell
+$CallBack = { param($match) HexConvert -HEX $($match.Groups[1].Value) } 
+
+$Regex = [regex]'(?ismx)\[([0-9A-F]+)\]' 
+
+$Text = (Get-Content C:\temp\Input.txt -Raw ) 
+
+[Regex]::Replace($Text,$Regex,$CallBack) | Set-Content C:\temp\Output.txt}
 ```
 
 {{< highlight powershell "linenos=table,hl_lines=8 15-17,linenostart=1" >}}
