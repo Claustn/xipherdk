@@ -32,5 +32,9 @@ Instead of using -Replace I use the .Net type accelerator [Regex] to define the 
 $CallBack = { param($match) HexConvert -HEX $($match.Groups[1].Value) } $Regex = [regex]'(?ismx)\[([0-9A-F]+)\]' $Text = (Get-Content C:\temp\Input.txt -Raw ) [Regex]::Replace($Text,$Regex,$CallBack) | Set-Content C:\temp\Output.txt}
 ```
 
+{{< highlight powershell >}}
+$CallBack = { param($match) HexConvert -HEX $($match.Groups[1].Value) } $Regex = [regex]'(?ismx)\[([0-9A-F]+)\]' $Text = (Get-Content C:\temp\Input.txt -Raw ) [Regex]::Replace($Text,$Regex,$CallBack) | Set-Content C:\temp\Output.txt}
+{{< / highlight >}}
+
 This literally cut the running time down from hours to minutes.
 
