@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Food on XenoBlog</title>
+    <link>/tags/food/</link>
+    <description>Recent content in Food on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 05 May 2007 22:12:42 +0000</lastBuildDate><atom:link href="/tags/food/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Aften hygge...</title>
+      <link>/posts/2007-05-05-aften-hygge/</link>
+      <pubDate>Sat, 05 May 2007 22:12:42 +0000</pubDate>
+      
+      <guid>/posts/2007-05-05-aften-hygge/</guid>
+      <description>I aftes var vi ude at spise på et sted, som hed Pungo Ranch bar. Jeg var glad for at jeg havde GPS i bilen, for det lignede mere eller mindre en forladt hytte.</description>
+    </item>
+    
+  </channel>
+</rss>

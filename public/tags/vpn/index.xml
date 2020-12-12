@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>VPN on XenoBlog</title>
+    <link>/tags/vpn/</link>
+    <description>Recent content in VPN on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Mar 2012 21:50:50 +0000</lastBuildDate><atom:link href="/tags/vpn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The mystery of why Cisco AnyConnect stopped working</title>
+      <link>/posts/2012-03-14-the-mystery-of-why-cisco-anyconnect-stopped-working/</link>
+      <pubDate>Wed, 14 Mar 2012 21:50:50 +0000</pubDate>
+      
+      <guid>/posts/2012-03-14-the-mystery-of-why-cisco-anyconnect-stopped-working/</guid>
+      <description>A while back I tried to update my Intel Centrino Ultimate 6300 Wifi NIC to the latest drivers, to test Intel MY wifi while I was out travelling, but I never got it to work, it said it could not detect a suitable adaptor.</description>
+    </item>
+    
+  </channel>
+</rss>

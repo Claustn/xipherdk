@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Minasi on XenoBlog</title>
+    <link>/tags/minasi/</link>
+    <description>Recent content in Minasi on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 11 May 2010 21:40:36 +0000</lastBuildDate><atom:link href="/tags/minasi/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Gotten back from Minasi conference</title>
+      <link>/posts/2010-05-11-gotten-back-from-minasi-conference/</link>
+      <pubDate>Tue, 11 May 2010 21:40:36 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-gotten-back-from-minasi-conference/</guid>
+      <description>I got back from Virgina Beach this past Saturday, after attending a very good conference, where I learned a lot of new an exciting stuff&amp;hellip; And of course it was very good to meet up with the &amp;ldquo;gang&amp;rdquo; again.</description>
+    </item>
+    
+    <item>
+      <title>Quick and dirty ping script</title>
+      <link>/posts/2009-01-15-quick-and-dirty-ping-script/</link>
+      <pubDate>Thu, 15 Jan 2009 22:27:00 +0000</pubDate>
+      
+      <guid>/posts/2009-01-15-quick-and-dirty-ping-script/</guid>
+      <description>There was a question on the Minasi forum asking if someone had written a batch script to ping a bunch of servers.. So I thought: &amp;quot; I have&amp;rsquo;nt, but I would like to try&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>USA Here I came</title>
+      <link>/posts/2008-04-18-usa-here-i-came/</link>
+      <pubDate>Fri, 18 Apr 2008 22:15:20 +0000</pubDate>
+      
+      <guid>/posts/2008-04-18-usa-here-i-came/</guid>
+      <description>Så er jeg kommer til USA, selv om jeg var lige ved at misse flyet fra Bruxelles til Washington.. Landede var ude af flyet kl 11.00 i Bruxelles, og skulle med fly videre kl 11.</description>
+    </item>
+    
+  </channel>
+</rss>

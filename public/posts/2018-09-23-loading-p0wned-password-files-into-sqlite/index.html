@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.0" />
+
+    
+    
+    
+
+<title>Loading &#34;P0wned&#34; password file into SQLite • XenoBlog</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Loading &#34;P0wned&#34; password file into SQLite"/>
+<meta name="twitter:description" content="Recently I had a discussion with a friend of mine with regards to checking AD passwords against the &ldquo;P0wned password list&rdquo; released by Troy Hunt.
+So I went and downloaded the the file from here"/>
+
+<meta property="og:title" content="Loading &#34;P0wned&#34; password file into SQLite" />
+<meta property="og:description" content="Recently I had a discussion with a friend of mine with regards to checking AD passwords against the &ldquo;P0wned password list&rdquo; released by Troy Hunt.
+So I went and downloaded the the file from here" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2018-09-23-loading-p0wned-password-files-into-sqlite/" />
+<meta property="article:published_time" content="2018-09-23T12:58:34+00:00" />
+<meta property="article:modified_time" content="2018-09-23T12:58:34+00:00" /><meta property="og:site_name" content="XenoBlog" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">
+        
+          XenoBlog
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/assets/images/me.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">XenoBlog</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>AboutMe</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/claustn" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://facebook.com/claus.t.nielsen.37" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/claustn" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/claustn" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:claustnspam@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2007 - 2020 Xenophane
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Loading &#34;P0wned&#34; password file into SQLite</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Sep 23, 2018
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/everyday">EVERYDAY</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 3 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <!-- raw HTML omitted -->
+<p>Recently I had a discussion with a friend of mine with regards to checking AD passwords against the &ldquo;P0wned password list&rdquo; released by Troy Hunt.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>So I went and downloaded the the file from <a href="https://haveibeenpwned.com/Passwords">here</a></p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>That turned out to be a 8.8 GB Zip file, that unpacked to almost 19GB of raw text. (The file consists of to columns of data the NTHash and the number of occurrences across password leaks.)</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Having to look through 19 GB of unsorted data I knew would be very slow, but I decided to test out different approaches. Keeping in mind, that I wanted to integrate this with my previously released AD Password checker tool <a href="https://github.com/Claustn/Password-Report"><!-- raw HTML omitted -->here<!-- raw HTML omitted --></a><!-- raw HTML omitted --> ,<!-- raw HTML omitted --> and the test data I have in AD consists of about 500 Users with the last 20 passwords stored in HashHistory, meaning that I would have to do about 10.000 lookups into the file.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>First attempt was simply to use Select-String and look for <!-- raw HTML omitted -->a NTHash<!-- raw HTML omitted --> value, even on a very fast Nvme drive this took more than 2 minutes per query, meaning it would take 20.000 minutes + (14 days)</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>I then tried Grep and Sift which yielded results in the same 2 minute area as Select-String.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Since I already had all the AD data in <!-- raw HTML omitted -->a SQLite<!-- raw HTML omitted --> database, I thought I would try to load the data into the DB<!-- raw HTML omitted -->.<!-- raw HTML omitted --> So I loaded the data into the DB and tried to query the DB for a specific Hash, this was a little bit faster than the plain file, but still took 1.40 minutes. Then I considered adding an index to the NTHash column, but since that has almost 520 million rows, and takes up 99% of the space used, it would mean that the DB would be double the size (around 40GB), which I felt would make it less portable.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>I really wanted to be able to keep everything in a way, so this could be run without &ldquo;installing&rdquo; anything and keeping it portable. So loading the database into MySQL really was not an option either. So I started reading the SQLite documentation and realized that it supports  Clustered indexed. Meaning that I could omit the default index and have SQLite use the NTHash data as an index. This means that the import time into the DB will go up (Takes about 3½ -4 hours),  because the data has to be sorted in order for it to act as an index. Since this data is very static the cost of using NTHash as an index is very low. With the data indexed the query time has gone done to about 10ms, which is very acceptable.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<hr>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<h2 id="import-data">Import Data</h2>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>First off we need to create the <!-- raw HTML omitted -->table,<!-- raw HTML omitted --> and tell SQLite not to use it &ldquo;regular&rdquo; index,  by telling it not to add a RowID, but use a &ldquo;clustered index&rdquo;.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>CREATE TABLE p0wned (
+	NTHash	TEXT,
+	cnt	INTEGER,
+	PRIMARY KEY(NTHash)
+) WITHOUT ROWID;
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Then we need to set the right import settings.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>.mode csv
+.separator :
+.import &quot;C:/temp/dbtest/pwds.txt&quot; p0wned
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This can of course also be automated, we can create a sql.txt file and put this into it.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>CREATE TABLE p0wned (
+	NTHash	TEXT,
+	cnt	INTEGER,
+	PRIMARY KEY(NTHash)
+) WITHOUT ROWID;
+.mode csv
+.separator :
+.import &quot;C:/temp/dbtest/pwds.txt&quot; p0wned
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>And run (This does require the sqlite3 binary)</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<pre><code>Get-Content .\sql.txt | &amp; sqlite3 test1.db
+</code></pre><!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>This has given us an ultra fast way to lookup data in the &ldquo;Have I been p0wned&rdquo; database, and all can be run locally.</p>
+<!-- raw HTML omitted -->
+<!-- raw HTML omitted -->
+<p>Next up I will show you how I have used that in my AD Password report script, to tell if users are using password that are in the &ldquo;Have I been P0wned&rdquo; list, or if you have users who are particular bad at passwords.</p>
+<!-- raw HTML omitted -->
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/2017-06-10-active-directory-users-password-report/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Active Directory Users Password Report</span>
+    </a>
+    
+    
+    <a href="/posts/2020-05-17-using-esp8266-to-monitor-kamstrup-omnipower/" class="navigation-next">
+      <span class="navigation-tittle">Using ESP8266 to monitor Kamstrup Omnipower</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'xipher-1';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/powershell.min.js"></script>
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/sql.min.js"></script>
+            
+        
+    <script type="text/javascript">
+        
+        hljs.configure({languages: ["powershell, sql"]});
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.0" />
+
+    
+    
+    
+
+<title>Updating UPN names in Active Directory • XenoBlog</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Updating UPN names in Active Directory"/>
+<meta name="twitter:description" content="function OnApplicationLoad { #Note: This function is not called in Projects #Note: This function runs before the form is created #Note: To get the script directory in the Packager use: Split-Path $hostinvocation."/>
+
+<meta property="og:title" content="Updating UPN names in Active Directory" />
+<meta property="og:description" content="function OnApplicationLoad { #Note: This function is not called in Projects #Note: This function runs before the form is created #Note: To get the script directory in the Packager use: Split-Path $hostinvocation." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2014-02-22-updating-upn-names-in-active-directory/" />
+<meta property="article:published_time" content="2014-02-22T20:22:37+00:00" />
+<meta property="article:modified_time" content="2014-02-22T20:22:37+00:00" /><meta property="og:site_name" content="XenoBlog" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">
+        
+          XenoBlog
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/assets/images/me.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">XenoBlog</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>AboutMe</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/claustn" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://facebook.com/claus.t.nielsen.37" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/claustn" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/claustn" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:claustnspam@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2007 - 2020 Xenophane
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Updating UPN names in Active Directory</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> Feb 22, 2014
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/everyday">EVERYDAY</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 8 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <!-- raw HTML omitted -->
+<p>function OnApplicationLoad {
+#Note: This function is not called in Projects
+#Note: This function runs before the form is created
+#Note: To get the script directory in the Packager use: Split-Path $hostinvocation.MyCommand.path
+#Note: To get the console output in the Packager (Windows Mode) use: $ConsoleOutput (Type: System.Collections.ArrayList)
+#Important: Form controls cannot be accessed in this function
+#TODO: Add snapins and custom code to validate the application load
+#Import-Module Pipeworks
+#Import-Module Pscx
+Import-Module Pipeworks</p>
+<pre><code>if (-not (Get-Module ActiveDirectory)){            
+     Import-Module ActiveDirectory            
+}            
+
+#TODO: Place custom script here
+$domain = [System.DirectoryServices.ActiveDirectory.Domain]::GetCurrentDomain()            
+$Script:strDomainDN = ($domain.GetDirectoryEntry()).distinguishedName 
+$Script:upnDN = &quot;cn=Partitions,cn=Configuration,$Script:strDomainDN&quot; 
+
+return $true #return true for success or false for failure
+</code></pre>
+<p>}</p>
+<p>function OnApplicationExit {
+#Note: This function is not called in Projects
+#Note: This function runs after the form is closed
+#TODO: Add custom code to clean up and unload snapins when the application exits</p>
+<pre><code>$script:ExitCode = 0 #Set the exit code for the Packager
+</code></pre>
+<p>}</p>
+<p>#endregion Application Functions</p>
+<p>#&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-</p>
+<h1 id="generated-form-function">Generated Form Function</h1>
+<p>#&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;&mdash;-
+function Call-OU_Picker_pff {</p>
+<pre><code>#----------------------------------------------
+#region Import the Assemblies
+#----------------------------------------------
+[void][reflection.assembly]::Load(&quot;mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;)
+[void][reflection.assembly]::Load(&quot;System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System.DirectoryServices, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;)
+[void][reflection.assembly]::Load(&quot;System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089&quot;)
+[void][reflection.assembly]::Load(&quot;System.ServiceProcess, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a&quot;)
+#endregion Import Assemblies
+
+#----------------------------------------------
+#region Define SAPIEN Types
+#----------------------------------------------
+try{
+    $local:type = [ProgressBarOverlay]
+}
+catch
+{
+    Add-Type -ReferencedAssemblies ('System.Windows.Forms', 'System.Drawing') -TypeDefinition  @&quot; 
+    using System;
+    using System.Windows.Forms;
+    using System.Drawing;
+    namespace SAPIENTypes
+    {
+        public class ProgressBarOverlay : System.Windows.Forms.ProgressBar
+        {
+            protected override void WndProc(ref Message m)
+            { 
+                base.WndProc(ref m);
+                if (m.Msg == 0x000F)// WM_PAINT
+                {
+                    if (Style != System.Windows.Forms.ProgressBarStyle.Marquee || !string.IsNullOrEmpty(this.Text))
+                    {
+                        using (Graphics g = this.CreateGraphics())
+                        {
+                            using (StringFormat stringFormat = new StringFormat(StringFormatFlags.NoWrap))
+                            {
+                                stringFormat.Alignment = StringAlignment.Center;
+                                stringFormat.LineAlignment = StringAlignment.Center;
+                                if (!string.IsNullOrEmpty(this.Text))
+                                    g.DrawString(this.Text, this.Font, Brushes.Black, this.ClientRectangle, stringFormat);
+                                else
+                                {
+                                    int percent = (int)(((double)Value / (double)Maximum) * 100);
+                                    g.DrawString(percent.ToString() + &quot;%&quot;, this.Font, Brushes.Black, this.ClientRectangle, stringFormat);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+          
+            public string TextOverlay
+            {
+                get
+                {
+                    return base.Text;
+                }
+                set
+                {
+                    base.Text = value;
+                    Invalidate();
+                }
+            }
+        }
+    }
+</code></pre>
+<p>&ldquo;@ | Out-Null
+}
+#endregion Define SAPIEN Types</p>
+<pre><code>#----------------------------------------------
+#region Generated Form Objects
+#----------------------------------------------
+[System.Windows.Forms.Application]::EnableVisualStyles()
+$formChangeUPNNames = New-Object 'System.Windows.Forms.Form'
+$checkboxRecurseOUs = New-Object 'System.Windows.Forms.CheckBox'
+$progressbaroverlay1 = New-Object 'SAPIENTypes.ProgressBarOverlay'
+$labelNewUPNPicker = New-Object 'System.Windows.Forms.Label'
+$buttonChangeUPNs = New-Object 'System.Windows.Forms.Button'
+$combobox1 = New-Object 'System.Windows.Forms.ComboBox'
+$buttonListOUs = New-Object 'System.Windows.Forms.Button'
+$treeview1 = New-Object 'System.Windows.Forms.TreeView'
+$errorprovider1 = New-Object 'System.Windows.Forms.ErrorProvider'
+$imagelistButtonBusyAnimation = New-Object 'System.Windows.Forms.ImageList'
+$InitialFormWindowState = New-Object 'System.Windows.Forms.FormWindowState'
+#endregion Generated Form Objects
+
+#----------------------------------------------
+# User Generated Script
+#----------------------------------------------
+
+
+
+
+
+
+
+$formChangeUPNNames_Load={
+    #TODO: Initialize Form Controls here
+    Load-ComboBox $combobox1 $(Get-ADObject -Identity $Script:upnDN  -Properties upnsuffixes | select -ExpandProperty upnsuffixes)
+    $errorprovider1.SetError($combobox1, &quot;Choose UPN&quot;)
+	
+}
+
+
+
+#region Control Helper Functions
+function Load-ListBox 
+{
+&amp;lt;#
+    .SYNOPSIS
+        This functions helps you load items into a ListBox or CheckedListBox.
+
+    .DESCRIPTION
+        Use this function to dynamically load items into the ListBox control.
+
+    .PARAMETER  ListBox
+        The ListBox control you want to add items to.
+
+    .PARAMETER  Items
+        The object or objects you wish to load into the ListBox's Items collection.
+
+    .PARAMETER  DisplayMember
+        Indicates the property to display for the items in this control.
+	
+    .PARAMETER  Append
+        Adds the item(s) to the ListBox without clearing the Items collection.
+	
+    .EXAMPLE
+        Load-ListBox $ListBox1 &quot;Red&quot;, &quot;White&quot;, &quot;Blue&quot;
+	
+    .EXAMPLE
+        Load-ListBox $listBox1 &quot;Red&quot; -Append
+        Load-ListBox $listBox1 &quot;White&quot; -Append
+        Load-ListBox $listBox1 &quot;Blue&quot; -Append
+	
+    .EXAMPLE
+        Load-ListBox $listBox1 (Get-Process) &quot;ProcessName&quot;
+#&amp;gt;
+    Param (
+        [ValidateNotNull()]
+        [Parameter(Mandatory=$true)]
+        [System.Windows.Forms.ListBox]$ListBox,
+        [ValidateNotNull()]
+        [Parameter(Mandatory=$true)]
+        $Items,
+        [Parameter(Mandatory=$false)]
+        [string]$DisplayMember,
+        [switch]$Append
+    )
+	
+    if(-not $Append)
+    {
+        $listBox.Items.Clear()	
+    }
+	
+    if($Items -is [System.Windows.Forms.ListBox+ObjectCollection])
+    {
+        $listBox.Items.AddRange($Items)
+    }
+    elseif ($Items -is [Array])
+    {
+        $listBox.BeginUpdate()
+        foreach($obj in $Items)
+        {
+            $listBox.Items.Add($obj)
+        }
+        $listBox.EndUpdate()
+    }
+    else
+    {
+        $listBox.Items.Add($Items)	
+    }
+
+    $listBox.DisplayMember = $DisplayMember	
+}
+
+function Load-ComboBox 
+{
+&amp;lt;#
+    .SYNOPSIS
+        This functions helps you load items into a ComboBox.
+
+    .DESCRIPTION
+        Use this function to dynamically load items into the ComboBox control.
+
+    .PARAMETER  ComboBox
+        The ComboBox control you want to add items to.
+
+    .PARAMETER  Items
+        The object or objects you wish to load into the ComboBox's Items collection.
+
+    .PARAMETER  DisplayMember
+        Indicates the property to display for the items in this control.
+	
+    .PARAMETER  Append
+        Adds the item(s) to the ComboBox without clearing the Items collection.
+	
+    .EXAMPLE
+        Load-ComboBox $combobox1 &quot;Red&quot;, &quot;White&quot;, &quot;Blue&quot;
+	
+    .EXAMPLE
+        Load-ComboBox $combobox1 &quot;Red&quot; -Append
+        Load-ComboBox $combobox1 &quot;White&quot; -Append
+        Load-ComboBox $combobox1 &quot;Blue&quot; -Append
+	
+    .EXAMPLE
+        Load-ComboBox $combobox1 (Get-Process) &quot;ProcessName&quot;
+#&amp;gt;
+    Param (
+        [ValidateNotNull()]
+        [Parameter(Mandatory=$true)]
+        [System.Windows.Forms.ComboBox]$ComboBox,
+        [ValidateNotNull()]
+        [Parameter(Mandatory=$true)]
+        $Items,
+        [Parameter(Mandatory=$false)]
+        [string]$DisplayMember,
+        [switch]$Append
+    )
+	
+    if(-not $Append)
+    {
+        $ComboBox.Items.Clear()	
+    }
+	
+    if($Items -is [Object[]])
+    {
+        $ComboBox.Items.AddRange($Items)
+    }
+    elseif ($Items -is [Array])
+    {
+        $ComboBox.BeginUpdate()
+        foreach($obj in $Items)
+        {
+            $ComboBox.Items.Add($obj)	
+        }
+        $ComboBox.EndUpdate()
+    }
+    else
+    {
+        $ComboBox.Items.Add($Items)	
+    }
+
+    $ComboBox.DisplayMember = $DisplayMember	
+}
+
+function Get-CheckedNodes 
+{
+&amp;lt;#
+    .SYNOPSIS
+        This function collects a list of checked nodes in a TreeView
+
+    .DESCRIPTION
+        This function collects a list of checked nodes in a TreeView
+
+    .PARAMETER  $NodeCollection
+        The collection of nodes to search
+
+    .PARAMETER  $CheckedNodes
+        The ArrayList that will contain the all the checked items
+	
+    .EXAMPLE
+        $CheckedNodes = New-Object System.Collections.ArrayList
+        Get-CheckedNodes $treeview1.Nodes $CheckedNodes
+        foreach($node in $CheckedNodes)
+        {	
+            Write-Host $node.Text
+        }
+#&amp;gt;
+    param(
+    [ValidateNotNull()]
+    [System.Windows.Forms.TreeNodeCollection] $NodeCollection,
+    [ValidateNotNull()]
+    [System.Collections.ArrayList]$CheckedNodes)
+	
+    foreach($Node in $NodeCollection)
+    {
+        if($Node.Checked)
+        {
+            [void]$CheckedNodes.Add($Node)
+        }
+        Get-CheckedNodes $Node.Nodes $CheckedNodes
+    }
+}
+
+#endregion
+
+
+
+#Add-Node, get-NextLevel and Build Treeview code is taken from http://thepip3r.blogspot.nl/2011/06/powershell-guis-active-directory.html
+function Add-Node { 
+        param ( 
+            $selectedNode, 
+            $name
+        ) 
+        $newNode = new-object System.Windows.Forms.TreeNode  
+        $newNode.Name = $name 
+        $newNode.Text = $name 
+        $selectedNode.Nodes.Add($newNode) | Out-Null 
+        return $newNode 
+} 
+
+function Get-NextLevel {
+    param (
+        $selectedNode,
+        [String]$dn
+   )
+   [System.Windows.Forms.Application]::DoEvents()
+    $OUs = Get-ADObject -Filter 'ObjectClass -eq &quot;organizationalUnit&quot; -or ObjectClass -eq &quot;container&quot;' -SearchScope OneLevel -SearchBase $dn
+
+    If ($OUs -eq $null) {
+        $node = Add-Node $selectedNode $dn
+    } Else {
+        $node = Add-Node $selectedNode $dn
+        
+        $OUs | % {
+            Get-NextLevel $node $_.distinguishedName
+        }
+    }
+}
+ 
+function Build-TreeView { 
+    if ($treeNodes)  
+    {  
+          $treeview1.Nodes.remove($treeNodes) 
+        $formChangeUPNNames.Refresh() 
+    } 
+    
+    $treeNodes = New-Object System.Windows.Forms.TreeNode 
+    $treeNodes.text = &quot;Active Directory Root&quot; 
+    $treeNodes.Name = &quot;Active Directory Root&quot; 
+    $treeNodes.Tag = &quot;root&quot; 
+    $treeView1.Nodes.Add($treeNodes) | Out-Null 
+     
+    #$treeView1.add_AfterSelect({ 
+    #    $textbox1.Text = $this.SelectedNode.Name
+    #}) 
+     
+    #Generate Module nodes 
+    $OUs = Get-NextLevel $treeNodes $Script:strDomainDN
+    
+    $treeNodes.Expand() 
+} 
+$buttonListOUs_Click={
+	
+	
+    $progressbaroverlay1.Visible = $true
+	
+    $progressbaroverlay1.Style = 'Marquee'
+    [System.Windows.Forms.Application]::DoEvents()
+    Build-TreeView
+	
+    $progressbaroverlay1.Visible = $false
+  
+	
+    #TODO: Place custom script here
+	
+}
+
+$button2_Click={
+	
+		
+    Load-ComboBox $combobox1 $(Get-ADObject -Identity $Script:upnDN  -Properties upnsuffixes | select -ExpandProperty upnsuffixes)
+	
+}
+
+
+$buttonChangeUPNs_Click={
+    #TODO: Place custom script here
+    $CheckedNodes = New-Object System.Collections.ArrayList
+    Get-CheckedNodes $treeview1.Nodes $CheckedNodes
+        foreach($node in $CheckedNodes)
+        {	
+			
+            If ($checkboxRecurseOUs.Checked) {
+                Get-ADUser -Filter * -SearchBase &quot;$($node.text)&quot;  |
+                    ForEach-Object {
+                        $UPN = $_.UserPrincipalName -Replace '(?im)@.+$', &quot;@$($combobox1.SelectedItem.ToString())&quot;
+                        Write-Host $UPN
+                        Write-Host $_.UserPrincipalName
+                        Set-ADUser $_ -UserPrincipalName $UPN 
+                    }				
+                $combobox1.SelectedItem
+                Write-Host $node.Text
+            }
+		
+            Else {
+                Get-ADUser -Filter * -SearchBase &quot;$($node.text)&quot; -SearchScope OneLevel |
+                    ForEach-Object {
+                        $UPN = $_.UserPrincipalName -Replace '(?im)@.+$', &quot;@$($combobox1.SelectedItem.ToString())&quot;
+                        Write-Host $UPN
+                        Write-Host $_.UserPrincipalName
+                        Set-ADUser $_ -UserPrincipalName $UPN 
+                    }				
+                $combobox1.SelectedItem
+                Write-Host $node.Text
+            }
+        }
+}
+
+
+$combobox1_Validating=[System.ComponentModel.CancelEventHandler]{
+#Event Argument: $_ = [System.ComponentModel.CancelEventArgs]
+    #TODO: Place custom script here
+	
+		
+}
+
+$combobox1_Leave={
+    #TODO: Place custom script here
+    If ((-not $combobox1.SelectedItem) -or ($combobox1.SelectedItem.ToString() -like &quot;&quot;)) {
+            $errorprovider1.SetError($combobox1,&quot;Select a value from the list&quot;)	
+        }
+        Else {
+            $errorprovider1.SetError($combobox1,&quot;&quot;)
+            }
+		
+}
+
+$combobox1_DropDownClosed={
+    #TODO: Place custom script here
+        If ((-not $combobox1.SelectedItem) -or ($combobox1.SelectedItem.ToString() -like &quot;&quot;)) {
+            $errorprovider1.SetError($combobox1,&quot;Select a value from the list&quot;)	
+        }
+        Else {
+            $errorprovider1.SetError($combobox1,&quot;&quot;)
+            }
+}
+
+
+
+
+$combobox1_TextChanged={
+    #TODO: Place custom script here
+    If ((-not $combobox1.SelectedItem) -or ($combobox1.SelectedItem.ToString() -like &quot;&quot;)) {
+            $errorprovider1.SetError($combobox1,&quot;Select a value from the list&quot;)	
+        }
+        Else {
+            $errorprovider1.SetError($combobox1,&quot;&quot;)
+            }
+}
+
+$checkboxRecurseOUs_CheckedChanged={
+    #TODO: Place custom script here
+	
+}
+
+# --End User Generated Script--
+#----------------------------------------------
+#region Generated Events
+#----------------------------------------------
+
+$Form_StateCorrection_Load=
+{
+    #Correct the initial state of the form to prevent the .Net maximized form issue
+    $formChangeUPNNames.WindowState = $InitialFormWindowState
+}
+
+$Form_Cleanup_FormClosed=
+{
+    #Remove all event handlers from the controls
+    try
+    {
+        $checkboxRecurseOUs.remove_CheckedChanged($checkboxRecurseOUs_CheckedChanged)
+        $buttonChangeUPNs.remove_Click($buttonChangeUPNs_Click)
+        $combobox1.remove_TextChanged($combobox1_TextChanged)
+        $combobox1.remove_Leave($combobox1_Leave)
+        $combobox1.remove_Validating($combobox1_Validating)
+        $buttonListOUs.remove_Click($buttonListOUs_Click)
+        $formChangeUPNNames.remove_Load($formChangeUPNNames_Load)
+        $formChangeUPNNames.remove_Load($Form_StateCorrection_Load)
+        $formChangeUPNNames.remove_FormClosed($Form_Cleanup_FormClosed)
+    }
+    catch [Exception]
+    { }
+}
+#endregion Generated Events
+
+#----------------------------------------------
+#region Generated Form Code
+#----------------------------------------------
+#
+# formChangeUPNNames
+#
+$formChangeUPNNames.Controls.Add($checkboxRecurseOUs)
+$formChangeUPNNames.Controls.Add($progressbaroverlay1)
+$formChangeUPNNames.Controls.Add($labelNewUPNPicker)
+$formChangeUPNNames.Controls.Add($buttonChangeUPNs)
+$formChangeUPNNames.Controls.Add($combobox1)
+$formChangeUPNNames.Controls.Add($buttonListOUs)
+$formChangeUPNNames.Controls.Add($treeview1)
+$formChangeUPNNames.ClientSize = '569, 640'
+$formChangeUPNNames.Name = &quot;formChangeUPNNames&quot;
+$formChangeUPNNames.Text = &quot;Change UPN names&quot;
+$formChangeUPNNames.add_Load($formChangeUPNNames_Load)
+#
+# checkboxRecurseOUs
+#
+$checkboxRecurseOUs.Location = '456, 569'
+$checkboxRecurseOUs.Name = &quot;checkboxRecurseOUs&quot;
+$checkboxRecurseOUs.Size = '104, 24'
+$checkboxRecurseOUs.TabIndex = 9
+$checkboxRecurseOUs.Text = &quot;Recurse OU's&quot;
+$checkboxRecurseOUs.UseVisualStyleBackColor = $True
+$checkboxRecurseOUs.add_CheckedChanged($checkboxRecurseOUs_CheckedChanged)
+#
+# progressbaroverlay1
+#
+$progressbaroverlay1.Location = '12, 509'
+$progressbaroverlay1.Maximum = 10
+$progressbaroverlay1.Name = &quot;progressbaroverlay1&quot;
+$progressbaroverlay1.Size = '540, 23'
+$progressbaroverlay1.Style = 'Marquee'
+$progressbaroverlay1.TabIndex = 8
+$progressbaroverlay1.TextOverlay = &quot;Loading OU Structure&quot;
+$progressbaroverlay1.Visible = $False
+#
+# labelNewUPNPicker
+#
+$labelNewUPNPicker.Location = '14, 535'
+$labelNewUPNPicker.Name = &quot;labelNewUPNPicker&quot;
+$labelNewUPNPicker.Size = '100, 23'
+$labelNewUPNPicker.TabIndex = 7
+$labelNewUPNPicker.Text = &quot;New UPN Picker&quot;
+#
+# buttonChangeUPNs
+#
+$buttonChangeUPNs.Location = '456, 599'
+$buttonChangeUPNs.Name = &quot;buttonChangeUPNs&quot;
+$buttonChangeUPNs.Size = '96, 23'
+$buttonChangeUPNs.TabIndex = 6
+$buttonChangeUPNs.Text = &quot;Change UPN's&quot;
+$buttonChangeUPNs.UseVisualStyleBackColor = $True
+$buttonChangeUPNs.add_Click($buttonChangeUPNs_Click)
+#
+# combobox1
+#
+$combobox1.DropDownStyle = 'DropDownList'
+$combobox1.FormattingEnabled = $True
+$combobox1.Location = '14, 559'
+$combobox1.Name = &quot;combobox1&quot;
+$combobox1.Size = '165, 21'
+$combobox1.TabIndex = 3
+$combobox1.add_TextChanged($combobox1_TextChanged)
+$combobox1.add_Leave($combobox1_Leave)
+$combobox1.add_Validating($combobox1_Validating)
+#
+# buttonListOUs
+#
+$buttonListOUs.Location = '14, 599'
+$buttonListOUs.Name = &quot;buttonListOUs&quot;
+$buttonListOUs.Size = '84, 23'
+$buttonListOUs.TabIndex = 1
+$buttonListOUs.Text = &quot;List OU's&quot;
+$buttonListOUs.UseVisualStyleBackColor = $True
+$buttonListOUs.add_Click($buttonListOUs_Click)
+#
+# treeview1
+#
+$treeview1.CheckBoxes = $True
+$treeview1.Location = '12, 27'
+$treeview1.Name = &quot;treeview1&quot;
+$treeview1.Size = '540, 478'
+$treeview1.TabIndex = 0
+#
+# errorprovider1
+#
+$errorprovider1.ContainerControl = $formChangeUPNNames
+#
+# imagelistButtonBusyAnimation
+#
+$Formatter_binaryFomatter = New-Object System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+#region Binary Data
+$System_IO_MemoryStream = New-Object System.IO.MemoryStream (,[byte[]][System.Convert]::FromBase64String('
+</code></pre>
+<p>AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAu
+MC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAA
+ACZTeXN0ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkD
+AAAADwMAAAB2CgAAAk1TRnQBSQFMAgEBCAEAATABAAEwAQABEAEAARABAAT/ASEBAAj/AUIBTQE2
+BwABNgMAASgDAAFAAwABMAMAAQEBAAEgBgABMP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/AP8A/wD/
+AP8AugADwgH/AzwB/wM8Af8DwgH/MAADwgH/A1wB/wOCAf8DwgH/sAADPAH/AwAB/wMAAf8DPAH/
+MAADggH/AzwB/wM8Af8DXAH/gAADwgH/AzwB/wM8Af8DwgH/IAADPAH/AwAB/wMAAf8DPAH/A8IB
+/wNcAf8DggH/A8IB/xAAA8IB/wM8Af8DPAH/A8IB/wNcAf8DPAH/AzwB/wNcAf8EAAOSAf8DkgH/
+A8IB/3AAAzwB/wMAAf8DAAH/AzwB/yAAA8IB/wM8Af8DPAH/A8IB/wOCAf8DPAH/AzwB/wOCAf8Q
+AAM8Af8DAAH/AwAB/wM8Af8DwgH/A1wB/wOCAf8DwgH/A5IB/wOCAf8DggH/A5IB/3AAAzwB/wMA
+Af8DAAH/AzwB/zAAA1wB/wM8Af8DPAH/A1wB/xAAAzwB/wMAAf8DAAH/AzwB/xAAA5IB/wOSAf8D
+kgH/A8IB/3AAA8IB/wM8Af8DPAH/A8IB/zAAA8IB/wNcAf8DggH/A8IB/xAAA8IB/wM8Af8DPAH/
+A8IB/xAAA8IB/wOSAf8DkgH/A8IB/zgAA8IB/wM8Af8DPAH/A8IB/zAAA8IB/wOCAf8DXAH/A8IB
+/zAAA8IB/wPCAf8DkgH/A8IB/zQAA8IB/wPCAf80AAM8Af8DAAH/AwAB/wM8Af8wAANcAf8DPAH/
+AzwB/wNcAf8wAAOSAf8DggH/A4IB/wOSAf8wAAPCAf8DwgH/A8IB/wPCAf8wAAM8Af8DAAH/AwAB
+/wM8Af8wAAOCAf8DPAH/AzwB/wOCAf8wAAPCAf8DggH/A5IB/wOSAf8wAAPCAf8DwgH/A8IB/wPC
+Af8wAAPCAf8DPAH/AzwB/wPCAf8wAAPCAf8DggH/A1wB/wPCAf8wAAPCAf8DkgH/A5IB/wPCAf80
+AAPCAf8DwgH/EAADwgH/A8IB/xQAA8IB/wOCAf8DXAH/A8IB/zAAA8IB/wOSAf8DkgH/A8IB/zQA
+A8IB/wPCAf9UAAPCAf8DwgH/A8IB/wPCAf8QAANcAf8DPAH/AzwB/wNcAf8wAAOSAf8DggH/A5IB
+/wOSAf8wAAPCAf8DwgH/A8IB/wPCAf9QAAPCAf8DwgH/A8IB/wPCAf8DwgH/A8IB/wOSAf8DwgH/
+A4IB/wM8Af8DPAH/A4IB/yQAA8IB/wPCAf8EAAPCAf8DggH/A5IB/wOSAf8wAAPCAf8DwgH/A8IB
+/wPCAf9UAAPCAf8DwgH/BAADkgH/A4IB/wOCAf8DkgH/A8IB/wOCAf8DXAH/A8IB/yAAA8IB/wPC
+Af8DwgH/A8IB/wPCAf8DkgH/A5IB/wPCAf80AAPCAf8DwgH/ZAADkgH/A5IB/wOSAf8DkgH/MAAD
+wgH/A8IB/wPCAf8DwgH/sAADwgH/A5IB/wOSAf8DwgH/NAADwgH/A8IB/7QAA8IB/wPCAf8DkgH/
+A8IB/zQAA8IB/wPCAf+0AAOSAf8DggH/A4IB/wOSAf8wAAPCAf8DwgH/A8IB/wPCAf+gAAPCAf8D
+XAH/A4IB/wPCAf8DkgH/A5IB/wOSAf8DwgH/BAADwgH/A8IB/xQAA8IB/wPCAf8DkgH/A8IB/wPC
+Af8DwgH/A8IB/wPCAf8kAAPCAf8DwgH/dAADggH/AzwB/wM8Af8DggH/A8IB/wOSAf8DkgH/A8IB
+/wPCAf8DwgH/A8IB/wPCAf8QAAOSAf8DggH/A4IB/wOSAf8EAAPCAf8DwgH/JAADwgH/A8IB/wPC
+Af8DwgH/cAADXAH/AzwB/wM8Af8DggH/EAADwgH/A8IB/wPCAf8DwgH/EAADkgH/A5IB/wOSAf8D
+kgH/MAADwgH/A8IB/wPCAf8DwgH/cAADwgH/A1wB/wNcAf8DwgH/FAADwgH/A8IB/xQAA8IB/wOS
+Af8DkgH/A8IB/zQAA8IB/wPCAf9sAAPCAf8DPAH/AzwB/wPCAf8wAAPCAf8DXAH/A4IB/wPCAf8w
+AAPCAf8DwgH/A5IB/wPCAf80AAPCAf8DwgH/NAADPAH/AwAB/wMAAf8DPAH/MAADggH/AzwB/wM8
+Af8DXAH/MAADkgH/A4IB/wOCAf8DkgH/MAADwgH/A8IB/wPCAf8DwgH/MAADPAH/AwAB/wMAAf8D
+PAH/MAADXAH/AzwB/wM8Af8DggH/MAADkgH/A5IB/wOSAf8DkgH/MAADwgH/A8IB/wPCAf8DwgH/
+MAADwgH/AzwB/wM8Af8DwgH/MAADwgH/A1wB/wNcAf8DwgH/MAADwgH/A5IB/wOSAf8DwgH/NAAD
+wgH/A8IB/3wAA8IB/wM8Af8DPAH/A8IB/zAAA8IB/wNcAf8DggH/A8IB/zAAA8IB/wPCAf8DkgH/
+A8IB/xAAA8IB/wM8Af8DPAH/A8IB/1AAAzwB/wMAAf8DAAH/AzwB/zAAA4IB/wM8Af8DPAH/A1wB
+/zAAA5IB/wOCAf8DggH/A5IB/xAAAzwB/wMAAf8DAAH/AzwB/1AAAzwB/wMAAf8DAAH/AzwB/zAA
+A1wB/wM8Af8DPAH/A4IB/wOSAf8DPAH/AzwB/wPCAf8gAAOSAf8DkgH/A5IB/wOSAf8DwgH/A1wB
+/wOCAf8DwgH/AzwB/wMAAf8DAAH/AzwB/1AAA8IB/wM8Af8DPAH/A8IB/zAAA8IB/wOCAf8DXAH/
+A8IB/wM8Af8DAAH/AwAB/wM8Af8gAAPCAf8DkgH/A5IB/wPCAf8DggH/AzwB/wM8Af8DXAH/A8IB
+/wM8Af8DPAH/A8IB/6AAAzwB/wMAAf8DAAH/AzwB/zAAA1wB/wM8Af8DPAH/A4IB/7AAA8IB/wM8
+Af8DPAH/A8IB/zAAA8IB/wOCAf8DXAH/A8IB/xgAAUIBTQE+BwABPgMAASgDAAFAAwABMAMAAQEB
+AAEBBQABgAEBFgAD/4EABP8B/AE/AfwBPwT/AfwBPwH8AT8D/wHDAfwBAwHAASMD/wHDAfwBAwHA
+AQMD/wHDAf8DwwP/AcMB/wPDAf8B8AH/AfAB/wHwAf8B+QH/AfAB/wHwAf8B8AH/AfAB/wHwAf8B
+8AH/AfAB/wHwAf8B8AH/AfAB/wHwAf8B+QHnAcMB/wHDAf8B5wL/AsMB/wHDAf8BwwL/AcABAwH+
+AUMB/wHDAv8B5AEDAfwBAwH/AecC/wH8AT8B/AE/BP8B/AE/Af4BfwT/AfwBPwH+AX8E/wH8AT8B
+/AE/BP8BwAEnAcABPwHnA/8BwAEDAcIBfwHDA/8DwwH/AcMD/wHDAecBwwH/AecD/wEPAf8BDwH/
+AQ8B/wGfAf8BDwH/AQ8B/wEPAf8BDwH/AQ8B/wEPAf8BDwH/AQ8B/wEPAf8BDwH/AQ8B/wGfA/8B
+wwH/AcMB/wLDAv8BwwH/AcMB/wLDAv8BwwH/AcABPwHAAQMC/wHDAf8BwAE/AcABAwT/AfwBPwH8
+AT8E/wH8AT8B/AE/Cw=='))
+#endregion
+$imagelistButtonBusyAnimation.ImageStream = $Formatter_binaryFomatter.Deserialize($System_IO_MemoryStream)
+$Formatter_binaryFomatter = $null
+$System_IO_MemoryStream = $null
+$imagelistButtonBusyAnimation.TransparentColor = &lsquo;Transparent&rsquo;
+#endregion Generated Form Code</p>
+<pre><code>#----------------------------------------------
+</code></pre>
+<p>#Save the initial state of the form $InitialFormWindowState = $formChangeUPNNames.WindowState #Init the OnLoad event to correct the initial state of the form $formChangeUPNNames.add_Load($Form_StateCorrection_Load) #Clean up the control events $formChangeUPNNames.add_FormClosed($Form_Cleanup_FormClosed) #Show the Form return $formChangeUPNNames.ShowDialog() } #End Function #Call OnApplicationLoad to initialize if((OnApplicationLoad) -eq $true) { #Call the form Call-OU_Picker_pff | Out-Null #Perform cleanup OnApplicationExit }</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/2014-02-03-using-ews-exchange-web-services-to-read-emails/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Using EWS (Exchange Web Services) to read email subjects.</span>
+    </a>
+    
+    
+    <a href="/posts/2014-05-30-sa-er-det-tid-til-at-saette-x-i-kalenderen-igen-26-juni/" class="navigation-next">
+      <span class="navigation-tittle">Så er det tid til at sætte X i kalenderen igen. ( 26 Juni)</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'xipher-1';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/powershell.min.js"></script>
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/sql.min.js"></script>
+            
+        
+    <script type="text/javascript">
+        
+        hljs.configure({languages: ["powershell, sql"]});
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

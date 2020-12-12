@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>vhd on XenoBlog</title>
+    <link>/tags/vhd/</link>
+    <description>Recent content in vhd on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 14 Sep 2009 13:41:54 +0000</lastBuildDate><atom:link href="/tags/vhd/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Right click to mount vhd files</title>
+      <link>/posts/2009-09-14-right-click-to-mount-vhd-files/</link>
+      <pubDate>Mon, 14 Sep 2009 13:41:54 +0000</pubDate>
+      
+      <guid>/posts/2009-09-14-right-click-to-mount-vhd-files/</guid>
+      <description>I have just upgraded my machines to Windows 7 RTM, before I did the reinstall I did full backup of my old Vista machines, of course I figured out that I had not gotten all the files out of the Vista machines before I upgraded, So I had to restore some files from the resulting .</description>
+    </item>
+    
+  </channel>
+</rss>

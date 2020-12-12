@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PS on XenoBlog</title>
+    <link>/tags/ps/</link>
+    <description>Recent content in PS on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 04 Sep 2009 23:33:28 +0000</lastBuildDate><atom:link href="/tags/ps/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Windows 7 &amp; RSAT</title>
+      <link>/posts/2009-09-04-windows-7-rsat/</link>
+      <pubDate>Fri, 04 Sep 2009 23:33:28 +0000</pubDate>
+      
+      <guid>/posts/2009-09-04-windows-7-rsat/</guid>
+      <description>I finally found some time today to upgrade my primary work machine to Windows 7 RTM (Yeah). Since I do a lot of system administration one of the first things I put on there was my Powershell tools and RSAT.</description>
+    </item>
+    
+    <item>
+      <title>Playing around with profiles.</title>
+      <link>/posts/2007-07-10-playing-around-with-profiles/</link>
+      <pubDate>Tue, 10 Jul 2007 11:08:02 +0000</pubDate>
+      
+      <guid>/posts/2007-07-10-playing-around-with-profiles/</guid>
+      <description>In PowerShell you have the option create custom profiles that you can use, in the profiles you can create different aliases, change the prompt and a lot of other things, today we will look at adding some info to prompt.</description>
+    </item>
+    
+    <item>
+      <title>Getting info from the eventlog with PowerShell</title>
+      <link>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</link>
+      <pubDate>Mon, 18 Jun 2007 15:14:13 +0000</pubDate>
+      
+      <guid>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</guid>
+      <description>Started playing around with PowerShell, so I thought I would post a few simple things on the blog, maybe you won&amp;rsquo;t find it interesting, but it is a good way for me to remember, so BLAH!</description>
+    </item>
+    
+  </channel>
+</rss>

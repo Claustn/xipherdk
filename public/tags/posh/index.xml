@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PoSH on XenoBlog</title>
+    <link>/tags/posh/</link>
+    <description>Recent content in PoSH on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Nov 2009 21:30:43 +0000</lastBuildDate><atom:link href="/tags/posh/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Finding Powershell V2</title>
+      <link>/posts/2009-11-30-finding-powershell-v2/</link>
+      <pubDate>Mon, 30 Nov 2009 21:30:43 +0000</pubDate>
+      
+      <guid>/posts/2009-11-30-finding-powershell-v2/</guid>
+      <description>Joel Bennet made a good point about it can be difficult to find Powershell V2 on the MS site. I am not going to rewrite Joels post, so I will just &amp;ldquo;quote&amp;rdquo; it.</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 &amp; RSAT</title>
+      <link>/posts/2009-09-04-windows-7-rsat/</link>
+      <pubDate>Fri, 04 Sep 2009 23:33:28 +0000</pubDate>
+      
+      <guid>/posts/2009-09-04-windows-7-rsat/</guid>
+      <description>I finally found some time today to upgrade my primary work machine to Windows 7 RTM (Yeah). Since I do a lot of system administration one of the first things I put on there was my Powershell tools and RSAT.</description>
+    </item>
+    
+    <item>
+      <title>BrowseForFolder VBScript/PowerShell</title>
+      <link>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</link>
+      <pubDate>Tue, 06 May 2008 08:35:47 +0000</pubDate>
+      
+      <guid>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</guid>
+      <description>I had to run a script the other day, that I wrote some time ago to change some files in a folder, the script uses the Shell.Application COM object BrowseForFolder method, to show a GUI that lets you browse through the directory structure and choose a folder.</description>
+    </item>
+    
+    <item>
+      <title>Learning PowerShell</title>
+      <link>/posts/2008-04-29-learning-powershell/</link>
+      <pubDate>Tue, 29 Apr 2008 13:13:47 +0000</pubDate>
+      
+      <guid>/posts/2008-04-29-learning-powershell/</guid>
+      <description>Don Jones&#39; keynote basically said, if you do not learn PowerShell, you will not be able to function as an Windows IT administrator in 5 years time or so&amp;hellip; After what was told on the MVP summit, about Microsofts commitment to PowerShell, and how all new products will be based on it, he foresees are very dim future for admins who do not know it.</description>
+    </item>
+    
+    <item>
+      <title>Søndag</title>
+      <link>/posts/2008-04-22-s%C3%B8ndag/</link>
+      <pubDate>Tue, 22 Apr 2008 17:34:24 +0000</pubDate>
+      
+      <guid>/posts/2008-04-22-s%C3%B8ndag/</guid>
+      <description>Efter vi har været ude at spise morgenmad hos Mark, kører vi tilbage til hotellet, så vi kan forberede tingene til konferencen, som starter kl 13.
+Det viser sig desværre at Anne Grub er blevet syg, så hun har desværret måttet melde afbud, og derfor har Don Jones sagt, ja til at overtage hendes &amp;ldquo;Keynote&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>PoSH add-on PowerTab</title>
+      <link>/posts/2007-10-02-posh-add-on-powertab/</link>
+      <pubDate>Tue, 02 Oct 2007 13:37:51 +0000</pubDate>
+      
+      <guid>/posts/2007-10-02-posh-add-on-powertab/</guid>
+      <description>Just been playing with PowerTabs for PowerShell, it is kinda like M$ Intellisence code completion, but for your PowerShell command prompt. Let me tell you, it rocks&amp;hellip; Just type get- &amp;lt; T A B&amp;gt; and you get all your cmdlets that starts with get-</description>
+    </item>
+    
+    <item>
+      <title>Playing around with profiles.</title>
+      <link>/posts/2007-07-10-playing-around-with-profiles/</link>
+      <pubDate>Tue, 10 Jul 2007 11:08:02 +0000</pubDate>
+      
+      <guid>/posts/2007-07-10-playing-around-with-profiles/</guid>
+      <description>In PowerShell you have the option create custom profiles that you can use, in the profiles you can create different aliases, change the prompt and a lot of other things, today we will look at adding some info to prompt.</description>
+    </item>
+    
+    <item>
+      <title>A little more fun with the eventlog in PowerShell</title>
+      <link>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</link>
+      <pubDate>Thu, 28 Jun 2007 19:37:25 +0000</pubDate>
+      
+      <guid>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</guid>
+      <description>Imagine that you want to list, the last 15 events in all the eventlogs on the system, do you have to write several lines of codes to do that, like this below?</description>
+    </item>
+    
+    <item>
+      <title>Getting info from the eventlog with PowerShell</title>
+      <link>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</link>
+      <pubDate>Mon, 18 Jun 2007 15:14:13 +0000</pubDate>
+      
+      <guid>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</guid>
+      <description>Started playing around with PowerShell, so I thought I would post a few simple things on the blog, maybe you won&amp;rsquo;t find it interesting, but it is a good way for me to remember, so BLAH!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerTab on XenoBlog</title>
+    <link>/tags/powertab/</link>
+    <description>Recent content in PowerTab on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 02 Oct 2007 13:37:51 +0000</lastBuildDate><atom:link href="/tags/powertab/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PoSH add-on PowerTab</title>
+      <link>/posts/2007-10-02-posh-add-on-powertab/</link>
+      <pubDate>Tue, 02 Oct 2007 13:37:51 +0000</pubDate>
+      
+      <guid>/posts/2007-10-02-posh-add-on-powertab/</guid>
+      <description>Just been playing with PowerTabs for PowerShell, it is kinda like M$ Intellisence code completion, but for your PowerShell command prompt. Let me tell you, it rocks&amp;hellip; Just type get- &amp;lt; T A B&amp;gt; and you get all your cmdlets that starts with get-</description>
+    </item>
+    
+  </channel>
+</rss>

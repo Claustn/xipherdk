@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Everyday on XenoBlog</title>
+    <link>/categories/everyday/</link>
+    <description>Recent content in Everyday on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 16 May 2020 12:58:34 +0000</lastBuildDate><atom:link href="/categories/everyday/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using ESP8266 to monitor Kamstrup Omnipower</title>
+      <link>/posts/2020-05-17-using-esp8266-to-monitor-kamstrup-omnipower/</link>
+      <pubDate>Sat, 16 May 2020 12:58:34 +0000</pubDate>
+      
+      <guid>/posts/2020-05-17-using-esp8266-to-monitor-kamstrup-omnipower/</guid>
+      <description>(This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)
+Over the years as the kids have gotten older, our electrical bill has just gone up and up, and I have been wondering what and when we were using all that power.</description>
+    </item>
+    
+    <item>
+      <title>Loading &#34;P0wned&#34; password file into SQLite</title>
+      <link>/posts/2018-09-23-loading-p0wned-password-files-into-sqlite/</link>
+      <pubDate>Sun, 23 Sep 2018 12:58:34 +0000</pubDate>
+      
+      <guid>/posts/2018-09-23-loading-p0wned-password-files-into-sqlite/</guid>
+      <description>Recently I had a discussion with a friend of mine with regards to checking AD passwords against the &amp;ldquo;P0wned password list&amp;rdquo; released by Troy Hunt.
+So I went and downloaded the the file from here</description>
+    </item>
+    
+    <item>
+      <title>Active Directory Users Password Report</title>
+      <link>/posts/2017-06-10-active-directory-users-password-report/</link>
+      <pubDate>Sat, 10 Jun 2017 09:02:28 +0000</pubDate>
+      
+      <guid>/posts/2017-06-10-active-directory-users-password-report/</guid>
+      <description>I was working with a customer; all their admin users had at least three accounts, a regular account, a domain admin account and a &amp;ldquo;server admin&amp;rdquo; account, some even had a &amp;ldquo;client admin&amp;rdquo; account as well per domain.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring your VM&#39;s using screenshots</title>
+      <link>/posts/2017-05-14-monitoring-your-vms-using-screenshots/</link>
+      <pubDate>Sun, 14 May 2017 23:33:03 +0000</pubDate>
+      
+      <guid>/posts/2017-05-14-monitoring-your-vms-using-screenshots/</guid>
+      <description>(This is part 1 of 3, in an articles series on how we at Unity started using &amp;ldquo;screenshots&amp;rdquo; and machine learning in our monitoring system)
+Part 1: Getting screenshots from VMware machines (This Post)</description>
+    </item>
+    
+    <item>
+      <title>Regex CallBack</title>
+      <link>/posts/2016-06-09-regex-callback/</link>
+      <pubDate>Thu, 09 Jun 2016 22:26:24 +0000</pubDate>
+      
+      <guid>/posts/2016-06-09-regex-callback/</guid>
+      <description>A friend of mine had had to go through a lot of data, and substitute some values&amp;hellip; But these weren&amp;rsquo;t 1-1 replacement, he had to find the value which was in HEX and then convert them to regular characters.</description>
+    </item>
+    
+    <item>
+      <title>DSC resource downloader</title>
+      <link>/posts/2016-01-31-dsc-resource-downloader/</link>
+      <pubDate>Sun, 31 Jan 2016 22:26:39 +0000</pubDate>
+      
+      <guid>/posts/2016-01-31-dsc-resource-downloader/</guid>
+      <description>I have been playing a lot with Azure automation, and Azure DSC pullserver in particular. I will not get into DSC or Azure automation in great detail in this post.</description>
+    </item>
+    
+    <item>
+      <title>Simple module dependency mapper</title>
+      <link>/posts/2016-01-31-simple-module-dependency-mapper/</link>
+      <pubDate>Sun, 31 Jan 2016 21:27:09 +0000</pubDate>
+      
+      <guid>/posts/2016-01-31-simple-module-dependency-mapper/</guid>
+      <description>Script to list module dependencies function Get-Depends { [CmdLetBinding()] Param( $ModulePath, $ModuleName, $Depth = 0, [switch]$ReturnDependency ) if ($Depth -eq 0) { $RootModulePath = $ModulePath } If ($Depth -ge 8 ) { Throw &amp;lsquo;Module dependency is deeper than 8 levels, possible cyclical dependency&amp;rsquo; } try { Write-Verbose -Message $($(&#39;&amp;ndash;&#39; * $Depth)+$ModuleName) $ModPath = $(($(Get-ChildItem -Path &amp;ldquo;$($ModulePath)&amp;rdquo; -Filter &amp;ldquo;$ModuleName.</description>
+    </item>
+    
+    <item>
+      <title>Run Azure Automation Hybrid Worker using &#34;RunAs&#34;</title>
+      <link>/posts/2016-01-05-run-azure-automation-hybrid-worker-using-runas/</link>
+      <pubDate>Tue, 05 Jan 2016 00:02:55 +0000</pubDate>
+      
+      <guid>/posts/2016-01-05-run-azure-automation-hybrid-worker-using-runas/</guid>
+      <description>Today I was working at a client, doing a bunch of Azure Automation stuff, moving a lot of the scheduled jobs into Azure Automation, when I noticed this little button.</description>
+    </item>
+    
+    <item>
+      <title>Configure Web.Config for use with PowerShell DSC v5 Configuration Names and RegistrationKey</title>
+      <link>/posts/2015-06-08-configure-web-config-for-use-with-powershell-dsc-v5-configuration-names-and-registrationkey/</link>
+      <pubDate>Mon, 08 Jun 2015 00:17:18 +0000</pubDate>
+      
+      <guid>/posts/2015-06-08-configure-web-config-for-use-with-powershell-dsc-v5-configuration-names-and-registrationkey/</guid>
+      <description>One of the new features of PowerShell v5 DSC, is that you now can use ConfigurationNames in &amp;ldquo;clear-text&amp;rdquo; not GUID, meaning that you can now have human readable names for your configurations.</description>
+    </item>
+    
+    <item>
+      <title>New in WMF 5 April release</title>
+      <link>/posts/2015-05-06-new-in-wmf-5-april-release/</link>
+      <pubDate>Wed, 06 May 2015 21:16:35 +0000</pubDate>
+      
+      <guid>/posts/2015-05-06-new-in-wmf-5-april-release/</guid>
+      <description>2889dbbb-0389-4b50-a741-eb4ab7e20210
+If you need to copy and paste the GUID into a configuration, you can do something like this:
+(New-Guid).ToString() | clip or
+New-Guid | select -ExpandProperty Guid | clip </description>
+    </item>
+    
+    <item>
+      <title>Domain requirement for ORK</title>
+      <link>/posts/2015-05-02-domain-requirement-for-ork/</link>
+      <pubDate>Sat, 02 May 2015 22:36:05 +0000</pubDate>
+      
+      <guid>/posts/2015-05-02-domain-requirement-for-ork/</guid>
+      <description>I was playing around with Microsoft ORK (Operational Readiness Kit), which is a frontend for the PowerShell deployment toolkit, aimed at hosters.
+I wanted to try to do a greenfield install, using a clean Server 2012R2 machine, which had not been joined to any domain, and run everything off that machine.</description>
+    </item>
+    
+    <item>
+      <title>New version of PowerShell v5 (April release)</title>
+      <link>/posts/2015-04-30-new-version-of-powershell-v5-april-release/</link>
+      <pubDate>Thu, 30 Apr 2015 12:44:25 +0000</pubDate>
+      
+      <guid>/posts/2015-04-30-new-version-of-powershell-v5-april-release/</guid>
+      <description>There is a new version of PowerShell v5 out&amp;hellip;. Get it while its hot :)
+Here is the blog post
+http://blogs.msdn.com/b/powershell/archive/2015/04/29/windows-management-framework-5-0-preview-april-2015-is-now-available.aspx
+Here is the direct link
+http://www.microsoft.com/en-us/download/details.aspx?id=46889</description>
+    </item>
+    
+    <item>
+      <title>Been a little slow lately  ;)</title>
+      <link>/posts/2015-04-21-been-a-little-slow-lately/</link>
+      <pubDate>Tue, 21 Apr 2015 22:58:12 +0000</pubDate>
+      
+      <guid>/posts/2015-04-21-been-a-little-slow-lately/</guid>
+      <description>It has been a little slow here for a while, between being very busy at work, and then starting a new job, I haven&amp;rsquo;t had enough time to blog that much.</description>
+    </item>
+    
+    <item>
+      <title>Adding Applications to EMET</title>
+      <link>/posts/2014-09-08-adding-applications-to-emet/</link>
+      <pubDate>Mon, 08 Sep 2014 20:34:14 +0000</pubDate>
+      
+      <guid>/posts/2014-09-08-adding-applications-to-emet/</guid>
+      <description>If you have been using EMET (Enhanced Mitigation Experience Toolkit ) toolkit from Microsoft you probably have had to need to add custom application, one of the main &amp;ldquo;culprits&amp;rdquo; is Flash Player with its ever changing name (filename contains it&amp;rsquo;s version number)</description>
+    </item>
+    
+    <item>
+      <title>PowerShell v5 COM improvements</title>
+      <link>/posts/2014-09-06-powershell-v5-com-improvements/</link>
+      <pubDate>Sat, 06 Sep 2014 10:03:43 +0000</pubDate>
+      
+      <guid>/posts/2014-09-06-powershell-v5-com-improvements/</guid>
+      <description>When I saw that Lee Holmes twittered about COM had been improved in WMF 5 September release, I just had to try it right away..
+I have several scripts that does some auditing of computers in AD, and populates an Excel spreadsheet, where different properties get highlighted depending on its value.</description>
+    </item>
+    
+    <item>
+      <title>Are you going ? I am..</title>
+      <link>/posts/2014-08-12-are-you-going-i-am/</link>
+      <pubDate>Tue, 12 Aug 2014 12:04:44 +0000</pubDate>
+      
+      <guid>/posts/2014-08-12-are-you-going-i-am/</guid>
+      <description>The European PowerShell Summit, organised by PowerShell.org, will be in Amsterdam September 29 - October 1 2014 at the Park Hotel. Details at http://powershell.org/wp/community-events/summit/
+The Summit will feature 3 days of PowerShell sessions from PowerShell team members, PowerShell MVPs and other PowerShell experts.</description>
+    </item>
+    
+    <item>
+      <title>Så er det tid til at sætte X i kalenderen igen. ( 26 Juni)</title>
+      <link>/posts/2014-05-30-sa-er-det-tid-til-at-saette-x-i-kalenderen-igen-26-juni/</link>
+      <pubDate>Fri, 30 May 2014 10:49:10 +0000</pubDate>
+      
+      <guid>/posts/2014-05-30-sa-er-det-tid-til-at-saette-x-i-kalenderen-igen-26-juni/</guid>
+      <description>XXXX 26 Juni XXXX
+Denne gang er det med ret kort varsel i forhold til hvad vi plejer, vi
+har ligget i “forhandlinger” med Aleksandar Nikolic ( en af de førende specialister inden for PowerShell remoting, restrained endpoints etc.</description>
+    </item>
+    
+    <item>
+      <title>Updating UPN names in Active Directory</title>
+      <link>/posts/2014-02-22-updating-upn-names-in-active-directory/</link>
+      <pubDate>Sat, 22 Feb 2014 20:22:37 +0000</pubDate>
+      
+      <guid>/posts/2014-02-22-updating-upn-names-in-active-directory/</guid>
+      <description>function OnApplicationLoad { #Note: This function is not called in Projects #Note: This function runs before the form is created #Note: To get the script directory in the Packager use: Split-Path $hostinvocation.</description>
+    </item>
+    
+    <item>
+      <title>Using EWS (Exchange Web Services) to read email subjects.</title>
+      <link>/posts/2014-02-03-using-ews-exchange-web-services-to-read-emails/</link>
+      <pubDate>Mon, 03 Feb 2014 21:27:21 +0000</pubDate>
+      
+      <guid>/posts/2014-02-03-using-ews-exchange-web-services-to-read-emails/</guid>
+      <description>Today I had a discussion with a vendor, they are delivering a solution that reads email from a specific email account on Exchange, and create a ticket in our helpdesk system.</description>
+    </item>
+    
+    <item>
+      <title>Readable Password generator</title>
+      <link>/posts/2014-01-08-readable-password-generator/</link>
+      <pubDate>Wed, 08 Jan 2014 23:51:04 +0000</pubDate>
+      
+      <guid>/posts/2014-01-08-readable-password-generator/</guid>
+      <description>Because of a report from our auditors, I was tasked with writing a password generator
+for our helpdesk staff, so instead of using a generic variation of the same password,</description>
+    </item>
+    
+    <item>
+      <title>Campus Days Session</title>
+      <link>/posts/2013-10-15-campus-days-session/</link>
+      <pubDate>Tue, 15 Oct 2013 11:26:13 +0000</pubDate>
+      
+      <guid>/posts/2013-10-15-campus-days-session/</guid>
+      <description>Videoen er endnu ikke kommet online, men den kan ses her når den kommer.
+hxxp://channel9.msdn.com/Events/Microsoft-Campus-Days/Microsoft-Campus-Days-2013/Windows-PowerShell-4-0</description>
+    </item>
+    
+    <item>
+      <title>Managing Queue-It queues with PowerShell</title>
+      <link>/posts/2013-08-02-managing-queue-it-queues-with-powershell/</link>
+      <pubDate>Fri, 02 Aug 2013 12:47:02 +0000</pubDate>
+      
+      <guid>/posts/2013-08-02-managing-queue-it-queues-with-powershell/</guid>
+      <description>We are using Queue-IT for some of our external websites, and we needed to start/stop the queues when we doing maintenance on our sites, I found this very easy to do, with Powershell&amp;rsquo;s Invoke-WebRequest cmdlet.</description>
+    </item>
+    
+    <item>
+      <title>Culture Gotchas</title>
+      <link>/posts/2013-06-27-culture-gotchas/</link>
+      <pubDate>Thu, 27 Jun 2013 10:37:35 +0000</pubDate>
+      
+      <guid>/posts/2013-06-27-culture-gotchas/</guid>
+      <description>We are not everyone running Powershell on machines with ”en-US” locale, and sometimes that gives some unexpected problems, if you are running on a non US system, and have been working with Excel for instance, you have probably run into this error when trying to add something to Excel like this:</description>
+    </item>
+    
+    <item>
+      <title>Sending out Password Expiration mails to users in Active Directory</title>
+      <link>/posts/2013-04-15-sending-out-password-expiration-mails-to-users-in-active-directory/</link>
+      <pubDate>Mon, 15 Apr 2013 09:21:50 +0000</pubDate>
+      
+      <guid>/posts/2013-04-15-sending-out-password-expiration-mails-to-users-in-active-directory/</guid>
+      <description>I was tasked with writing a script that would send out an e-mail to users, when there were 14,7,3,2 and 1 days before their AD passwords expired.
+I use the Quest AD cmdlets to get users from AD.</description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting Test-Connection</title>
+      <link>/posts/2012-09-10-troubleshooting-test-connection/</link>
+      <pubDate>Mon, 10 Sep 2012 21:38:40 +0000</pubDate>
+      
+      <guid>/posts/2012-09-10-troubleshooting-test-connection/</guid>
+      <description>I was contacted by a friend who was having some issues with Test-Connection when using TimeToLive
+Example:
+Test-Connection -ComputerName www.google.ie -Count 1 -TimeToLive 3
+Test-Connection : Testing connection to computer &amp;lsquo;www.</description>
+    </item>
+    
+    <item>
+      <title>Checking Site sizes in SharePoint 2007 and 2010</title>
+      <link>/posts/2012-01-25-checking-site-sizes-in-sharepoint-2007-and-2010/</link>
+      <pubDate>Wed, 25 Jan 2012 12:19:58 +0000</pubDate>
+      
+      <guid>/posts/2012-01-25-checking-site-sizes-in-sharepoint-2007-and-2010/</guid>
+      <description>Our Sharepoint admin asked me to help him write a script, that found out how much space each DocumentLibrary in our sharepoint farm took up, so after some googeling I found that I could use the StorageManagementInformation Method on the SPSite object, so I cam up with this little script</description>
+    </item>
+    
+    <item>
+      <title>Updating .Htacces file based on Apache log files</title>
+      <link>/posts/2011-10-09-updating-htacces-file-based-on-apache-log-files/</link>
+      <pubDate>Sun, 09 Oct 2011 20:12:12 +0000</pubDate>
+      
+      <guid>/posts/2011-10-09-updating-htacces-file-based-on-apache-log-files/</guid>
+      <description>I am still seeing massive amounts of referal traffic hitting my site, eating up my bandwidth.. I did not get time to update my .htaccess file for the last 2 days.</description>
+    </item>
+    
+    <item>
+      <title>Finally got confirmation.. Grown men do cry when their Bitlocker encrypted SSD disk dies ;(</title>
+      <link>/posts/2011-09-18-finally-got-confirmation-grown-men-do-cry-when-their-bitlocker-encrypted-ssd-disk-dies/</link>
+      <pubDate>Sun, 18 Sep 2011 19:57:05 +0000</pubDate>
+      
+      <guid>/posts/2011-09-18-finally-got-confirmation-grown-men-do-cry-when-their-bitlocker-encrypted-ssd-disk-dies/</guid>
+      <description>Had another visit from the ever present Mr Murphy, I have had a Lenovo T420 sitting on my desk for a while, as a replacement for my T410.. Finally last night I had some time to start moving over data to the new laptop.</description>
+    </item>
+    
+    <item>
+      <title>Back to my old theme again</title>
+      <link>/posts/2011-09-05-back-to-my-old-theme-again/</link>
+      <pubDate>Mon, 05 Sep 2011 11:34:22 +0000</pubDate>
+      
+      <guid>/posts/2011-09-05-back-to-my-old-theme-again/</guid>
+      <description>Updated my .htaccess file to prevent the massive flooding of my site..</description>
+    </item>
+    
+    <item>
+      <title>Testing simple theme</title>
+      <link>/posts/2011-09-02-testing-simple-theme/</link>
+      <pubDate>Fri, 02 Sep 2011 12:45:34 +0000</pubDate>
+      
+      <guid>/posts/2011-09-02-testing-simple-theme/</guid>
+      <description>I am currently having some problems with my site, apparently it gets linked to be a lot of spam sites, resulting in more than 4000 visits in the last 24 hours.</description>
+    </item>
+    
+    <item>
+      <title>Fix 2008R2 scheduled tasks</title>
+      <link>/posts/2011-06-17-fix-2008r2-scheduled-tasks/</link>
+      <pubDate>Fri, 17 Jun 2011 21:29:00 +0000</pubDate>
+      
+      <guid>/posts/2011-06-17-fix-2008r2-scheduled-tasks/</guid>
+      <description>[ps]
+Function Change-ScheduledTask {
+Param($XMLIn)
+$ShortDate = [regex]&amp;quot;(?&amp;lt;shortdate&amp;gt;[0-9]{4}/.-/.-T(?:2[0-3]|[01][0-9])[:.][0-5][0-9][:.][0-5][0-9])(?&amp;lt;digits&amp;gt;.\d*)&amp;quot;
+foreach ($line in $XMLIn){
+If ($line -match &amp;ldquo;$ShortDate&amp;rdquo;) {
+$line = [regex]::Replace($line, $ShortDate, $($Matches[&amp;ldquo;Shortdate&amp;rdquo;]))
+}
+$line
+#$Script:outfile += $line + &amp;ldquo;`n&amp;rdquo;
+}</description>
+    </item>
+    
+    <item>
+      <title>Send SMS through bibob with Powershell</title>
+      <link>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</link>
+      <pubDate>Wed, 09 Feb 2011 21:55:42 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</guid>
+      <description>I thought I had posted this script more than a year ago, but apparently I have not. It is quite similar to the script, I posted recently sending SMS messages through unwire, this just allows bibob customers to send messages through bibobs online gateway.</description>
+    </item>
+    
+    <item>
+      <title>Send SMS from Powershell through Unwire</title>
+      <link>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</link>
+      <pubDate>Wed, 09 Feb 2011 14:38:39 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</guid>
+      <description>At work we have bought an SMS gateway service through the danish company Unwire, so after we the deal was signed we got the information on how to send email through their services, so in order to test I wrote a quick Powershell script to test it.</description>
+    </item>
+    
+    <item>
+      <title>Change username/password on scheduled tasks.</title>
+      <link>/posts/2011-01-29-change-usernamepassword-on-scheduled-tasks/</link>
+      <pubDate>Sat, 29 Jan 2011 23:01:48 +0000</pubDate>
+      
+      <guid>/posts/2011-01-29-change-usernamepassword-on-scheduled-tasks/</guid>
+      <description>} #End Function
+#Call OnApplicationLoad to initialize
+if(OnApplicationLoad -eq $true)
+{
+#Create the form
+GenerateForm | Out-Null
+#Perform cleanup
+OnApplicationExit
+}
+[/ps]</description>
+    </item>
+    
+    <item>
+      <title>Scheduled Tasks Server 2008(R2)</title>
+      <link>/posts/2011-01-29-scheduled-tasks-server-2008/</link>
+      <pubDate>Sat, 29 Jan 2011 22:12:17 +0000</pubDate>
+      
+      <guid>/posts/2011-01-29-scheduled-tasks-server-2008/</guid>
+      <description>I have been working on a script for changing passwords on scheduled tasks in our domain, in that process I have run into a few kinks with scheduled tasks in server 2008(R2).</description>
+    </item>
+    
+    <item>
+      <title>Free online Source Control with PowerGui Pro.</title>
+      <link>/posts/2011-01-14-free-online-source-control-with-powergui-pro/</link>
+      <pubDate>Fri, 14 Jan 2011 11:52:49 +0000</pubDate>
+      
+      <guid>/posts/2011-01-14-free-online-source-control-with-powergui-pro/</guid>
+      <description>Currently I am using a free plan with Dynamsoft for source control with PowerGui, you get 25 MB for free, which will last me a long time at my current speed of writing PowerShell scripts  Here is a quick guide to setting up an account.</description>
+    </item>
+    
+    <item>
+      <title>MVP</title>
+      <link>/posts/2011-01-04-mvp/</link>
+      <pubDate>Tue, 04 Jan 2011 22:03:29 +0000</pubDate>
+      
+      <guid>/posts/2011-01-04-mvp/</guid>
+      <description>Yesterday I received the notice from Microsoft, that I had been awarded the MVP title.
+So now I can call myself MVP for the next year..</description>
+    </item>
+    
+    <item>
+      <title>Translate Service DACL&#39;s</title>
+      <link>/posts/2010-09-08-translate-service-dacls/</link>
+      <pubDate>Wed, 08 Sep 2010 22:21:42 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-translate-service-dacls/</guid>
+      <description>There was a post on the Minasi forum, where someone was trying to check which users had start/stop permissions on a given server. I knew SC would give the results, but it returns it in DACL format, which as far from readable by humans&amp;hellip; So since I had some time to pass I decided to try to write a powershell script to translate the DACL into something human readable (We were having our floor lacquered, and the guy doing it, had a little extra lacquer, and decided to lacquer our hallway, thereby cutting me off from leaving the first floor of our house).</description>
+    </item>
+    
+    <item>
+      <title>Account lockout continued</title>
+      <link>/posts/2010-09-08-account-lockout-continued/</link>
+      <pubDate>Wed, 08 Sep 2010 22:12:53 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-account-lockout-continued/</guid>
+      <description>} #End Function
+#Call OnApplicationLoad to initialize
+if(OnApplicationLoad -eq $true)
+{
+#Create the form
+GenerateForm | Out-Null
+#Perform cleanup
+OnApplicationExit
+}
+[/sourcecode]</description>
+    </item>
+    
+    <item>
+      <title>My account keeps getting locked out, where did I use it ??</title>
+      <link>/posts/2010-09-08-my-account-keeps-getting-locked-out-where-did-i-use-it/</link>
+      <pubDate>Wed, 08 Sep 2010 22:00:53 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-my-account-keeps-getting-locked-out-where-did-i-use-it/</guid>
+      <description>A few weeks ago my admin account kept getting locked out, after I had changed my password.. So I assumed I had used it somewhere to either run a service or a scheduled task on a test server.</description>
+    </item>
+    
+    <item>
+      <title>Export-xls Powershell script to export to XLS</title>
+      <link>/posts/2010-05-30-export-xls-powershell-script-to-export-to-xls/</link>
+      <pubDate>Sun, 30 May 2010 21:31:52 +0000</pubDate>
+      
+      <guid>/posts/2010-05-30-export-xls-powershell-script-to-export-to-xls/</guid>
+      <description>This looks very promising, going to give it a spin tomorrow when I get to work
+http://www.lucd.info/2010/05/29/beyond-export-csv-export-xls/</description>
+    </item>
+    
+    <item>
+      <title>Quest AD Cmdlet examples from my Presentation</title>
+      <link>/posts/2010-05-11-quest-ad-cmdlet-examples-from-my-presentation/</link>
+      <pubDate>Tue, 11 May 2010 22:06:28 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-quest-ad-cmdlet-examples-from-my-presentation/</guid>
+      <description>Example #1
+List users that expires within X days
+[ps]
+$DaysToExpire = 14
+$MaxPassAge = (Get-QADObject (Get-QADRootDSE).defaultNamingContextDN).MaximumPasswordAge.days
+[array]$a = Get-QADUser -Enabled -PasswordNeverExpires:$false -SizeLimit 0 -Email * |Select-Object Name,Email,@{Name=&amp;ldquo;Expires&amp;rdquo;;Expression={ $MaxPassAge - $_.</description>
+    </item>
+    
+    <item>
+      <title>.Net Examples from Presentation</title>
+      <link>/posts/2010-05-11-net-examples-from-presentation/</link>
+      <pubDate>Tue, 11 May 2010 21:58:16 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-net-examples-from-presentation/</guid>
+      <description>Example #1 (From Lee Holmes&#39; Powershell cookbook)
+&amp;ldquo;Compile C# code on the fly&amp;rdquo;
+[ps]
+$code =@&#39;
+using System.Management.Automation;
+[Cmdlet(&amp;ldquo;Write&amp;rdquo;, &amp;ldquo;InputObject&amp;rdquo;)]
+public class MyWriteInputObjectCmdlet : Cmdlet
+{
+[Parameter]
+public string Parameter1;</description>
+    </item>
+    
+    <item>
+      <title>Profile Examples from Presentation</title>
+      <link>/posts/2010-05-11-profile-examples-from-presentation/</link>
+      <pubDate>Tue, 11 May 2010 21:47:52 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-profile-examples-from-presentation/</guid>
+      <description>Here are some of the scripts that I used during the demonstration in VA Beach.
+Profiles:
+Example #1
+[ps]
+function prompt
+{
+&amp;ldquo;Xenophane &amp;quot; + $(get-location) + &amp;ldquo;&amp;gt;&amp;rdquo;
+}
+[/ps]</description>
+    </item>
+    
+    <item>
+      <title>MSTSC Util update</title>
+      <link>/posts/2009-12-14-mstsc-util-update/</link>
+      <pubDate>Mon, 14 Dec 2009 20:38:14 +0000</pubDate>
+      
+      <guid>/posts/2009-12-14-mstsc-util-update/</guid>
+      <description>I was asked to update my MSTSC util, so here goes.. It will now check for the configuration file and display a message if it is not there, instead of just erroring out.</description>
+    </item>
+    
+    <item>
+      <title>Windows Management Framework has arrived</title>
+      <link>/posts/2009-10-28-windows-management-framework-has-arrived/</link>
+      <pubDate>Wed, 28 Oct 2009 11:05:28 +0000</pubDate>
+      
+      <guid>/posts/2009-10-28-windows-management-framework-has-arrived/</guid>
+      <description>Today Windows Management Framework was released in its final version for Windows XP, and Server 2003, Windows Vista and Server 2008. Windows Management Framework contains Powershell v2, WinRM 2.0 and BITS 4.</description>
+    </item>
+    
+    <item>
+      <title>Finding out how many active sessions are on a Server 2008 TS</title>
+      <link>/posts/2009-09-25-finding-out-how-many-active-sessions-are-on-a-server-2008-ts/</link>
+      <pubDate>Fri, 25 Sep 2009 20:40:36 +0000</pubDate>
+      
+      <guid>/posts/2009-09-25-finding-out-how-many-active-sessions-are-on-a-server-2008-ts/</guid>
+      <description>DisconnectedSessions Win32_TerminalService
+TotalSessions Win32_TerminalService
+ActiveSessions Win32_PerfFormattedData_LocalSessionManager_TerminalServices
+InactiveSessions Win32_PerfFormattedData_LocalSessionManager_TerminalServices
+TotalSessions Win32_PerfFormattedData_LocalSessionManager_TerminalServices
+ActiveSessions Win32_PerfRawData_LocalSessionManager_TerminalServices
+InactiveSessions Win32_PerfRawData_LocalSessionManager_TerminalServices
+TotalSessions Win32_PerfRawData_LocalSessionManager_TerminalServices
+Of course to be able to do this, I had to know/guess that the class contained &amp;ldquo;term&amp;rdquo; and that the property would be named something with &amp;ldquo;session&amp;rdquo;</description>
+    </item>
+    
+    <item>
+      <title>Set-ExecutionPolicy</title>
+      <link>/posts/2009-09-23-set-executionpolicy/</link>
+      <pubDate>Wed, 23 Sep 2009 21:21:29 +0000</pubDate>
+      
+      <guid>/posts/2009-09-23-set-executionpolicy/</guid>
+      <description>I was just playing with the Set-ExecutionPolicy cmdlet today, when I noticed that in V2, it is possible to change the execution policy for different scopes, even though you are not running your session using the &amp;ldquo;Run as administrator&amp;rdquo;.</description>
+    </item>
+    
+    <item>
+      <title>Windows 7 &amp; RSAT</title>
+      <link>/posts/2009-09-04-windows-7-rsat/</link>
+      <pubDate>Fri, 04 Sep 2009 23:33:28 +0000</pubDate>
+      
+      <guid>/posts/2009-09-04-windows-7-rsat/</guid>
+      <description>I finally found some time today to upgrade my primary work machine to Windows 7 RTM (Yeah). Since I do a lot of system administration one of the first things I put on there was my Powershell tools and RSAT.</description>
+    </item>
+    
+    <item>
+      <title>&#34;The Scripting Guy(s)) have done it again.</title>
+      <link>/posts/2009-08-15-the-scripting-guys-have-done-it-again/</link>
+      <pubDate>Sat, 15 Aug 2009 19:30:53 +0000</pubDate>
+      
+      <guid>/posts/2009-08-15-the-scripting-guys-have-done-it-again/</guid>
+      <description>They have gone back and tagged all the scripts they have made during the last many years, and put up an easily searchable repository on their site on Technet.
+They are calling it the Script Gallery</description>
+    </item>
+    
+    <item>
+      <title>Installing Exchange 2007 Mgmt tools with PowerShell CTP&#39;s</title>
+      <link>/posts/2009-07-23-installing-exchange-2007-mgmt-tools-with-powershell-ctps/</link>
+      <pubDate>Thu, 23 Jul 2009 08:51:34 +0000</pubDate>
+      
+      <guid>/posts/2009-07-23-installing-exchange-2007-mgmt-tools-with-powershell-ctps/</guid>
+      <description>When you try to install Exchange 2007 mgmt tools on a machine running anything else than PowerShell V1 (yah yah I know, shouldn&amp;rsquo;t run &amp;ldquo;beta&amp;rdquo; software in production, but I want my remoting).</description>
+    </item>
+    
+    <item>
+      <title>Get Exchange rates</title>
+      <link>/posts/2009-07-21-get-exchange-rates/</link>
+      <pubDate>Tue, 21 Jul 2009 20:16:39 +0000</pubDate>
+      
+      <guid>/posts/2009-07-21-get-exchange-rates/</guid>
+      <description>I stumbled on a post about getting Exchange rates from a bank, from an online XML file.. So I thought I would try that with a local bank, I figured out the Danish national bank, has an XML file online with the current rates&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Create Excel Spreadsheet</title>
+      <link>/posts/2009-07-19-create-excel-spreadsheet/</link>
+      <pubDate>Sun, 19 Jul 2009 21:13:13 +0000</pubDate>
+      
+      <guid>/posts/2009-07-19-create-excel-spreadsheet/</guid>
+      <description>The other day I was tasked with creating a spreadsheet containing a list of all servers in our network, manager wanted a &amp;ldquo;sheet&amp;rdquo; for each computer, and an &amp;ldquo;index&amp;rdquo; sheet with links to all the other sheets.</description>
+    </item>
+    
+    <item>
+      <title>Deleting empty folders in Outlook</title>
+      <link>/posts/2009-03-30-deleting-empty-folders-in-outlook/</link>
+      <pubDate>Mon, 30 Mar 2009 16:17:26 +0000</pubDate>
+      
+      <guid>/posts/2009-03-30-deleting-empty-folders-in-outlook/</guid>
+      <description>A friend of mine called me, and asked me for help&amp;hellip; He had had a migration go wrong and had ended up with a bunch of .pst files containing 1000&amp;rsquo;s of emtpy folders.</description>
+    </item>
+    
+    <item>
+      <title>Get-Mailboxinfo Powershell script</title>
+      <link>/posts/2009-03-11-get-mailboxinfo-powershell-script/</link>
+      <pubDate>Wed, 11 Mar 2009 20:25:56 +0000</pubDate>
+      
+      <guid>/posts/2009-03-11-get-mailboxinfo-powershell-script/</guid>
+      <description>$script:totalSize += ([System.Int64]$mailbox.Size)
+$script:totalItems += ([System.Int32]$mailbox.TotalItems)
+$script:totalDeleted += ([System.Int64]$mailbox.DeletedMessageSizeExtended)
+$script:totalMailboxes += 1
+}
+}
+}
+}
+&amp;ldquo;Mailbox name Mailbox size Item count Deleted size&amp;rdquo; | Out-File $OutPutFile -append
+&amp;ldquo;==================================================================================&amp;rdquo; | Out-File $OutPutFile -append</description>
+    </item>
+    
+    <item>
+      <title>Double arrrgghhh</title>
+      <link>/posts/2009-01-29-double-arrrgghhh/</link>
+      <pubDate>Thu, 29 Jan 2009 09:12:27 +0000</pubDate>
+      
+      <guid>/posts/2009-01-29-double-arrrgghhh/</guid>
+      <description>Wife slipped on the stairs fracturing her big toe in such away she has to wear a cast for 4 weeks&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>AArrggghhh</title>
+      <link>/posts/2009-01-22-aarrggghhh/</link>
+      <pubDate>Thu, 22 Jan 2009 23:39:50 +0000</pubDate>
+      
+      <guid>/posts/2009-01-22-aarrggghhh/</guid>
+      <description>This is going to be a short post, I fractured at least one bone in my hand playing basketball the other night, after sitting 6 hours in the emergency room until 4.</description>
+    </item>
+    
+    <item>
+      <title>I am back</title>
+      <link>/posts/2008-12-17-i-am-back/</link>
+      <pubDate>Wed, 17 Dec 2008 23:00:39 +0000</pubDate>
+      
+      <guid>/posts/2008-12-17-i-am-back/</guid>
+      <description>Have you missed me ??
+I know I have been away for a while, but between becoming a dad, starting a new job, having to get deep knowledge of several different enterprise products that I have not worked with before has taken some time&amp;hellip; But now things are looking a little less hectic, so I hope to get some good PowerShell posts written up in the near future.</description>
+    </item>
+    
+    <item>
+      <title>Test Post</title>
+      <link>/posts/2008-05-18-test-post/</link>
+      <pubDate>Sun, 18 May 2008 21:45:26 +0000</pubDate>
+      
+      <guid>/posts/2008-05-18-test-post/</guid>
+      <description>[sourcecode lang=&amp;ldquo;powershell&amp;rdquo;]
+PowerShell cmdlet to list the System files in the root of C:\ $i=0
+$GciFiles = get-ChildItem &amp;ldquo;c:&amp;rdquo; -force |where {$_.attributes -match &amp;ldquo;System&amp;rdquo;}
+foreach ($file in $GciFiles) {$i++}
+$GciFiles |sort |ft name, attributes -auto</description>
+    </item>
+    
+    <item>
+      <title>Trying out new Syntax Highligther</title>
+      <link>/posts/2008-05-07-trying-out-new-syntax-highligther/</link>
+      <pubDate>Wed, 07 May 2008 12:48:23 +0000</pubDate>
+      
+      <guid>/posts/2008-05-07-trying-out-new-syntax-highligther/</guid>
+      <description>I am testing a new Syntax Highlighter to make made code posts look better&amp;hellip;
+The new one looks really good, and has some nice features like &amp;ldquo;copy to clipboard&amp;rdquo; and &amp;ldquo;view plain&amp;rdquo;, but unfortunately it does not support PowerShell&amp;hellip;</description>
+    </item>
+    
+    <item>
+      <title>Aften tide...</title>
+      <link>/posts/2008-04-19-aften-tide/</link>
+      <pubDate>Sat, 19 Apr 2008 01:52:45 +0000</pubDate>
+      
+      <guid>/posts/2008-04-19-aften-tide/</guid>
+      <description>Så har jeg lige snakket med min mor i telefonen&amp;hellip;. Klokken er 20.45 herovre&amp;hellip;. og 02.45 i Danmark&amp;hellip;.
+Er lige kommet tilbage, har kørt en tur rundt og set lidt af Washington by.</description>
+    </item>
+    
+    <item>
+      <title>Arrgghhh ingen strøm</title>
+      <link>/posts/2008-04-19-arrgghhh-ingen-str%C3%B8m/</link>
+      <pubDate>Sat, 19 Apr 2008 01:46:03 +0000</pubDate>
+      
+      <guid>/posts/2008-04-19-arrgghhh-ingen-str%C3%B8m/</guid>
+      <description>På et tidspunkt løber man jo altid tør for strøm&amp;hellip;. Så da jeg skal til at oplade min bærbare, så jeg kan skrive lidt om turen, ser jeg at jeg har glemt, den strøm adaptor som passer til USA, jeg har mere eller mindre til alle andre lande end USA, så det er lige blevet en tur ned i Target og BestBuy&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Esbjerg Testen</title>
+      <link>/posts/2008-01-21-esbjerg-testen/</link>
+      <pubDate>Mon, 21 Jan 2008 13:05:50 +0000</pubDate>
+      
+      <guid>/posts/2008-01-21-esbjerg-testen/</guid>
+      <description>Fik lige denne her mail&amp;hellip;.. Det er faktisk lidt uhyggeligt&amp;hellip;
+ Du ved, du er fra Esbjerg når&amp;hellip;
+&amp;hellip; den vigtigste ingrediens i en kaffepunch er en mønt.
+&amp;hellip; du i folkeskolen har haft gøgler-dag med Kaj Jørgensen.</description>
+    </item>
+    
+    <item>
+      <title>Så er der ikke langt igen</title>
+      <link>/posts/2007-12-12-sa-er-der-ikke-langt-igen/</link>
+      <pubDate>Wed, 12 Dec 2007 23:14:29 +0000</pubDate>
+      
+      <guid>/posts/2007-12-12-sa-er-der-ikke-langt-igen/</guid>
+      <description>Nu er der ikke lang tid igen til at vi skal takke farvel til Østerbro, og vænne os til at vi bor i København NV&amp;hellip;.
+Vi har fundet et flyttefirma, de kommer med flyttekasser på fredag, ca 70-80 stk&amp;hellip; så skal hele weekenden bruges på at pakke, og sætte køkken op&amp;hellip; Mandag er så store flyttedag, vi regner med at starte kl 09.</description>
+    </item>
+    
+    <item>
+      <title>New pictures from the house...</title>
+      <link>/posts/2007-11-16-new-pictures-from-the-house/</link>
+      <pubDate>Fri, 16 Nov 2007 12:51:38 +0000</pubDate>
+      
+      <guid>/posts/2007-11-16-new-pictures-from-the-house/</guid>
+      <description>As per my sisters request , I have finally remembered to bring my camera to our new house to take some pictures.
+The project is going along nicely, albeit a lot more expensive that I would have ever imagined.</description>
+    </item>
+    
+    <item>
+      <title>SpeedReading</title>
+      <link>/posts/2007-09-25-speedreading/</link>
+      <pubDate>Tue, 25 Sep 2007 12:39:58 +0000</pubDate>
+      
+      <guid>/posts/2007-09-25-speedreading/</guid>
+      <description>Just a little thing, that I have never thought of before&amp;hellip;
+When you learn to write, you learn that the letters should &amp;ldquo;on&amp;rdquo; the line, meaning that when you write, your focus is on the lower half of the letters, to make sure they are on the line.</description>
+    </item>
+    
+    <item>
+      <title>Det gode danske sommervejr.</title>
+      <link>/posts/2007-06-11-det-gode-danske-sommervejr/</link>
+      <pubDate>Mon, 11 Jun 2007 19:35:48 +0000</pubDate>
+      
+      <guid>/posts/2007-06-11-det-gode-danske-sommervejr/</guid>
+      <description>Da Martin ikke kunne finde noget at ønske sig til fødselsdag, blev vi enige om at give ham en &amp;ldquo;Picnic&amp;rdquo; tur i Fælledparken, dette skete så i lørdags. Jeg må sige, at vi kunne ikke have ønsket os bedre vejr, til sådan et arrangement.</description>
+    </item>
+    
+    <item>
+      <title>Yeah... Har det lidt bedre igen</title>
+      <link>/posts/2007-06-02-yeah-har-det-lidt-bedre-igen/</link>
+      <pubDate>Sat, 02 Jun 2007 23:45:43 +0000</pubDate>
+      
+      <guid>/posts/2007-06-02-yeah-har-det-lidt-bedre-igen/</guid>
+      <description>Så er jeg ved at være lidt mere frisk igen, ihvertfald så frisk at jeg kan holde ud til at sidde foran computeren :)
+Jeg har ligget med feber og hovedpine siden onsdag&amp;hellip; Igår fredag var dog værst hvor jeg havde over 40 i feber, men har fået noget antibiotika så nu håber jeg kun det går fremad :)</description>
+    </item>
+    
+    <item>
+      <title>Ole&#39;s Føs&#39;dag</title>
+      <link>/posts/2007-05-20-oles-fsdag/</link>
+      <pubDate>Sun, 20 May 2007 18:20:52 +0000</pubDate>
+      
+      <guid>/posts/2007-05-20-oles-fsdag/</guid>
+      <description>Sidder her i toget fra Århus mod København, jeg må indrømme at der har været tidspunkter i mit liv, hvor jeg har været mere frisk. Startede i Fredags, med at tage i biografen med Joakim, og så lige ud og drikke en enkelt øl :O)</description>
+    </item>
+    
+    <item>
+      <title>Hjemme igen..</title>
+      <link>/posts/2007-05-18-hjemme-igen/</link>
+      <pubDate>Fri, 18 May 2007 18:17:36 +0000</pubDate>
+      
+      <guid>/posts/2007-05-18-hjemme-igen/</guid>
+      <description>Så er det hverdag igen, men man kan jo ikke klage, når man kun skal på arbejde 3 dage på en uge :=)
+Lige nu sidder jeg i toget, på vej mod Århus, skal til fødselsdag imorgen lørdag, hos en kammerat i Silkeborg, så tænkte jeg jeg lige kunne bruge lidt tid i Århus, og mødes med de venner jeg nu har, der bor der.</description>
+    </item>
+    
+  </channel>
+</rss>

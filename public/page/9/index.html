@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+  <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.0" />
+
+    
+
+<title>XenoBlog</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="XenoBlog"/>
+<meta name="twitter:description" content=""/>
+
+<meta property="og:title" content="XenoBlog" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="/" />
+<meta property="og:updated_time" content="2020-05-16T12:58:34+00:00" /><meta property="og:site_name" content="XenoBlog" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="alternate" type="application/rss+xml" href="/index.xml" title="XenoBlog" />
+
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">
+        
+          XenoBlog
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/assets/images/me.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">XenoBlog</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>AboutMe</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/claustn" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://facebook.com/claus.t.nielsen.37" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/claustn" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/claustn" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:claustnspam@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2007 - 2020 Xenophane
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+  <div class="post-list">
+    
+    
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-05-18-test-post/" >Test Post</a>
+        </span>
+        <span class="item__date">
+          May 18, 2008
+        </span>
+        <span >
+        
+        [sourcecode lang=&ldquo;powershell&rdquo;]
+PowerShell cmdlet to list the System files in the root of C:\ $i=0
+$GciFiles = get-ChildItem &ldquo;c:&rdquo; -force |where {$_.attributes -match &ldquo;System&rdquo;}
+foreach ($file in $GciFiles) {$i++}
+$GciFiles |sort |ft name, attributes -auto
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-05-18-test-post/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-05-11-very-simple-file-browser-in-powershell/" >Very simple file browser in PowerShell</a>
+        </span>
+        <span class="item__date">
+          May 11, 2008
+        </span>
+        <span >
+        
+        One of my friends needed a script that would be able to list all files in a folder, and then he should be able to choose the file, and return the name of the file.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-05-11-very-simple-file-browser-in-powershell/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-05-07-trying-out-new-syntax-highligther/" >Trying out new Syntax Highligther</a>
+        </span>
+        <span class="item__date">
+          May 7, 2008
+        </span>
+        <span >
+        
+        I am testing a new Syntax Highlighter to make made code posts look better&hellip;
+The new one looks really good, and has some nice features like &ldquo;copy to clipboard&rdquo; and &ldquo;view plain&rdquo;, but unfortunately it does not support PowerShell&hellip;
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-05-07-trying-out-new-syntax-highligther/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-05-06-browseforfolder-vbscriptpowershell/" >BrowseForFolder VBScript/PowerShell</a>
+        </span>
+        <span class="item__date">
+          May 6, 2008
+        </span>
+        <span >
+        
+        I had to run a script the other day, that I wrote some time ago to change some files in a folder, the script uses the Shell.Application COM object BrowseForFolder method, to show a GUI that lets you browse through the directory structure and choose a folder.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-05-06-browseforfolder-vbscriptpowershell/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-29-learning-powershell/" >Learning PowerShell</a>
+        </span>
+        <span class="item__date">
+          Apr 29, 2008
+        </span>
+        <span >
+        
+        Don Jones' keynote basically said, if you do not learn PowerShell, you will not be able to function as an Windows IT administrator in 5 years time or so&hellip; After what was told on the MVP summit, about Microsofts commitment to PowerShell, and how all new products will be based on it, he foresees are very dim future for admins who do not know it.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-29-learning-powershell/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-22-s%C3%B8ndag/" >Søndag</a>
+        </span>
+        <span class="item__date">
+          Apr 22, 2008
+        </span>
+        <span >
+        
+        Efter vi har været ude at spise morgenmad hos Mark, kører vi tilbage til hotellet, så vi kan forberede tingene til konferencen, som starter kl 13.
+Det viser sig desværre at Anne Grub er blevet syg, så hun har desværret måttet melde afbud, og derfor har Don Jones sagt, ja til at overtage hendes &ldquo;Keynote&rdquo;.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-22-s%C3%B8ndag/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-22-de-f%C3%B8rste-par-dage/" >De første par dage...</a>
+        </span>
+        <span class="item__date">
+          Apr 22, 2008
+        </span>
+        <span >
+        
+        Så er jeg kommet ned til Virgina, og vi er godt igang med konferecen..
+Jeg kørte ned fra Washington lørdag formiddag.. det tog ca 4 timer at køre ned til Virgina Beach, så det var lige til at klare i min lejede sofa med hjul.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-22-de-f%C3%B8rste-par-dage/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-19-aften-tide/" >Aften tide...</a>
+        </span>
+        <span class="item__date">
+          Apr 19, 2008
+        </span>
+        <span >
+        
+        Så har jeg lige snakket med min mor i telefonen&hellip;. Klokken er 20.45 herovre&hellip;. og 02.45 i Danmark&hellip;.
+Er lige kommet tilbage, har kørt en tur rundt og set lidt af Washington by.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-19-aften-tide/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-19-arrgghhh-ingen-str%C3%B8m/" >Arrgghhh ingen strøm</a>
+        </span>
+        <span class="item__date">
+          Apr 19, 2008
+        </span>
+        <span >
+        
+        På et tidspunkt løber man jo altid tør for strøm&hellip;. Så da jeg skal til at oplade min bærbare, så jeg kan skrive lidt om turen, ser jeg at jeg har glemt, den strøm adaptor som passer til USA, jeg har mere eller mindre til alle andre lande end USA, så det er lige blevet en tur ned i Target og BestBuy&hellip;.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-19-arrgghhh-ingen-str%C3%B8m/">➦</a>
+        
+        </div>
+        
+     
+      
+        
+      
+      <div class="post-list__item">
+        <span class="item__title--big">
+          <a href="/posts/2008-04-18-usa-here-i-came/" >USA Here I came</a>
+        </span>
+        <span class="item__date">
+          Apr 18, 2008
+        </span>
+        <span >
+        
+        Så er jeg kommer til USA, selv om jeg var lige ved at misse flyet fra Bruxelles til Washington.. Landede var ude af flyet kl 11.00 i Bruxelles, og skulle med fly videre kl 11.
+        
+        </span>
+        
+          ... <a class="read-more-symbol" href="/posts/2008-04-18-usa-here-i-came/">➦</a>
+        
+        </div>
+        
+     
+  </div>
+  
+
+<ul class="pagination">
+    
+    <li class="page-item">
+        <a href="/" class="page-link" aria-label="First"><span aria-hidden="true">&laquo;&laquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+    <a href="/page/8/" class="page-link" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+    </li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/">1</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/2/">2</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/3/">3</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/8/">8</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item active"><a class="page-link" href="/page/9/">9</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/10/">10</a></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item disabled"><span aria-hidden="true">&nbsp;&hellip;&nbsp;</span></li>
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    
+    
+    
+    
+    
+        
+        
+    
+    
+    <li class="page-item"><a class="page-link" href="/page/14/">14</a></li>
+    
+    
+    <li class="page-item">
+    <a href="/page/10/" class="page-link" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+    </li>
+    
+    <li class="page-item">
+        <a href="/page/14/" class="page-link" aria-label="Last"><span aria-hidden="true">&raquo;&raquo;</span></a>
+    </li>
+    
+</ul>
+
+
+        </div>
+        
+  
+  <script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

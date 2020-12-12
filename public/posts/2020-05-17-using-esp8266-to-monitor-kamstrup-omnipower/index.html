@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.0" />
+
+    
+    
+    
+
+<title>Using ESP8266 to monitor Kamstrup Omnipower • XenoBlog</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Using ESP8266 to monitor Kamstrup Omnipower"/>
+<meta name="twitter:description" content="(This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)
+Over the years as the kids have gotten older, our electrical bill has just gone up and up, and I have been wondering what and when we were using all that power."/>
+
+<meta property="og:title" content="Using ESP8266 to monitor Kamstrup Omnipower" />
+<meta property="og:description" content="(This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)
+Over the years as the kids have gotten older, our electrical bill has just gone up and up, and I have been wondering what and when we were using all that power." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2020-05-17-using-esp8266-to-monitor-kamstrup-omnipower/" />
+<meta property="article:published_time" content="2020-05-16T12:58:34+00:00" />
+<meta property="article:modified_time" content="2020-05-16T12:58:34+00:00" /><meta property="og:site_name" content="XenoBlog" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">
+        
+          XenoBlog
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/assets/images/me.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">XenoBlog</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>AboutMe</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/claustn" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://facebook.com/claus.t.nielsen.37" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/claustn" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/claustn" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:claustnspam@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2007 - 2020 Xenophane
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Using ESP8266 to monitor Kamstrup Omnipower</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 16, 2020
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/everyday">EVERYDAY</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 5 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>(This is what I did to get it working with the Kamstrup Omnipower as a Radius customer, Danish Power Company)</p>
+<p>Over the years as the kids have gotten older, our electrical bill has just gone up and up, and I have been wondering what and when we were using all that power.</p>
+<p>My initial setup looked like this.</p>
+<p><a href="https://www.xipher.dk/assets/images/oldsetup.png"><img src="/assets/images/oldsetup.png" alt=""></a></p>
+<p>A Raspberry Pi connected to a webcam and a relay to turn on a little LED so the camera could read the LCD when the lights were off. Then sending the pictures to Azure to do OCR to get the reading of the display so that I could measure power consumption over time.<br>
+(This was more to play with IoT than anything else, and the WAF was very low)</p>
+<p>I Denmark, it has been mandated by law that everyone should have a new smart “Power meter” installed one that can report power consumption hourly,  this way there can be differentiated prices on electricity  during the day.</p>
+<p>When had ours replaced I signed up for an electricity provider that had a fancy app, that would show me hourly usage, but I soon realized that it took them more than 1 day to get the data into the app, and I had hope it would be near real-time ☹</p>
+<p>Looking at the new power meter I saw there was a slot in the top for a HAN module, so I started looking around for a HAN module, and only found one called Smart-me, which required me to buy a relatively expensive module (120€) and it connected to a cloud service which I assumed I would have to pay for as well.</p>
+<p>I started researching different forums and realized that by law the electrical companies have to provide a way for consumers to read their meters electronically (It did not state that it had to be easy to do it)<br>
+So I started looking around and found that Asbjørn (<a href="https://github.com/Asbjoern/Kamstrup-Radius-Interface/">https://github.com/Asbjoern/Kamstrup-Radius-Interface/</a>) had already done most of the hard work, so I tried to get his solution to work, but to no avail. (Sometimes these cheap china boards can be a little finicky)<br>
+So I decided to re-write the Arduino sketch that Asbjørn had written, and make it a little simpler (No webserver, mDNS, fileupload etc).<br>
+What makes this a little hard is that the data is encrypted, and you need to get your (de)encryption keys from Radius (I do not know how this works with other companies).<br>
+With Radius you have to ask for the “DIY” keys (DLMS/COSEM). This means you get 2 keys instead of 1, which is used for the HAN module.<br>
+Your meter also needs to have a special firmware, which is supposed to be rolled out to everyone by summer 2020, but when you ask for the keys, I assume the validate you have the correct firmware.<br>
+The new firmware outputs the measurement data every 10 seconds to the serial pins behind the “blinder” on the top of the meter</p>
+<p><img src="/assets/images/kamstrupblinder.png" alt=""></p>
+<p>Under that you will find 6 pins in the upper left corner, and we will use Pin 5 and 6, which are “Ground” and “Data_OUT”</p>
+<p><img src="/assets/images/pinout.png" alt=""></p>
+<p>I received my encryption keys in an email after about 5 days, the email also contains a very basic description of how to decrypt the data.</p>
+<p>Now I had my keys and was eager to get started so I  went and got my 2$ Lolin NodeMCU v3 , and hooked it up to my computer via USB.</p>
+<p><img src="/assets/images/lolinesp8266.png" alt=""></p>
+<p>In the Arduino IDE I connect it as an “Node MCU 1.0 (ESP-12E Module)</p>
+<p><img src="/assets/images/arduino_ide_lolin.png" alt=""></p>
+<p>As stated above I tried to use Asbjørn’s code directly, but  for some reason I could not get the MQTT part working.(Also be aware that the code is in the development branch)<br>
+It simply did not connect to my mosquito MQTT server, which I run as part of my Home Assistant setup<br>
+I decided to try and simplify Asbjørn’s code as much as possible to suit my needs, Read sensor data -&gt; decrypt sensor data -&gt; send sensor data to MQTT server.</p>
+<p>I’m not going to go through all the code here, but one thing to notice is that we have to connect to the Power Meter via a serial connection, and the NodeMCU has 2 serial ports that are available, one is usually used for debugging and then we can use UART1 to connect to the Power Meter.</p>
+<p>Serial.begin(2400, SERIAL_8N1);
+Serial.swap();</p>
+<p>First we set the Serial Port configuration, and then call Serial.swap(); which remaps the UART0 ports from GPIO1 (TX) and GPIO3 (RX) to GPIO15 (TXD2) and GPIO13 (RXD2), from looking at the schematic below we then need to use “D7” to connect to the (TX) port on the Kamstrup Meter (Pin 5)
+<img src="/assets/images/lolin_pinout.png" alt=""></p>
+<p>You need to change the following in the file before you can use it</p>
+<ul>
+<li>ssid</li>
+<li>password (wifi password)</li>
+<li>mqttserver</li>
+<li>mqttPort</li>
+<li>mqttUser</li>
+<li>mqttPassword</li>
+<li>mqtt_topic</li>
+<li>conf_key (Key from Radius)</li>
+<li>cont_authkey (Key from Radius)</li>
+</ul>
+<p>(This is very much a v0.1 release, I will move passwords etc into a separate file later.)</p>
+<p>When the sketch is successfully loaded, you can connect the NodeMCU to your power meter and power it on, it should connect to your wifi/MQTT server and start receiving data from the power meter, then decrypt it and send the data to your MQTT server. You can verify that it connects to wifi and MQTT from the serial monitor in Arduino.</p>
+<p>You can find the code here: <a href="https://github.com/Claustn/esp8266-kamstrup-mqtt">https://github.com/Claustn/esp8266-kamstrup-mqtt</a></p>
+<p>I the following post I will look at getting that data from MQTT into InfluxDB and use Grafana Dashboards to monitor your power usage.</p>
+<p><img src="/assets/images/powerusage_grafana.png" alt=""></p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/2018-09-23-loading-p0wned-password-files-into-sqlite/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Loading &#34;P0wned&#34; password file into SQLite</span>
+    </a>
+    
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'xipher-1';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/powershell.min.js"></script>
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/sql.min.js"></script>
+            
+        
+    <script type="text/javascript">
+        
+        hljs.configure({languages: ["powershell, sql"]});
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

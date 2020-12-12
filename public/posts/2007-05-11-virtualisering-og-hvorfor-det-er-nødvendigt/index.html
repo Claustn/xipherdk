@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    
+    
+
+
+    <head>
+    <link href="https://gmpg.org/xfn/11" rel="profile">
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<!-- Enable responsiveness on mobile devices -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+<meta name="generator" content="Hugo 0.79.0" />
+
+    
+    
+    
+
+<title>Virtualisering og hvorfor det er nødvendigt. • XenoBlog</title>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Virtualisering og hvorfor det er nødvendigt."/>
+<meta name="twitter:description" content="Nathan Winters holdt et excellent foredrag om hvad og hvorfor man skal begynde at overveje at bruge virtualisering, jeg vil her prøve at opsummere nogle af de ting, som han lagde vægt på under sit foredrag."/>
+
+<meta property="og:title" content="Virtualisering og hvorfor det er nødvendigt." />
+<meta property="og:description" content="Nathan Winters holdt et excellent foredrag om hvad og hvorfor man skal begynde at overveje at bruge virtualisering, jeg vil her prøve at opsummere nogle af de ting, som han lagde vægt på under sit foredrag." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/2007-05-11-virtualisering-og-hvorfor-det-er-n%C3%B8dvendigt/" />
+<meta property="article:published_time" content="2007-05-11T00:59:02+00:00" />
+<meta property="article:modified_time" content="2007-05-11T00:59:02+00:00" /><meta property="og:site_name" content="XenoBlog" />
+
+
+    
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/dracula.min.css">
+
+
+
+
+
+
+
+
+<link rel="stylesheet" href="/scss/hyde-hyde.9181f25ed2263aeb878ec6f8a84f10c4ebb16150000fca8767308880bdde5ca0.css" integrity="sha256-kYHyXtImOuuHjsb4qE8QxOuxYVAAD8qHZzCIgL3eXKA=">
+
+
+<link rel="stylesheet" href="/scss/print.2744dcbf8a0b2e74f8a50e4b34e5f441be7cf93cc7de27029121c6a09f9e77bc.css" integrity="sha256-J0Tcv4oLLnT4pQ5LNOX0Qb58&#43;TzH3icCkSHGoJ&#43;ed7w=" media="print">
+
+
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- Icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144-precomposed.png">
+    <link rel="shortcut icon" href="/favicon.png">
+    
+    
+
+</head>
+
+
+    <body class=" ">
+    
+<div class="sidebar">
+  <div class="container ">
+    <div class="sidebar-about">
+      <span class="site__title">
+        <a href="/">
+        
+          XenoBlog
+        
+        </a>
+      </span>
+      
+        
+        
+        
+        <div class="author-image">
+          <img src="/assets/images/me.jpg" alt="Author Image" class="img--circle img--headshot element--center">
+        </div>
+        
+      
+      
+      <p class="site__description">
+        
+      </p>
+    </div>
+    <div class="collapsible-menu">
+      <input type="checkbox" id="menuToggle">
+      <label for="menuToggle">XenoBlog</label>
+      <div class="menu-content">
+        <div>
+	<ul class="sidebar-nav">
+		 
+		 
+			 
+				<li>
+					<a href="/posts/">
+						<span>Posts</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/portfolio/">
+						<span>Portfolio</span>
+					</a>
+				</li>
+			 
+		 
+			 
+				<li>
+					<a href="/about/">
+						<span>AboutMe</span>
+					</a>
+				</li>
+			 
+		
+	</ul>
+</div>
+
+        <section class="social">
+	
+	<a href="https://twitter.com/claustn" rel="me"><i class="fab fa-twitter fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	<a href="https://facebook.com/claus.t.nielsen.37" rel="me"><i class="fab fa-facebook-f"></i></a>
+	
+	
+	<a href="https://github.com/claustn" rel="me"><i class="fab fa-github fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	<a href="https://linkedin.com/in/claustn" rel="me"><i class="fab fa-linkedin fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<a href="mailto:claustnspam@gmail.com" rel="me"><i class="fas fa-at fa-lg" aria-hidden="true"></i></a>
+	
+	
+	
+	
+</section>
+
+      </div>
+    </div>
+    
+<div class="copyright">
+  &copy; 2007 - 2020 Xenophane
+  
+    <a href="https://creativecommons.org/licenses/by-sa/4.0">CC BY-SA 4.0</a>
+  
+</div>
+
+
+<div class="builtwith">
+Built with <a href="https://gohugo.io">Hugo</a> ❤️ <a href="https://github.com/htr3n/hyde-hyde">hyde-hyde</a>.
+</div>
+
+
+  </div>
+</div>
+
+        <div class="content container">
+            
+    
+<article>
+  <header>
+    <h1>Virtualisering og hvorfor det er nødvendigt.</h1>
+    
+    
+<div class="post__meta">
+    
+    
+      <i class="fas fa-calendar-alt"></i> May 11, 2007
+    
+    
+    
+      
+      
+          in
+          
+          
+              <a class="badge badge-category" href="/categories/tech-stuff">TECH STUFF</a>
+              
+          
+      
+    
+    
+    
+    <br/>
+    <i class="fas fa-clock"></i> 4 min read
+</div>
+
+
+  </header>
+  
+  
+  <div class="post">
+    <p>Nathan Winters holdt et excellent foredrag om hvad og hvorfor man skal begynde at overveje at bruge virtualisering, jeg vil her prøve at opsummere nogle af de ting, som han lagde vægt på under sit foredrag.<br>
+Moderne servere har enormt mange kræfter, og det sker derfor ofte at det langt overstiger hvad en applikation reelt skal bruge, derfor er det lavet flere undersøgelser, som rent faktisk har vist, at en gennemsnits server idag, kun bruger ca 5% CPU kraft, det vil sige at der er en masse spildte ressourcer.<br>
+Fordele ved at virtualisere flere servere gør, at man vil få en langt højere udnyttelsesgrad af sine server ressourcer, og yderligere muligheder for at sikre højere oppetid på sine applikationer ved at have flere servere kørende. Hvis man kigger på Vmware som idag er markedsførende, understøtter det blandt andet clustering i deres ESX server produkt, det gør at man kan have flere servere til at køre samme applikation, hvis den ene går ned, kan en anden tage over. Jeg vil prøve at gå lidt tættere på nogle af de ting som Vmware’s 3 generation software er i stand til.<br>
+En virtuel maskine i kan idag have 16GB RAM og 4 virtuelle CPU’er, Vmware ESX understøtter fysiske servere med op til 32 fysiske CPU’er (Med idags Quad-core CPU’er betyder det reelt 128 CPU’er) samt 64GB RAM.<br>
+Vmware har en feature de kalder Vmotion, som tillader at flytte en kørende virtuel maskine over på en anden server, det vil sige at har man en CPU tung opgave, og man har en server, der ikke bliver brugt ret meget, kan man uden at slukke den virtuelle server, flytte den over på en anden maskine. Vi testede dette, ved at pinge fra den virtuelle maskine, og pingede den virtulle maskine fra en af host maskinerne, det eneste det resulterede i var at 1 ping ikke kom igennem. Det var meget imporende, og det fleste applikationer idag, kan håndtere sådan et lille netværksudfald. Det er også muligt at få Vmware til selv at håndtere flytningen af serverene, så hvis man har en server der ikke laver noget, og en virtuel maskine på en anden server bruger mange ressourcer, så kan Vmware selv flytte den krævende maskiner, over hvor der er ledige ressourcer. Det kan også bruges hvis en host server rapporterer der er problemer med f.eks en harddisk, så kan man flytte alle kørende virtuelle servere over på en anden server, reparere den pågældende host server, og så flytte de virtuelle maskiner tilbage igen.<br>
+Vmware håndterer ressourcer, ved at lave en ”resource pool” det vil sige at har man en ”server gruppe” kan denne f.eks have 36Ghz CPU ressourcer og 64GB RAM, en anden server gruppe kan have 20Ghz CPU og 32GB RAM. Det betyder at man så kan har en aggregeret logisk ressource på 56Ghz samt 96GB RAM, det skal dog igen siges, at det ikke betyder man kan give en server hele clusterets ressourcer, men kun maks 4 CPU’er og 16GB RAM. Det betyder også at hvis man mangler ressourcer i sit cluster, så installerer man bare en ekstra server, og melder den ind i clusteret, og så bliver dens ressourcer automatisk tilføjet den aggregerede ”Resource pool.”</p>
+<p>Hvis man skal køre VmWare hvad enten det er Workstation eller ESX server, er det alfa og omega at have hurtige diske, derfor kan man med stor fordel bruge et SAN (Ihvertfald ved server udgaverne)<br>
+Ved at bruge et SAN, giver det muliged for let at tilføje flere diske, og dermed tilføje mere plads til virtuelle servere, samt gøre det lettere for andre host servere at overtage fra en evt. crashet host server.<br>
+En anden fordel ved Vmware er backup, når man kører Vmware, har man reelt bare en fil som ligger på serveren, denne fil kan kopieres rundt, og startes på hvilken som helst Vmware host. Der findes idag også flere 3 parts produkter, som kører og tager snapsshots af disse filer, selv når serveren kører, og dermed har man hele tiden en fuld kopi af sit produktions miljø hvis noget skulle gå galt.<br>
+Nathan fortalte også at man med nogle af de ovenstående fordele faktisk var begyndt at virtualisere både Exchange &amp; SQL servere.</p>
+
+  </div>
+  
+
+<div class="navigation navigation-single">
+    
+    <a href="/posts/2007-05-09-microsoft-windows-usergroup-danmark/" class="navigation-prev">
+      <i aria-hidden="true" class="fa fa-chevron-left"></i>
+      <span class="navigation-tittle">Microsoft Windows Usergroup Danmark</span>
+    </a>
+    
+    
+    <a href="/posts/2007-05-18-hjemme-igen/" class="navigation-next">
+      <span class="navigation-tittle">Hjemme igen..</span>
+      <i aria-hidden="true" class="fa fa-chevron-right"></i>
+    </a>
+    
+</div>
+
+
+  
+
+  
+    
+        <div id="disqus_thread"></div>
+<script type="text/javascript">
+    
+
+    (function () {
+    if (location.hostname === "localhost" ||
+      location.hostname === "127.0.0.1" ||
+      location.hostname === "") {
+      return;
+    }
+    var dsq = document.createElement('script');
+    dsq.type = 'text/javascript';
+    dsq.async = true;
+    var disqus_shortname = 'xipher-1';
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || 
+      document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+
+<noscript>
+  Please enable JavaScript to view the
+  <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a>
+</noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by
+  <span class="logo-disqus">Disqus</span>
+</a>
+
+    
+
+
+</article>
+
+
+        </div>
+        
+    
+
+<script defer src="https://use.fontawesome.com/releases/v5.12.1/js/all.js" integrity="sha384-ZbbbT1gw3joYkKRqh0kWyRp32UAvdqkpbLedQJSlnI8iLQcFVxaGyrOgOJiDQTTR" crossorigin="anonymous"></script>
+
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+        
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/powershell.min.js"></script>
+            
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/languages/sql.min.js"></script>
+            
+        
+    <script type="text/javascript">
+        
+        hljs.configure({languages: ["powershell, sql"]});
+        
+        hljs.initHighlightingOnLoad();
+    </script>
+    
+
+
+
+    
+
+
+
+    </body>
+</html>

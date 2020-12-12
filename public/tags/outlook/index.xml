@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Outlook on XenoBlog</title>
+    <link>/tags/outlook/</link>
+    <description>Recent content in Outlook on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 30 Mar 2009 16:17:26 +0000</lastBuildDate><atom:link href="/tags/outlook/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Deleting empty folders in Outlook</title>
+      <link>/posts/2009-03-30-deleting-empty-folders-in-outlook/</link>
+      <pubDate>Mon, 30 Mar 2009 16:17:26 +0000</pubDate>
+      
+      <guid>/posts/2009-03-30-deleting-empty-folders-in-outlook/</guid>
+      <description>A friend of mine called me, and asked me for help&amp;hellip; He had had a migration go wrong and had ended up with a bunch of .pst files containing 1000&amp;rsquo;s of emtpy folders.</description>
+    </item>
+    
+  </channel>
+</rss>

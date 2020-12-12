@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Xenophane on XenoBlog</title>
+    <link>/tags/xenophane/</link>
+    <description>Recent content in Xenophane on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 10 Jul 2007 11:08:02 +0000</lastBuildDate><atom:link href="/tags/xenophane/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Playing around with profiles.</title>
+      <link>/posts/2007-07-10-playing-around-with-profiles/</link>
+      <pubDate>Tue, 10 Jul 2007 11:08:02 +0000</pubDate>
+      
+      <guid>/posts/2007-07-10-playing-around-with-profiles/</guid>
+      <description>In PowerShell you have the option create custom profiles that you can use, in the profiles you can create different aliases, change the prompt and a lot of other things, today we will look at adding some info to prompt.</description>
+    </item>
+    
+  </channel>
+</rss>

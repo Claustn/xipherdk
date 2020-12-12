@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Excel on XenoBlog</title>
+    <link>/tags/excel/</link>
+    <description>Recent content in Excel on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 30 Jul 2009 22:28:08 +0000</lastBuildDate><atom:link href="/tags/excel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>&#34;Editing&#34; Excel using Powershell</title>
+      <link>/posts/2009-07-30-editing-excel-using-powershell/</link>
+      <pubDate>Thu, 30 Jul 2009 22:28:08 +0000</pubDate>
+      
+      <guid>/posts/2009-07-30-editing-excel-using-powershell/</guid>
+      <description>At work we have a spreadsheet, where we keep track of our mobile phones, and 3G dongles, in it we keep info about the IMEI code, PUK/PIN codes etc.
+Today we found a few SIM cards lying around, the only thing on them was the SIM card number (19 digits).</description>
+    </item>
+    
+    <item>
+      <title>Create Excel Spreadsheet</title>
+      <link>/posts/2009-07-19-create-excel-spreadsheet/</link>
+      <pubDate>Sun, 19 Jul 2009 21:13:13 +0000</pubDate>
+      
+      <guid>/posts/2009-07-19-create-excel-spreadsheet/</guid>
+      <description>The other day I was tasked with creating a spreadsheet containing a list of all servers in our network, manager wanted a &amp;ldquo;sheet&amp;rdquo; for each computer, and an &amp;ldquo;index&amp;rdquo; sheet with links to all the other sheets.</description>
+    </item>
+    
+  </channel>
+</rss>

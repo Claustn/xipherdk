@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ADMGS on XenoBlog</title>
+    <link>/tags/admgs/</link>
+    <description>Recent content in ADMGS on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 20 Sep 2009 09:40:42 +0000</lastBuildDate><atom:link href="/tags/admgs/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ADMGS (Active Directory Management Gateway Service)</title>
+      <link>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</link>
+      <pubDate>Sun, 20 Sep 2009 09:40:42 +0000</pubDate>
+      
+      <guid>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</guid>
+      <description>There has been some speculation on the web regarding the ADMGS for Server 2008 and 2003, if it would be possible to use it, in an environment without at least one Server 2008 R2.</description>
+    </item>
+    
+  </channel>
+</rss>

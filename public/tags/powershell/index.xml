@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PowerShell on XenoBlog</title>
+    <link>/tags/powershell/</link>
+    <description>Recent content in PowerShell on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Sep 2014 20:34:14 +0000</lastBuildDate><atom:link href="/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Applications to EMET</title>
+      <link>/posts/2014-09-08-adding-applications-to-emet/</link>
+      <pubDate>Mon, 08 Sep 2014 20:34:14 +0000</pubDate>
+      
+      <guid>/posts/2014-09-08-adding-applications-to-emet/</guid>
+      <description>If you have been using EMET (Enhanced Mitigation Experience Toolkit ) toolkit from Microsoft you probably have had to need to add custom application, one of the main &amp;ldquo;culprits&amp;rdquo; is Flash Player with its ever changing name (filename contains it&amp;rsquo;s version number)</description>
+    </item>
+    
+    <item>
+      <title>Send SMS through bibob with Powershell</title>
+      <link>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</link>
+      <pubDate>Wed, 09 Feb 2011 21:55:42 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</guid>
+      <description>I thought I had posted this script more than a year ago, but apparently I have not. It is quite similar to the script, I posted recently sending SMS messages through unwire, this just allows bibob customers to send messages through bibobs online gateway.</description>
+    </item>
+    
+    <item>
+      <title>Send SMS from Powershell through Unwire</title>
+      <link>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</link>
+      <pubDate>Wed, 09 Feb 2011 14:38:39 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</guid>
+      <description>At work we have bought an SMS gateway service through the danish company Unwire, so after we the deal was signed we got the information on how to send email through their services, so in order to test I wrote a quick Powershell script to test it.</description>
+    </item>
+    
+    <item>
+      <title>The (r)evolution of a script</title>
+      <link>/posts/2011-01-06-the-revolution-of-a-script/</link>
+      <pubDate>Thu, 06 Jan 2011 23:58:53 +0000</pubDate>
+      
+      <guid>/posts/2011-01-06-the-revolution-of-a-script/</guid>
+      <description>As those of you who a following my blog know, I have been fortunate enough to become a Microsoft MVP in Powershell, and because of that I have been allowed on the Powershell MVP mailing list, an let me tell, there are some amazing people out there, doing some amazing stuff.</description>
+    </item>
+    
+    <item>
+      <title>Translate Service DACL&#39;s</title>
+      <link>/posts/2010-09-08-translate-service-dacls/</link>
+      <pubDate>Wed, 08 Sep 2010 22:21:42 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-translate-service-dacls/</guid>
+      <description>There was a post on the Minasi forum, where someone was trying to check which users had start/stop permissions on a given server. I knew SC would give the results, but it returns it in DACL format, which as far from readable by humans&amp;hellip; So since I had some time to pass I decided to try to write a powershell script to translate the DACL into something human readable (We were having our floor lacquered, and the guy doing it, had a little extra lacquer, and decided to lacquer our hallway, thereby cutting me off from leaving the first floor of our house).</description>
+    </item>
+    
+    <item>
+      <title>My account keeps getting locked out, where did I use it ??</title>
+      <link>/posts/2010-09-08-my-account-keeps-getting-locked-out-where-did-i-use-it/</link>
+      <pubDate>Wed, 08 Sep 2010 22:00:53 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-my-account-keeps-getting-locked-out-where-did-i-use-it/</guid>
+      <description>A few weeks ago my admin account kept getting locked out, after I had changed my password.. So I assumed I had used it somewhere to either run a service or a scheduled task on a test server.</description>
+    </item>
+    
+    <item>
+      <title>Output a sortable HTML table</title>
+      <link>/posts/2010-05-30-output-a-sortable-html-table/</link>
+      <pubDate>Sun, 30 May 2010 12:51:28 +0000</pubDate>
+      
+      <guid>/posts/2010-05-30-output-a-sortable-html-table/</guid>
+      <description>A while back I posted a script that would take whatever input it got, into a sortable HTML table in a file.
+Last night my family was here, and they wanted to see the Eurovision song contest thing, so I had some time to rewrite the script into a PowerShell V2 Advanced function, that supports pipeline input.</description>
+    </item>
+    
+    <item>
+      <title>Remoting examples from my presentation</title>
+      <link>/posts/2010-05-11-remoting-examples-from-my-presentation/</link>
+      <pubDate>Tue, 11 May 2010 22:14:45 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-remoting-examples-from-my-presentation/</guid>
+      <description>Example #1
+[ps]
+#Sessions
+#Single Session
+$Session = New-PSSession -ComputerName &amp;ldquo;computername&amp;rdquo;
+#Multiple Sessions
+$Session = New-PSSession -ComputerName &amp;ldquo;comp1&amp;rdquo;,&amp;ldquo;comp2&amp;rdquo;&amp;hellip;..
+#Remove all Sessions
+Remove-PSSession *
+#Remove Named Session
+Remove-PSSession $Session
+#Using $session</description>
+    </item>
+    
+    <item>
+      <title>Quest AD Cmdlet examples from my Presentation</title>
+      <link>/posts/2010-05-11-quest-ad-cmdlet-examples-from-my-presentation/</link>
+      <pubDate>Tue, 11 May 2010 22:06:28 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-quest-ad-cmdlet-examples-from-my-presentation/</guid>
+      <description>Example #1
+List users that expires within X days
+[ps]
+$DaysToExpire = 14
+$MaxPassAge = (Get-QADObject (Get-QADRootDSE).defaultNamingContextDN).MaximumPasswordAge.days
+[array]$a = Get-QADUser -Enabled -PasswordNeverExpires:$false -SizeLimit 0 -Email * |Select-Object Name,Email,@{Name=&amp;ldquo;Expires&amp;rdquo;;Expression={ $MaxPassAge - $_.</description>
+    </item>
+    
+    <item>
+      <title>.Net Examples from Presentation</title>
+      <link>/posts/2010-05-11-net-examples-from-presentation/</link>
+      <pubDate>Tue, 11 May 2010 21:58:16 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-net-examples-from-presentation/</guid>
+      <description>Example #1 (From Lee Holmes&#39; Powershell cookbook)
+&amp;ldquo;Compile C# code on the fly&amp;rdquo;
+[ps]
+$code =@&#39;
+using System.Management.Automation;
+[Cmdlet(&amp;ldquo;Write&amp;rdquo;, &amp;ldquo;InputObject&amp;rdquo;)]
+public class MyWriteInputObjectCmdlet : Cmdlet
+{
+[Parameter]
+public string Parameter1;</description>
+    </item>
+    
+    <item>
+      <title>Profile Examples from Presentation</title>
+      <link>/posts/2010-05-11-profile-examples-from-presentation/</link>
+      <pubDate>Tue, 11 May 2010 21:47:52 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-profile-examples-from-presentation/</guid>
+      <description>Here are some of the scripts that I used during the demonstration in VA Beach.
+Profiles:
+Example #1
+[ps]
+function prompt
+{
+&amp;ldquo;Xenophane &amp;quot; + $(get-location) + &amp;ldquo;&amp;gt;&amp;rdquo;
+}
+[/ps]</description>
+    </item>
+    
+    <item>
+      <title>Gotten back from Minasi conference</title>
+      <link>/posts/2010-05-11-gotten-back-from-minasi-conference/</link>
+      <pubDate>Tue, 11 May 2010 21:40:36 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-gotten-back-from-minasi-conference/</guid>
+      <description>I got back from Virgina Beach this past Saturday, after attending a very good conference, where I learned a lot of new an exciting stuff&amp;hellip; And of course it was very good to meet up with the &amp;ldquo;gang&amp;rdquo; again.</description>
+    </item>
+    
+    <item>
+      <title>Powershell as a webservice</title>
+      <link>/posts/2010-01-24-powershell-as-a-webservice/</link>
+      <pubDate>Sun, 24 Jan 2010 23:38:05 +0000</pubDate>
+      
+      <guid>/posts/2010-01-24-powershell-as-a-webservice/</guid>
+      <description>Seems as if Quest has been doing some really cool things with Powershell, from what I can read, they have &amp;ldquo;rolled&amp;rdquo; it up as a webservice, meaning that you can now run your Powershell scripts over HTTPS from either you local machine, your phone, anything that supports a newer web browser.</description>
+    </item>
+    
+    <item>
+      <title>ADMGS (Active Directory Management Gateway Service)</title>
+      <link>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</link>
+      <pubDate>Sun, 20 Sep 2009 09:40:42 +0000</pubDate>
+      
+      <guid>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</guid>
+      <description>There has been some speculation on the web regarding the ADMGS for Server 2008 and 2003, if it would be possible to use it, in an environment without at least one Server 2008 R2.</description>
+    </item>
+    
+    <item>
+      <title>Finding that Hyper-V machine</title>
+      <link>/posts/2009-09-19-findind-that-hyper-v-machine/</link>
+      <pubDate>Sat, 19 Sep 2009 16:45:10 +0000</pubDate>
+      
+      <guid>/posts/2009-09-19-findind-that-hyper-v-machine/</guid>
+      <description>[ps]
+Get-QADObject -Name &amp;lsquo;Microsoft Hyper-V&amp;rsquo; -Type serviceConnectionPoint | Get-QADComputer -Identity {$_.ParentContainerDN}
+[/ps]</description>
+    </item>
+    
+    <item>
+      <title>Right click to mount vhd files</title>
+      <link>/posts/2009-09-14-right-click-to-mount-vhd-files/</link>
+      <pubDate>Mon, 14 Sep 2009 13:41:54 +0000</pubDate>
+      
+      <guid>/posts/2009-09-14-right-click-to-mount-vhd-files/</guid>
+      <description>I have just upgraded my machines to Windows 7 RTM, before I did the reinstall I did full backup of my old Vista machines, of course I figured out that I had not gotten all the files out of the Vista machines before I upgraded, So I had to restore some files from the resulting .</description>
+    </item>
+    
+    <item>
+      <title>PowerShell v2 for Vista and Server 2008 has been released as RC</title>
+      <link>/posts/2009-08-14-powershell-v2-for-vista-and-server-2008-has-been-released-as-rc/</link>
+      <pubDate>Fri, 14 Aug 2009 15:50:30 +0000</pubDate>
+      
+      <guid>/posts/2009-08-14-powershell-v2-for-vista-and-server-2008-has-been-released-as-rc/</guid>
+      <description>You can now get PowerShell v2 as a download for Windows Vista and Windows Server 2008 from Microsoft Connect.
+Windows XP and Windows Server 2003 SP2 are not included in this RC release but they will be made available in future.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Editing&#34; Excel using Powershell</title>
+      <link>/posts/2009-07-30-editing-excel-using-powershell/</link>
+      <pubDate>Thu, 30 Jul 2009 22:28:08 +0000</pubDate>
+      
+      <guid>/posts/2009-07-30-editing-excel-using-powershell/</guid>
+      <description>At work we have a spreadsheet, where we keep track of our mobile phones, and 3G dongles, in it we keep info about the IMEI code, PUK/PIN codes etc.
+Today we found a few SIM cards lying around, the only thing on them was the SIM card number (19 digits).</description>
+    </item>
+    
+    <item>
+      <title>Prevent-Screensaver</title>
+      <link>/posts/2009-07-27-prevent-screensaver/</link>
+      <pubDate>Mon, 27 Jul 2009 07:27:05 +0000</pubDate>
+      
+      <guid>/posts/2009-07-27-prevent-screensaver/</guid>
+      <description>A while back I created a small AutoIt script, to prevent the screensaver from kicking in, last employer had screensaver kick after 5 min, which was rather annoying when you are out doing presentations, and you have to punch in your password everytime the screensaver kicks in.</description>
+    </item>
+    
+    <item>
+      <title>Create Excel Spreadsheet</title>
+      <link>/posts/2009-07-19-create-excel-spreadsheet/</link>
+      <pubDate>Sun, 19 Jul 2009 21:13:13 +0000</pubDate>
+      
+      <guid>/posts/2009-07-19-create-excel-spreadsheet/</guid>
+      <description>The other day I was tasked with creating a spreadsheet containing a list of all servers in our network, manager wanted a &amp;ldquo;sheet&amp;rdquo; for each computer, and an &amp;ldquo;index&amp;rdquo; sheet with links to all the other sheets.</description>
+    </item>
+    
+    <item>
+      <title>Deleting empty folders in Outlook</title>
+      <link>/posts/2009-03-30-deleting-empty-folders-in-outlook/</link>
+      <pubDate>Mon, 30 Mar 2009 16:17:26 +0000</pubDate>
+      
+      <guid>/posts/2009-03-30-deleting-empty-folders-in-outlook/</guid>
+      <description>A friend of mine called me, and asked me for help&amp;hellip; He had had a migration go wrong and had ended up with a bunch of .pst files containing 1000&amp;rsquo;s of emtpy folders.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell TombStone revival</title>
+      <link>/posts/2008-06-04-powershell-tombstone-revival/</link>
+      <pubDate>Wed, 04 Jun 2008 15:36:12 +0000</pubDate>
+      
+      <guid>/posts/2008-06-04-powershell-tombstone-revival/</guid>
+      <description>Our friend Darren Mar-Elia over at SDM software has just released some nice PowerShell cmdlets, to view Tombstoned objects in AD&amp;hellip; You can even revive(or reanimate them as I think the correct AD term is) them as well.</description>
+    </item>
+    
+    <item>
+      <title>BrowseForFolder VBScript/PowerShell</title>
+      <link>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</link>
+      <pubDate>Tue, 06 May 2008 08:35:47 +0000</pubDate>
+      
+      <guid>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</guid>
+      <description>I had to run a script the other day, that I wrote some time ago to change some files in a folder, the script uses the Shell.Application COM object BrowseForFolder method, to show a GUI that lets you browse through the directory structure and choose a folder.</description>
+    </item>
+    
+    <item>
+      <title>Learning PowerShell</title>
+      <link>/posts/2008-04-29-learning-powershell/</link>
+      <pubDate>Tue, 29 Apr 2008 13:13:47 +0000</pubDate>
+      
+      <guid>/posts/2008-04-29-learning-powershell/</guid>
+      <description>Don Jones&#39; keynote basically said, if you do not learn PowerShell, you will not be able to function as an Windows IT administrator in 5 years time or so&amp;hellip; After what was told on the MVP summit, about Microsofts commitment to PowerShell, and how all new products will be based on it, he foresees are very dim future for admins who do not know it.</description>
+    </item>
+    
+    <item>
+      <title>April 2008</title>
+      <link>/posts/2007-11-01-april-2008/</link>
+      <pubDate>Thu, 01 Nov 2007 02:03:05 +0000</pubDate>
+      
+      <guid>/posts/2007-11-01-april-2008/</guid>
+      <description>What are you doing between April 20 and April 23rd ??? You don&amp;rsquo;t know ??
+Well if you are the least bit interested in computers, there is only one place to be&amp;hellip; The Minasi Forum meet 2008</description>
+    </item>
+    
+    <item>
+      <title>PoSH add-on PowerTab</title>
+      <link>/posts/2007-10-02-posh-add-on-powertab/</link>
+      <pubDate>Tue, 02 Oct 2007 13:37:51 +0000</pubDate>
+      
+      <guid>/posts/2007-10-02-posh-add-on-powertab/</guid>
+      <description>Just been playing with PowerTabs for PowerShell, it is kinda like M$ Intellisence code completion, but for your PowerShell command prompt. Let me tell you, it rocks&amp;hellip; Just type get- &amp;lt; T A B&amp;gt; and you get all your cmdlets that starts with get-</description>
+    </item>
+    
+    <item>
+      <title>Playing around with profiles.</title>
+      <link>/posts/2007-07-10-playing-around-with-profiles/</link>
+      <pubDate>Tue, 10 Jul 2007 11:08:02 +0000</pubDate>
+      
+      <guid>/posts/2007-07-10-playing-around-with-profiles/</guid>
+      <description>In PowerShell you have the option create custom profiles that you can use, in the profiles you can create different aliases, change the prompt and a lot of other things, today we will look at adding some info to prompt.</description>
+    </item>
+    
+    <item>
+      <title>A little more fun with the eventlog in PowerShell</title>
+      <link>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</link>
+      <pubDate>Thu, 28 Jun 2007 19:37:25 +0000</pubDate>
+      
+      <guid>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</guid>
+      <description>Imagine that you want to list, the last 15 events in all the eventlogs on the system, do you have to write several lines of codes to do that, like this below?</description>
+    </item>
+    
+    <item>
+      <title>Getting info from the eventlog with PowerShell</title>
+      <link>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</link>
+      <pubDate>Mon, 18 Jun 2007 15:14:13 +0000</pubDate>
+      
+      <guid>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</guid>
+      <description>Started playing around with PowerShell, so I thought I would post a few simple things on the blog, maybe you won&amp;rsquo;t find it interesting, but it is a good way for me to remember, so BLAH!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DACL on XenoBlog</title>
+    <link>/tags/dacl/</link>
+    <description>Recent content in DACL on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 08 Sep 2010 22:21:42 +0000</lastBuildDate><atom:link href="/tags/dacl/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Translate Service DACL&#39;s</title>
+      <link>/posts/2010-09-08-translate-service-dacls/</link>
+      <pubDate>Wed, 08 Sep 2010 22:21:42 +0000</pubDate>
+      
+      <guid>/posts/2010-09-08-translate-service-dacls/</guid>
+      <description>There was a post on the Minasi forum, where someone was trying to check which users had start/stop permissions on a given server. I knew SC would give the results, but it returns it in DACL format, which as far from readable by humans&amp;hellip; So since I had some time to pass I decided to try to write a powershell script to translate the DACL into something human readable (We were having our floor lacquered, and the guy doing it, had a little extra lacquer, and decided to lacquer our hallway, thereby cutting me off from leaving the first floor of our house).</description>
+    </item>
+    
+  </channel>
+</rss>

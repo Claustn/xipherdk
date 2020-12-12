@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-05-16T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/everyday/</loc>
+    <lastmod>2020-05-16T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-05-16T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2020-05-17-using-esp8266-to-monitor-kamstrup-omnipower/</loc>
+    <lastmod>2020-05-16T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/</loc>
+    <lastmod>2020-05-16T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2018-09-23-loading-p0wned-password-files-into-sqlite/</loc>
+    <lastmod>2018-09-23T12:58:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-06-10-active-directory-users-password-report/</loc>
+    <lastmod>2017-06-10T09:02:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2017-05-14-monitoring-your-vms-using-screenshots/</loc>
+    <lastmod>2017-05-14T23:33:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-06-09-regex-callback/</loc>
+    <lastmod>2016-06-09T22:26:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-01-31-dsc-resource-downloader/</loc>
+    <lastmod>2016-01-31T22:26:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-01-31-simple-module-dependency-mapper/</loc>
+    <lastmod>2016-01-31T21:27:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2016-01-05-run-azure-automation-hybrid-worker-using-runas/</loc>
+    <lastmod>2016-01-05T00:02:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-06-08-configure-web-config-for-use-with-powershell-dsc-v5-configuration-names-and-registrationkey/</loc>
+    <lastmod>2015-06-08T00:17:18+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-05-06-new-in-wmf-5-april-release/</loc>
+    <lastmod>2015-05-06T21:16:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-05-02-domain-requirement-for-ork/</loc>
+    <lastmod>2015-05-02T22:36:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-04-30-new-version-of-powershell-v5-april-release/</loc>
+    <lastmod>2015-04-30T12:44:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2015-04-21-been-a-little-slow-lately/</loc>
+    <lastmod>2015-04-21T22:58:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-09-08-adding-applications-to-emet/</loc>
+    <lastmod>2014-09-08T20:34:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/emet/</loc>
+    <lastmod>2014-09-08T20:34:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powershell/</loc>
+    <lastmod>2014-09-08T20:34:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2014-09-08T20:34:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-09-06-powershell-v5-com-improvements/</loc>
+    <lastmod>2014-09-06T10:03:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-08-12-are-you-going-i-am/</loc>
+    <lastmod>2014-08-12T12:04:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-05-30-sa-er-det-tid-til-at-saette-x-i-kalenderen-igen-26-juni/</loc>
+    <lastmod>2014-05-30T10:49:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-02-22-updating-upn-names-in-active-directory/</loc>
+    <lastmod>2014-02-22T20:22:37+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-02-03-using-ews-exchange-web-services-to-read-emails/</loc>
+    <lastmod>2014-02-03T21:27:21+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2014-01-08-readable-password-generator/</loc>
+    <lastmod>2014-01-08T23:51:04+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-10-15-campus-days-session/</loc>
+    <lastmod>2013-10-15T11:26:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-08-02-managing-queue-it-queues-with-powershell/</loc>
+    <lastmod>2013-08-02T12:47:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-06-27-culture-gotchas/</loc>
+    <lastmod>2013-06-27T10:37:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2013-04-15-sending-out-password-expiration-mails-to-users-in-active-directory/</loc>
+    <lastmod>2013-04-15T09:21:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-09-10-troubleshooting-test-connection/</loc>
+    <lastmod>2012-09-10T21:38:40+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/anyconnect/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cisco/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/intel/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/tech-stuff/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-03-14-the-mystery-of-why-cisco-anyconnect-stopped-working/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vpn/</loc>
+    <lastmod>2012-03-14T21:50:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2012-01-25-checking-site-sizes-in-sharepoint-2007-and-2010/</loc>
+    <lastmod>2012-01-25T12:19:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-10-09-updating-htacces-file-based-on-apache-log-files/</loc>
+    <lastmod>2011-10-09T20:12:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-09-18-finally-got-confirmation-grown-men-do-cry-when-their-bitlocker-encrypted-ssd-disk-dies/</loc>
+    <lastmod>2011-09-18T19:57:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-09-05-back-to-my-old-theme-again/</loc>
+    <lastmod>2011-09-05T11:34:22+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-09-02-testing-simple-theme/</loc>
+    <lastmod>2011-09-02T12:45:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-06-17-fix-2008r2-scheduled-tasks/</loc>
+    <lastmod>2011-06-17T21:29:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bibob/</loc>
+    <lastmod>2011-02-09T21:55:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</loc>
+    <lastmod>2011-02-09T21:55:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sms/</loc>
+    <lastmod>2011-02-09T21:55:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</loc>
+    <lastmod>2011-02-09T14:38:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-01-29-change-usernamepassword-on-scheduled-tasks/</loc>
+    <lastmod>2011-01-29T23:01:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-01-29-scheduled-tasks-server-2008/</loc>
+    <lastmod>2011-01-29T22:12:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-01-14-free-online-source-control-with-powergui-pro/</loc>
+    <lastmod>2011-01-14T11:52:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-01-06-the-revolution-of-a-script/</loc>
+    <lastmod>2011-01-06T23:58:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2011-01-04-mvp/</loc>
+    <lastmod>2011-01-04T22:03:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dacl/</loc>
+    <lastmod>2010-09-08T22:21:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-09-08-translate-service-dacls/</loc>
+    <lastmod>2010-09-08T22:21:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-09-08-account-lockout-continued/</loc>
+    <lastmod>2010-09-08T22:12:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-09-08-my-account-keeps-getting-locked-out-where-did-i-use-it/</loc>
+    <lastmod>2010-09-08T22:00:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-30-export-xls-powershell-script-to-export-to-xls/</loc>
+    <lastmod>2010-05-30T21:31:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/module/</loc>
+    <lastmod>2010-05-30T12:51:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-30-output-a-sortable-html-table/</loc>
+    <lastmod>2010-05-30T12:51:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-powershell-presentation-from-2010-minasi-conference/</loc>
+    <lastmod>2010-05-11T22:39:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-remoting-examples-from-my-presentation/</loc>
+    <lastmod>2010-05-11T22:14:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-quest-ad-cmdlet-examples-from-my-presentation/</loc>
+    <lastmod>2010-05-11T22:06:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-net-examples-from-presentation/</loc>
+    <lastmod>2010-05-11T21:58:16+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pofiles/</loc>
+    <lastmod>2010-05-11T21:47:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-profile-examples-from-presentation/</loc>
+    <lastmod>2010-05-11T21:47:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/conference/</loc>
+    <lastmod>2010-05-11T21:40:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-05-11-gotten-back-from-minasi-conference/</loc>
+    <lastmod>2010-05-11T21:40:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/minasi/</loc>
+    <lastmod>2010-05-11T21:40:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2010-01-24-powershell-as-a-webservice/</loc>
+    <lastmod>2010-01-24T23:38:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/quest/</loc>
+    <lastmod>2010-01-24T23:38:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-12-14-mstsc-util-update/</loc>
+    <lastmod>2009-12-14T20:38:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-11-30-finding-powershell-v2/</loc>
+    <lastmod>2009-11-30T21:30:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/posh/</loc>
+    <lastmod>2009-11-30T21:30:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-10-28-windows-management-framework-has-arrived/</loc>
+    <lastmod>2009-10-28T11:05:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-25-finding-out-how-many-active-sessions-are-on-a-server-2008-ts/</loc>
+    <lastmod>2009-09-25T20:40:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-23-set-executionpolicy/</loc>
+    <lastmod>2009-09-23T21:21:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ad/</loc>
+    <lastmod>2009-09-20T09:40:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/admgs/</loc>
+    <lastmod>2009-09-20T09:40:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</loc>
+    <lastmod>2009-09-20T09:40:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-19-findind-that-hyper-v-machine/</loc>
+    <lastmod>2009-09-19T16:45:10+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-14-right-click-to-mount-vhd-files/</loc>
+    <lastmod>2009-09-14T13:41:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/vhd/</loc>
+    <lastmod>2009-09-14T13:41:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-7/</loc>
+    <lastmod>2009-09-14T13:41:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dism/</loc>
+    <lastmod>2009-09-04T23:33:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/ps/</loc>
+    <lastmod>2009-09-04T23:33:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-09-04-windows-7-rsat/</loc>
+    <lastmod>2009-09-04T23:33:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-08-15-the-scripting-guys-have-done-it-again/</loc>
+    <lastmod>2009-08-15T19:30:53+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-08-14-powershell-v2-for-vista-and-server-2008-has-been-released-as-rc/</loc>
+    <lastmod>2009-08-14T15:50:30+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-07-30-editing-excel-using-powershell/</loc>
+    <lastmod>2009-07-30T22:28:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/excel/</loc>
+    <lastmod>2009-07-30T22:28:08+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-07-27-prevent-screensaver/</loc>
+    <lastmod>2009-07-27T07:27:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-07-23-installing-exchange-2007-mgmt-tools-with-powershell-ctps/</loc>
+    <lastmod>2009-07-23T08:51:34+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-07-21-get-exchange-rates/</loc>
+    <lastmod>2009-07-21T20:16:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-07-19-create-excel-spreadsheet/</loc>
+    <lastmod>2009-07-19T21:13:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-04-17-arrived-safely-in-washington-dulles-airport/</loc>
+    <lastmod>2009-04-17T22:47:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/minasi-trip-2009/</loc>
+    <lastmod>2009-04-17T22:47:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-03-30-deleting-empty-folders-in-outlook/</loc>
+    <lastmod>2009-03-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exchange/</loc>
+    <lastmod>2009-03-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/folder/</loc>
+    <lastmod>2009-03-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mail/</loc>
+    <lastmod>2009-03-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/outlook/</loc>
+    <lastmod>2009-03-30T16:17:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-03-11-get-mailboxinfo-powershell-script/</loc>
+    <lastmod>2009-03-11T20:25:56+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-03-11-new-powershell-brushes-for-syntax-highlighter-plus/</loc>
+    <lastmod>2009-03-11T19:56:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-03-01-set-file-permissions-with-set-acl/</loc>
+    <lastmod>2009-03-01T22:12:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-29-double-arrrgghhh/</loc>
+    <lastmod>2009-01-29T09:12:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-22-aarrggghhh/</loc>
+    <lastmod>2009-01-22T23:39:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/930t/</loc>
+    <lastmod>2009-01-20T22:47:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gprs/</loc>
+    <lastmod>2009-01-20T22:47:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tomtom/</loc>
+    <lastmod>2009-01-20T22:47:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-20-tomtom-930t-and-bibob/</loc>
+    <lastmod>2009-01-20T22:47:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/autoit/</loc>
+    <lastmod>2009-01-20T22:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-20-prevent-screensaver-from-disturbing-my-presentations/</loc>
+    <lastmod>2009-01-20T22:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/screensaver/</loc>
+    <lastmod>2009-01-20T22:38:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/batch/</loc>
+    <lastmod>2009-01-15T22:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/prompt/</loc>
+    <lastmod>2009-01-15T22:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-15-quick-and-dirty-ping-script/</loc>
+    <lastmod>2009-01-15T22:27:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2009-01-08-creatin-multiple-users-in-multiple-ous/</loc>
+    <lastmod>2009-01-08T00:39:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/back/</loc>
+    <lastmod>2008-12-17T23:00:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-12-17-i-am-back/</loc>
+    <lastmod>2008-12-17T23:00:39+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gpoguy/</loc>
+    <lastmod>2008-06-04T15:36:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-06-04-powershell-tombstone-revival/</loc>
+    <lastmod>2008-06-04T15:36:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/windows-server/</loc>
+    <lastmod>2008-06-04T15:36:12+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-05-18-test-post/</loc>
+    <lastmod>2008-05-18T21:45:26+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-05-11-very-simple-file-browser-in-powershell/</loc>
+    <lastmod>2008-05-11T20:36:17+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-05-07-trying-out-new-syntax-highligther/</loc>
+    <lastmod>2008-05-07T12:48:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/browseforfolder/</loc>
+    <lastmod>2008-05-06T08:35:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</loc>
+    <lastmod>2008-05-06T08:35:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-29-learning-powershell/</loc>
+    <lastmod>2008-04-29T13:13:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scripting/</loc>
+    <lastmod>2008-04-29T13:13:47+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/2008/</loc>
+    <lastmod>2008-04-22T17:34:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/forummeet/</loc>
+    <lastmod>2008-04-22T17:34:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/minasi-trip-2008/</loc>
+    <lastmod>2008-04-22T17:34:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-22-s%C3%B8ndag/</loc>
+    <lastmod>2008-04-22T17:34:24+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-22-de-f%C3%B8rste-par-dage/</loc>
+    <lastmod>2008-04-22T17:23:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/virgina/</loc>
+    <lastmod>2008-04-22T17:23:23+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-19-aften-tide/</loc>
+    <lastmod>2008-04-19T01:52:45+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/adaptor/</loc>
+    <lastmod>2008-04-19T01:46:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-19-arrgghhh-ingen-str%C3%B8m/</loc>
+    <lastmod>2008-04-19T01:46:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/usa/</loc>
+    <lastmod>2008-04-18T22:15:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-18-usa-here-i-came/</loc>
+    <lastmod>2008-04-18T22:15:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/washington/</loc>
+    <lastmod>2008-04-18T22:15:20+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/flash/</loc>
+    <lastmod>2008-04-16T12:30:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-16-test-flash-drive/</loc>
+    <lastmod>2008-04-16T12:30:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/usb/</loc>
+    <lastmod>2008-04-16T12:30:28+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cadillac/</loc>
+    <lastmod>2008-04-01T13:32:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-04-01-tickets-booked-and-i-am-ready-to-go/</loc>
+    <lastmod>2008-04-01T13:32:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-03-12-mstsc-util/</loc>
+    <lastmod>2008-03-12T16:44:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/scripts/</loc>
+    <lastmod>2008-03-12T16:44:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-02-27-log-in-notepad/</loc>
+    <lastmod>2008-02-27T23:09:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-02-25-ata-security/</loc>
+    <lastmod>2008-02-25T00:04:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-02-24-dram-data-rentention/</loc>
+    <lastmod>2008-02-24T23:51:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-02-01-dir-r/</loc>
+    <lastmod>2008-02-01T12:30:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-02-01-annoying-security-warning-in-posh/</loc>
+    <lastmod>2008-02-01T12:25:46+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/esbjerg/</loc>
+    <lastmod>2008-01-21T13:05:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-01-21-esbjerg-testen/</loc>
+    <lastmod>2008-01-21T13:05:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/humor/</loc>
+    <lastmod>2008-01-21T13:05:50+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2008-01-02-bibob-gprs-internet/</loc>
+    <lastmod>2008-01-02T15:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/e65/</loc>
+    <lastmod>2008-01-02T15:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/gsm/</loc>
+    <lastmod>2008-01-02T15:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/modem/</loc>
+    <lastmod>2008-01-02T15:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nokia/</loc>
+    <lastmod>2008-01-02T15:09:49+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hus/</loc>
+    <lastmod>2007-12-12T23:14:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/nv/</loc>
+    <lastmod>2007-12-12T23:14:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-12-12-sa-er-der-ikke-langt-igen/</loc>
+    <lastmod>2007-12-12T23:14:29+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/house/</loc>
+    <lastmod>2007-11-16T12:51:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/link/</loc>
+    <lastmod>2007-11-16T12:51:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-11-16-new-pictures-from-the-house/</loc>
+    <lastmod>2007-11-16T12:51:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pictures/</loc>
+    <lastmod>2007-11-16T12:51:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-11-01-april-2008/</loc>
+    <lastmod>2007-11-01T02:03:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/mark-minasi/</loc>
+    <lastmod>2007-11-01T02:03:05+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-10-02-posh-add-on-powertab/</loc>
+    <lastmod>2007-10-02T13:37:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/powertab/</loc>
+    <lastmod>2007-10-02T13:37:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/42/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/brain/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-09-25-speedreading/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/speedreading/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/test/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/text/</loc>
+    <lastmod>2007-09-25T12:39:58+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/code/</loc>
+    <lastmod>2007-07-10T11:08:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/playing/</loc>
+    <lastmod>2007-07-10T11:08:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-07-10-playing-around-with-profiles/</loc>
+    <lastmod>2007-07-10T11:08:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/profile/</loc>
+    <lastmod>2007-07-10T11:08:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/xenophane/</loc>
+    <lastmod>2007-07-10T11:08:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</loc>
+    <lastmod>2007-06-28T19:37:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/eventlog/</loc>
+    <lastmod>2007-06-18T15:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</loc>
+    <lastmod>2007-06-18T15:14:13+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-13-very-good-beginners-guide-to-powershell/</loc>
+    <lastmod>2007-06-13T16:59:32+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-12-very-nice-collection-of-free-microsoft-tools/</loc>
+    <lastmod>2007-06-12T03:24:11+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-11-det-gode-danske-sommervejr/</loc>
+    <lastmod>2007-06-11T19:35:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/frisbee/</loc>
+    <lastmod>2007-06-11T19:35:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/f%C3%A6lledparken/</loc>
+    <lastmod>2007-06-11T19:35:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/kubb/</loc>
+    <lastmod>2007-06-11T19:35:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/picnic/</loc>
+    <lastmod>2007-06-11T19:35:48+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-06-02-yeah-har-det-lidt-bedre-igen/</loc>
+    <lastmod>2007-06-02T23:45:43+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-20-oles-fsdag/</loc>
+    <lastmod>2007-05-20T18:20:52+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-18-hjemme-igen/</loc>
+    <lastmod>2007-05-18T18:17:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/party/</loc>
+    <lastmod>2007-05-18T18:17:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/silkeborg/</loc>
+    <lastmod>2007-05-18T18:17:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-11-virtualisering-og-hvorfor-det-er-n%C3%B8dvendigt/</loc>
+    <lastmod>2007-05-11T00:59:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-09-microsoft-windows-usergroup-danmark/</loc>
+    <lastmod>2007-05-09T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/minasi-trip-2007/</loc>
+    <lastmod>2007-05-09T06:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-08-sa-er-det-det-ved-at-v%C3%A6re-ovre/</loc>
+    <lastmod>2007-05-08T00:56:35+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-05-aften-hygge/</loc>
+    <lastmod>2007-05-05T22:12:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/food/</loc>
+    <lastmod>2007-05-05T22:12:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/fun/</loc>
+    <lastmod>2007-05-05T22:12:42+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/group-policy/</loc>
+    <lastmod>2007-05-05T20:32:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-05-group-policy-how-to-create-your-own-police-state/</loc>
+    <lastmod>2007-05-05T20:32:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/police-state/</loc>
+    <lastmod>2007-05-05T20:32:54+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-05-prveklude/</loc>
+    <lastmod>2007-05-05T20:25:15+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-04-dag-1-2/</loc>
+    <lastmod>2007-05-04T19:39:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/learning/</loc>
+    <lastmod>2007-05-04T19:39:36+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-04-sa-er-konferencen-begyndt/</loc>
+    <lastmod>2007-05-04T00:33:38+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-04-hvad-gr-man-ikke-for-basket/</loc>
+    <lastmod>2007-05-04T00:23:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/pain/</loc>
+    <lastmod>2007-05-04T00:23:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/smerte/</loc>
+    <lastmod>2007-05-04T00:23:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/s%C3%A5r/</loc>
+    <lastmod>2007-05-04T00:23:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wounds/</loc>
+    <lastmod>2007-05-04T00:23:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-03-sa-er-jeg-kommet-til-marriott-hotellet/</loc>
+    <lastmod>2007-05-03T00:31:25+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-02-lige-en-stor-bil-mere/</loc>
+    <lastmod>2007-05-02T23:53:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/truck/</loc>
+    <lastmod>2007-05-02T23:53:02+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-02-man-ma-altsa-ikke-bande-her/</loc>
+    <lastmod>2007-05-02T23:47:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/no-swearing/</loc>
+    <lastmod>2007-05-02T23:47:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/life-guards/</loc>
+    <lastmod>2007-05-02T09:16:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-02-livreddere/</loc>
+    <lastmod>2007-05-02T09:16:55+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-01-ny-basket-skobold-basket-tr%C3%A6ning/</loc>
+    <lastmod>2007-05-01T21:52:19+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-01-nye-basket-sko-og-bold/</loc>
+    <lastmod>2007-05-01T21:42:14+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hotel/</loc>
+    <lastmod>2007-05-01T21:35:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-01-hotel-numero-dos/</loc>
+    <lastmod>2007-05-01T21:35:27+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-01-alting-er-bare-st%C3%B8rre-herovre/</loc>
+    <lastmod>2007-05-01T21:21:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/biler/</loc>
+    <lastmod>2007-05-01T21:21:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/bruser/</loc>
+    <lastmod>2007-05-01T21:21:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/cars/</loc>
+    <lastmod>2007-05-01T21:21:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/showerhead/</loc>
+    <lastmod>2007-05-01T21:21:59+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-05-01-sa-er-det-igen-lykkedes-for-mig-at-finde-noget-internet/</loc>
+    <lastmod>2007-05-01T21:15:03+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/breakfast/</loc>
+    <lastmod>2007-04-30T20:26:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-04-30-dag-1/</loc>
+    <lastmod>2007-04-30T20:26:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sol/</loc>
+    <lastmod>2007-04-30T20:26:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/sun/</loc>
+    <lastmod>2007-04-30T20:26:51+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-04-30-hotel-ramada-norfolk/</loc>
+    <lastmod>2007-04-30T07:27:33+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/chevy-impala/</loc>
+    <lastmod>2007-04-30T06:00:09+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/2007-04-30-f%C3%B8rste-post-fra-usa/</loc>
+    <lastmod>2007-04-30T06:00:09+00:00</lastmod>
+  </url>
+  
+</urlset>

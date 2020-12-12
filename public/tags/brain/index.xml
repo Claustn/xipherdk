@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>brain on XenoBlog</title>
+    <link>/tags/brain/</link>
+    <description>Recent content in brain on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 25 Sep 2007 12:39:58 +0000</lastBuildDate><atom:link href="/tags/brain/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpeedReading</title>
+      <link>/posts/2007-09-25-speedreading/</link>
+      <pubDate>Tue, 25 Sep 2007 12:39:58 +0000</pubDate>
+      
+      <guid>/posts/2007-09-25-speedreading/</guid>
+      <description>Just a little thing, that I have never thought of before&amp;hellip;
+When you learn to write, you learn that the letters should &amp;ldquo;on&amp;rdquo; the line, meaning that when you write, your focus is on the lower half of the letters, to make sure they are on the line.</description>
+    </item>
+    
+  </channel>
+</rss>

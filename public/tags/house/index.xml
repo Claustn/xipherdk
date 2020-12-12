@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>House on XenoBlog</title>
+    <link>/tags/house/</link>
+    <description>Recent content in House on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 16 Nov 2007 12:51:38 +0000</lastBuildDate><atom:link href="/tags/house/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New pictures from the house...</title>
+      <link>/posts/2007-11-16-new-pictures-from-the-house/</link>
+      <pubDate>Fri, 16 Nov 2007 12:51:38 +0000</pubDate>
+      
+      <guid>/posts/2007-11-16-new-pictures-from-the-house/</guid>
+      <description>As per my sisters request , I have finally remembered to bring my camera to our new house to take some pictures.
+The project is going along nicely, albeit a lot more expensive that I would have ever imagined.</description>
+    </item>
+    
+  </channel>
+</rss>

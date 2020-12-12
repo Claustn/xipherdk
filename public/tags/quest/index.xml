@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Quest on XenoBlog</title>
+    <link>/tags/quest/</link>
+    <description>Recent content in Quest on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 24 Jan 2010 23:38:05 +0000</lastBuildDate><atom:link href="/tags/quest/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Powershell as a webservice</title>
+      <link>/posts/2010-01-24-powershell-as-a-webservice/</link>
+      <pubDate>Sun, 24 Jan 2010 23:38:05 +0000</pubDate>
+      
+      <guid>/posts/2010-01-24-powershell-as-a-webservice/</guid>
+      <description>Seems as if Quest has been doing some really cool things with Powershell, from what I can read, they have &amp;ldquo;rolled&amp;rdquo; it up as a webservice, meaning that you can now run your Powershell scripts over HTTPS from either you local machine, your phone, anything that supports a newer web browser.</description>
+    </item>
+    
+  </channel>
+</rss>

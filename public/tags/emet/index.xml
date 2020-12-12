@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>EMET on XenoBlog</title>
+    <link>/tags/emet/</link>
+    <description>Recent content in EMET on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 08 Sep 2014 20:34:14 +0000</lastBuildDate><atom:link href="/tags/emet/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Adding Applications to EMET</title>
+      <link>/posts/2014-09-08-adding-applications-to-emet/</link>
+      <pubDate>Mon, 08 Sep 2014 20:34:14 +0000</pubDate>
+      
+      <guid>/posts/2014-09-08-adding-applications-to-emet/</guid>
+      <description>If you have been using EMET (Enhanced Mitigation Experience Toolkit ) toolkit from Microsoft you probably have had to need to add custom application, one of the main &amp;ldquo;culprits&amp;rdquo; is Flash Player with its ever changing name (filename contains it&amp;rsquo;s version number)</description>
+    </item>
+    
+  </channel>
+</rss>

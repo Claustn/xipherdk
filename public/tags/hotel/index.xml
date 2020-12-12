@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hotel on XenoBlog</title>
+    <link>/tags/hotel/</link>
+    <description>Recent content in Hotel on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 May 2007 21:35:27 +0000</lastBuildDate><atom:link href="/tags/hotel/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hotel numero dos</title>
+      <link>/posts/2007-05-01-hotel-numero-dos/</link>
+      <pubDate>Tue, 01 May 2007 21:35:27 +0000</pubDate>
+      
+      <guid>/posts/2007-05-01-hotel-numero-dos/</guid>
+      <description>Besluttede at jeg ville lidt tættere på stranden, så jeg har skiftet hotel til &amp;gt;The Atrium&amp;lt; som ligger ca. 500 m. fra stranden i Virgina Beach, så er jeg heller ikke ret langt fra hvor konference skal være.</description>
+    </item>
+    
+    <item>
+      <title>Hotel Ramada Norfolk</title>
+      <link>/posts/2007-04-30-hotel-ramada-norfolk/</link>
+      <pubDate>Mon, 30 Apr 2007 07:27:33 +0000</pubDate>
+      
+      <guid>/posts/2007-04-30-hotel-ramada-norfolk/</guid>
+      <description>Efter flere konsultationer med bilens indbyggede GPS kom jeg endeligt frem til hotellet&amp;hellip; Det er ikke noget at råbe hurra for, men skal også kun overnatte her en enkelt nat..</description>
+    </item>
+    
+  </channel>
+</rss>

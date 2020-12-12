@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>GPOGuy on XenoBlog</title>
+    <link>/tags/gpoguy/</link>
+    <description>Recent content in GPOGuy on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Jun 2008 15:36:12 +0000</lastBuildDate><atom:link href="/tags/gpoguy/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>PowerShell TombStone revival</title>
+      <link>/posts/2008-06-04-powershell-tombstone-revival/</link>
+      <pubDate>Wed, 04 Jun 2008 15:36:12 +0000</pubDate>
+      
+      <guid>/posts/2008-06-04-powershell-tombstone-revival/</guid>
+      <description>Our friend Darren Mar-Elia over at SDM software has just released some nice PowerShell cmdlets, to view Tombstoned objects in AD&amp;hellip; You can even revive(or reanimate them as I think the correct AD term is) them as well.</description>
+    </item>
+    
+    <item>
+      <title>Group Policy: How to create your own police state!</title>
+      <link>/posts/2007-05-05-group-policy-how-to-create-your-own-police-state/</link>
+      <pubDate>Sat, 05 May 2007 20:32:54 +0000</pubDate>
+      
+      <guid>/posts/2007-05-05-group-policy-how-to-create-your-own-police-state/</guid>
+      <description>En af verdens førende inden for Gruppe politikker, har været forbi og fortælle om gruppepolitikker, og hvordan man kan bruge dem i hverdagen. Hvilke ændringer der kommer i Windows Server 2007 (Longhorn), og hvad de kan bruges til.</description>
+    </item>
+    
+  </channel>
+</rss>

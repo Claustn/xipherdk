@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>USB on XenoBlog</title>
+    <link>/tags/usb/</link>
+    <description>Recent content in USB on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 16 Apr 2008 12:30:28 +0000</lastBuildDate><atom:link href="/tags/usb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Test Flash Drive</title>
+      <link>/posts/2008-04-16-test-flash-drive/</link>
+      <pubDate>Wed, 16 Apr 2008 12:30:28 +0000</pubDate>
+      
+      <guid>/posts/2008-04-16-test-flash-drive/</guid>
+      <description>I recently tried a software package called MojoPac. During the install of MojoPac to my USB stick it complained that it might not work very well, because it detected that I had a slow USB stick&amp;hellip; So I started wondering, what do I need to test the speed of my USB drives, besides some large files and a stopwatch.</description>
+    </item>
+    
+  </channel>
+</rss>

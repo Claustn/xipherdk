@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bibob on XenoBlog</title>
+    <link>/tags/bibob/</link>
+    <description>Recent content in bibob on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Feb 2011 21:55:42 +0000</lastBuildDate><atom:link href="/tags/bibob/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send SMS through bibob with Powershell</title>
+      <link>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</link>
+      <pubDate>Wed, 09 Feb 2011 21:55:42 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</guid>
+      <description>I thought I had posted this script more than a year ago, but apparently I have not. It is quite similar to the script, I posted recently sending SMS messages through unwire, this just allows bibob customers to send messages through bibobs online gateway.</description>
+    </item>
+    
+    <item>
+      <title>TomTom 930T and Bibob</title>
+      <link>/posts/2009-01-20-tomtom-930t-and-bibob/</link>
+      <pubDate>Tue, 20 Jan 2009 22:47:11 +0000</pubDate>
+      
+      <guid>/posts/2009-01-20-tomtom-930t-and-bibob/</guid>
+      <description>I just got my new TomTom 930T GPS, I unpacked it and connected it to my phone via Bluetooth, it asked me if I wanted to connect to &amp;ldquo;internet&amp;rdquo; and of course I had to try it, it asked me which country I was in, then which phone I had, my Nokia E65 was in the list, then which telco I used&amp;hellip; But to my luck mine was not in the list, I know my carrier Bibob uses Sonofon network, so I decided to try choosing that from the menu.</description>
+    </item>
+    
+    <item>
+      <title>BiBoB GPRS Internet</title>
+      <link>/posts/2008-01-02-bibob-gprs-internet/</link>
+      <pubDate>Wed, 02 Jan 2008 15:09:49 +0000</pubDate>
+      
+      <guid>/posts/2008-01-02-bibob-gprs-internet/</guid>
+      <description>Efter jeg er flyttet har jeg ikke fået bestilt internet i god nok tid :(
+ Hvad skal man da bruge al den tid til&amp;hellip; Så tænkte jeg, at jeg ville bruge min nye Nokia mobil til at gå på nettet på (E65).</description>
+    </item>
+    
+  </channel>
+</rss>

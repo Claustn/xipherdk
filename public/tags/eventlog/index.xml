@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Eventlog on XenoBlog</title>
+    <link>/tags/eventlog/</link>
+    <description>Recent content in Eventlog on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 18 Jun 2007 15:14:13 +0000</lastBuildDate><atom:link href="/tags/eventlog/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Getting info from the eventlog with PowerShell</title>
+      <link>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</link>
+      <pubDate>Mon, 18 Jun 2007 15:14:13 +0000</pubDate>
+      
+      <guid>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</guid>
+      <description>Started playing around with PowerShell, so I thought I would post a few simple things on the blog, maybe you won&amp;rsquo;t find it interesting, but it is a good way for me to remember, so BLAH!</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>930T on XenoBlog</title>
+    <link>/tags/930t/</link>
+    <description>Recent content in 930T on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 20 Jan 2009 22:47:11 +0000</lastBuildDate><atom:link href="/tags/930t/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>TomTom 930T and Bibob</title>
+      <link>/posts/2009-01-20-tomtom-930t-and-bibob/</link>
+      <pubDate>Tue, 20 Jan 2009 22:47:11 +0000</pubDate>
+      
+      <guid>/posts/2009-01-20-tomtom-930t-and-bibob/</guid>
+      <description>I just got my new TomTom 930T GPS, I unpacked it and connected it to my phone via Bluetooth, it asked me if I wanted to connect to &amp;ldquo;internet&amp;rdquo; and of course I had to try it, it asked me which country I was in, then which phone I had, my Nokia E65 was in the list, then which telco I used&amp;hellip; But to my luck mine was not in the list, I know my carrier Bibob uses Sonofon network, so I decided to try choosing that from the menu.</description>
+    </item>
+    
+  </channel>
+</rss>

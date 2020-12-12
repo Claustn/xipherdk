@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tech Stuff on XenoBlog</title>
+    <link>/categories/tech-stuff/</link>
+    <description>Recent content in Tech Stuff on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 14 Mar 2012 21:50:50 +0000</lastBuildDate><atom:link href="/categories/tech-stuff/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>The mystery of why Cisco AnyConnect stopped working</title>
+      <link>/posts/2012-03-14-the-mystery-of-why-cisco-anyconnect-stopped-working/</link>
+      <pubDate>Wed, 14 Mar 2012 21:50:50 +0000</pubDate>
+      
+      <guid>/posts/2012-03-14-the-mystery-of-why-cisco-anyconnect-stopped-working/</guid>
+      <description>A while back I tried to update my Intel Centrino Ultimate 6300 Wifi NIC to the latest drivers, to test Intel MY wifi while I was out travelling, but I never got it to work, it said it could not detect a suitable adaptor.</description>
+    </item>
+    
+    <item>
+      <title>The (r)evolution of a script</title>
+      <link>/posts/2011-01-06-the-revolution-of-a-script/</link>
+      <pubDate>Thu, 06 Jan 2011 23:58:53 +0000</pubDate>
+      
+      <guid>/posts/2011-01-06-the-revolution-of-a-script/</guid>
+      <description>As those of you who a following my blog know, I have been fortunate enough to become a Microsoft MVP in Powershell, and because of that I have been allowed on the Powershell MVP mailing list, an let me tell, there are some amazing people out there, doing some amazing stuff.</description>
+    </item>
+    
+    <item>
+      <title>Output a sortable HTML table</title>
+      <link>/posts/2010-05-30-output-a-sortable-html-table/</link>
+      <pubDate>Sun, 30 May 2010 12:51:28 +0000</pubDate>
+      
+      <guid>/posts/2010-05-30-output-a-sortable-html-table/</guid>
+      <description>A while back I posted a script that would take whatever input it got, into a sortable HTML table in a file.
+Last night my family was here, and they wanted to see the Eurovision song contest thing, so I had some time to rewrite the script into a PowerShell V2 Advanced function, that supports pipeline input.</description>
+    </item>
+    
+    <item>
+      <title>PowerShell presentation from 2010 Minasi Conference</title>
+      <link>/posts/2010-05-11-powershell-presentation-from-2010-minasi-conference/</link>
+      <pubDate>Tue, 11 May 2010 22:39:28 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-powershell-presentation-from-2010-minasi-conference/</guid>
+      <description>Here is my presentation from the 2010 Minasi conference.
+Presentation</description>
+    </item>
+    
+    <item>
+      <title>Remoting examples from my presentation</title>
+      <link>/posts/2010-05-11-remoting-examples-from-my-presentation/</link>
+      <pubDate>Tue, 11 May 2010 22:14:45 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-remoting-examples-from-my-presentation/</guid>
+      <description>Example #1
+[ps]
+#Sessions
+#Single Session
+$Session = New-PSSession -ComputerName &amp;ldquo;computername&amp;rdquo;
+#Multiple Sessions
+$Session = New-PSSession -ComputerName &amp;ldquo;comp1&amp;rdquo;,&amp;ldquo;comp2&amp;rdquo;&amp;hellip;..
+#Remove all Sessions
+Remove-PSSession *
+#Remove Named Session
+Remove-PSSession $Session
+#Using $session</description>
+    </item>
+    
+    <item>
+      <title>Gotten back from Minasi conference</title>
+      <link>/posts/2010-05-11-gotten-back-from-minasi-conference/</link>
+      <pubDate>Tue, 11 May 2010 21:40:36 +0000</pubDate>
+      
+      <guid>/posts/2010-05-11-gotten-back-from-minasi-conference/</guid>
+      <description>I got back from Virgina Beach this past Saturday, after attending a very good conference, where I learned a lot of new an exciting stuff&amp;hellip; And of course it was very good to meet up with the &amp;ldquo;gang&amp;rdquo; again.</description>
+    </item>
+    
+    <item>
+      <title>Powershell as a webservice</title>
+      <link>/posts/2010-01-24-powershell-as-a-webservice/</link>
+      <pubDate>Sun, 24 Jan 2010 23:38:05 +0000</pubDate>
+      
+      <guid>/posts/2010-01-24-powershell-as-a-webservice/</guid>
+      <description>Seems as if Quest has been doing some really cool things with Powershell, from what I can read, they have &amp;ldquo;rolled&amp;rdquo; it up as a webservice, meaning that you can now run your Powershell scripts over HTTPS from either you local machine, your phone, anything that supports a newer web browser.</description>
+    </item>
+    
+    <item>
+      <title>Finding Powershell V2</title>
+      <link>/posts/2009-11-30-finding-powershell-v2/</link>
+      <pubDate>Mon, 30 Nov 2009 21:30:43 +0000</pubDate>
+      
+      <guid>/posts/2009-11-30-finding-powershell-v2/</guid>
+      <description>Joel Bennet made a good point about it can be difficult to find Powershell V2 on the MS site. I am not going to rewrite Joels post, so I will just &amp;ldquo;quote&amp;rdquo; it.</description>
+    </item>
+    
+    <item>
+      <title>ADMGS (Active Directory Management Gateway Service)</title>
+      <link>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</link>
+      <pubDate>Sun, 20 Sep 2009 09:40:42 +0000</pubDate>
+      
+      <guid>/posts/2009-09-20-admgs-active-directory-management-gateway-service/</guid>
+      <description>There has been some speculation on the web regarding the ADMGS for Server 2008 and 2003, if it would be possible to use it, in an environment without at least one Server 2008 R2.</description>
+    </item>
+    
+    <item>
+      <title>Finding that Hyper-V machine</title>
+      <link>/posts/2009-09-19-findind-that-hyper-v-machine/</link>
+      <pubDate>Sat, 19 Sep 2009 16:45:10 +0000</pubDate>
+      
+      <guid>/posts/2009-09-19-findind-that-hyper-v-machine/</guid>
+      <description>[ps]
+Get-QADObject -Name &amp;lsquo;Microsoft Hyper-V&amp;rsquo; -Type serviceConnectionPoint | Get-QADComputer -Identity {$_.ParentContainerDN}
+[/ps]</description>
+    </item>
+    
+    <item>
+      <title>Right click to mount vhd files</title>
+      <link>/posts/2009-09-14-right-click-to-mount-vhd-files/</link>
+      <pubDate>Mon, 14 Sep 2009 13:41:54 +0000</pubDate>
+      
+      <guid>/posts/2009-09-14-right-click-to-mount-vhd-files/</guid>
+      <description>I have just upgraded my machines to Windows 7 RTM, before I did the reinstall I did full backup of my old Vista machines, of course I figured out that I had not gotten all the files out of the Vista machines before I upgraded, So I had to restore some files from the resulting .</description>
+    </item>
+    
+    <item>
+      <title>&#34;The Scripting Guy(s)) have done it again.</title>
+      <link>/posts/2009-08-15-the-scripting-guys-have-done-it-again/</link>
+      <pubDate>Sat, 15 Aug 2009 19:30:53 +0000</pubDate>
+      
+      <guid>/posts/2009-08-15-the-scripting-guys-have-done-it-again/</guid>
+      <description>They have gone back and tagged all the scripts they have made during the last many years, and put up an easily searchable repository on their site on Technet.
+They are calling it the Script Gallery</description>
+    </item>
+    
+    <item>
+      <title>PowerShell v2 for Vista and Server 2008 has been released as RC</title>
+      <link>/posts/2009-08-14-powershell-v2-for-vista-and-server-2008-has-been-released-as-rc/</link>
+      <pubDate>Fri, 14 Aug 2009 15:50:30 +0000</pubDate>
+      
+      <guid>/posts/2009-08-14-powershell-v2-for-vista-and-server-2008-has-been-released-as-rc/</guid>
+      <description>You can now get PowerShell v2 as a download for Windows Vista and Windows Server 2008 from Microsoft Connect.
+Windows XP and Windows Server 2003 SP2 are not included in this RC release but they will be made available in future.</description>
+    </item>
+    
+    <item>
+      <title>&#34;Editing&#34; Excel using Powershell</title>
+      <link>/posts/2009-07-30-editing-excel-using-powershell/</link>
+      <pubDate>Thu, 30 Jul 2009 22:28:08 +0000</pubDate>
+      
+      <guid>/posts/2009-07-30-editing-excel-using-powershell/</guid>
+      <description>At work we have a spreadsheet, where we keep track of our mobile phones, and 3G dongles, in it we keep info about the IMEI code, PUK/PIN codes etc.
+Today we found a few SIM cards lying around, the only thing on them was the SIM card number (19 digits).</description>
+    </item>
+    
+    <item>
+      <title>Prevent-Screensaver</title>
+      <link>/posts/2009-07-27-prevent-screensaver/</link>
+      <pubDate>Mon, 27 Jul 2009 07:27:05 +0000</pubDate>
+      
+      <guid>/posts/2009-07-27-prevent-screensaver/</guid>
+      <description>A while back I created a small AutoIt script, to prevent the screensaver from kicking in, last employer had screensaver kick after 5 min, which was rather annoying when you are out doing presentations, and you have to punch in your password everytime the screensaver kicks in.</description>
+    </item>
+    
+    <item>
+      <title>New Powershell brushes for Syntax Highlighter plus</title>
+      <link>/posts/2009-03-11-new-powershell-brushes-for-syntax-highlighter-plus/</link>
+      <pubDate>Wed, 11 Mar 2009 19:56:46 +0000</pubDate>
+      
+      <guid>/posts/2009-03-11-new-powershell-brushes-for-syntax-highlighter-plus/</guid>
+      <description>Since I once in a while post powershell scripts on my site, I like that fact that I can have them color highlighted for better readability, so I played around with several different syntax highlighters, but none of them was able to do powershell, so I created a brush for Syntax highligther plus.</description>
+    </item>
+    
+    <item>
+      <title>Set file permissions with Set-ACL</title>
+      <link>/posts/2009-03-01-set-file-permissions-with-set-acl/</link>
+      <pubDate>Sun, 01 Mar 2009 22:12:29 +0000</pubDate>
+      
+      <guid>/posts/2009-03-01-set-file-permissions-with-set-acl/</guid>
+      <description>One of the guys at the minasi forum had a problem with setting permissions on multiple .ini files (Had to add the Deny setting to read for a certain group), he joked that I was probably able to write a powershell script to do it.</description>
+    </item>
+    
+    <item>
+      <title>TomTom 930T and Bibob</title>
+      <link>/posts/2009-01-20-tomtom-930t-and-bibob/</link>
+      <pubDate>Tue, 20 Jan 2009 22:47:11 +0000</pubDate>
+      
+      <guid>/posts/2009-01-20-tomtom-930t-and-bibob/</guid>
+      <description>I just got my new TomTom 930T GPS, I unpacked it and connected it to my phone via Bluetooth, it asked me if I wanted to connect to &amp;ldquo;internet&amp;rdquo; and of course I had to try it, it asked me which country I was in, then which phone I had, my Nokia E65 was in the list, then which telco I used&amp;hellip; But to my luck mine was not in the list, I know my carrier Bibob uses Sonofon network, so I decided to try choosing that from the menu.</description>
+    </item>
+    
+    <item>
+      <title>Prevent screensaver from disturbing my presentations.</title>
+      <link>/posts/2009-01-20-prevent-screensaver-from-disturbing-my-presentations/</link>
+      <pubDate>Tue, 20 Jan 2009 22:38:24 +0000</pubDate>
+      
+      <guid>/posts/2009-01-20-prevent-screensaver-from-disturbing-my-presentations/</guid>
+      <description>Most companies have GPO settings that enforces a company wide screensaver policy, in my case the screensaver kicks in after 5 min.
+5 Min is a very short time, when you are doing presentations or showing video content, so I decided to create a little AutoIT script to move the mouse 1 pixel after 4 min and 59 sec.</description>
+    </item>
+    
+    <item>
+      <title>Quick and dirty ping script</title>
+      <link>/posts/2009-01-15-quick-and-dirty-ping-script/</link>
+      <pubDate>Thu, 15 Jan 2009 22:27:00 +0000</pubDate>
+      
+      <guid>/posts/2009-01-15-quick-and-dirty-ping-script/</guid>
+      <description>There was a question on the Minasi forum asking if someone had written a batch script to ping a bunch of servers.. So I thought: &amp;quot; I have&amp;rsquo;nt, but I would like to try&amp;quot;.</description>
+    </item>
+    
+    <item>
+      <title>Creating multiple users in multiple OU&#39;s</title>
+      <link>/posts/2009-01-08-creatin-multiple-users-in-multiple-ous/</link>
+      <pubDate>Thu, 08 Jan 2009 00:39:23 +0000</pubDate>
+      
+      <guid>/posts/2009-01-08-creatin-multiple-users-in-multiple-ous/</guid>
+      <description>The other day I was setting up a few VmWare test environments for work, where I had to test amongst other apps Quest Recovery Manager for AD..
+So I had to create some users in Active Directory, I thought I would create a PowerShell script to do that (Must keep your PS skill fresh :)</description>
+    </item>
+    
+    <item>
+      <title>PowerShell TombStone revival</title>
+      <link>/posts/2008-06-04-powershell-tombstone-revival/</link>
+      <pubDate>Wed, 04 Jun 2008 15:36:12 +0000</pubDate>
+      
+      <guid>/posts/2008-06-04-powershell-tombstone-revival/</guid>
+      <description>Our friend Darren Mar-Elia over at SDM software has just released some nice PowerShell cmdlets, to view Tombstoned objects in AD&amp;hellip; You can even revive(or reanimate them as I think the correct AD term is) them as well.</description>
+    </item>
+    
+    <item>
+      <title>Very simple file browser in PowerShell</title>
+      <link>/posts/2008-05-11-very-simple-file-browser-in-powershell/</link>
+      <pubDate>Sun, 11 May 2008 20:36:17 +0000</pubDate>
+      
+      <guid>/posts/2008-05-11-very-simple-file-browser-in-powershell/</guid>
+      <description>One of my friends needed a script that would be able to list all files in a folder, and then he should be able to choose the file, and return the name of the file.</description>
+    </item>
+    
+    <item>
+      <title>BrowseForFolder VBScript/PowerShell</title>
+      <link>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</link>
+      <pubDate>Tue, 06 May 2008 08:35:47 +0000</pubDate>
+      
+      <guid>/posts/2008-05-06-browseforfolder-vbscriptpowershell/</guid>
+      <description>I had to run a script the other day, that I wrote some time ago to change some files in a folder, the script uses the Shell.Application COM object BrowseForFolder method, to show a GUI that lets you browse through the directory structure and choose a folder.</description>
+    </item>
+    
+    <item>
+      <title>Learning PowerShell</title>
+      <link>/posts/2008-04-29-learning-powershell/</link>
+      <pubDate>Tue, 29 Apr 2008 13:13:47 +0000</pubDate>
+      
+      <guid>/posts/2008-04-29-learning-powershell/</guid>
+      <description>Don Jones&#39; keynote basically said, if you do not learn PowerShell, you will not be able to function as an Windows IT administrator in 5 years time or so&amp;hellip; After what was told on the MVP summit, about Microsofts commitment to PowerShell, and how all new products will be based on it, he foresees are very dim future for admins who do not know it.</description>
+    </item>
+    
+    <item>
+      <title>Test Flash Drive</title>
+      <link>/posts/2008-04-16-test-flash-drive/</link>
+      <pubDate>Wed, 16 Apr 2008 12:30:28 +0000</pubDate>
+      
+      <guid>/posts/2008-04-16-test-flash-drive/</guid>
+      <description>I recently tried a software package called MojoPac. During the install of MojoPac to my USB stick it complained that it might not work very well, because it detected that I had a slow USB stick&amp;hellip; So I started wondering, what do I need to test the speed of my USB drives, besides some large files and a stopwatch.</description>
+    </item>
+    
+    <item>
+      <title>MSTSC Util</title>
+      <link>/posts/2008-03-12-mstsc-util/</link>
+      <pubDate>Wed, 12 Mar 2008 16:44:02 +0000</pubDate>
+      
+      <guid>/posts/2008-03-12-mstsc-util/</guid>
+      <description>A while back I needed to connect to different servers quite often via mstsc, and a lot of the times I needed a console connection to the specific server, so I decided to write a small app, so I did not have to type Mstsc /v:server /console all the time.</description>
+    </item>
+    
+    <item>
+      <title>.LOG in notepad</title>
+      <link>/posts/2008-02-27-log-in-notepad/</link>
+      <pubDate>Wed, 27 Feb 2008 23:09:50 +0000</pubDate>
+      
+      <guid>/posts/2008-02-27-log-in-notepad/</guid>
+      <description>I was recently made aware of a feature in notepad that I was not aware of.
+If you open Notepad and type in .LOG (In CAPITAL letters) and the save it.</description>
+    </item>
+    
+    <item>
+      <title>ATA security</title>
+      <link>/posts/2008-02-25-ata-security/</link>
+      <pubDate>Mon, 25 Feb 2008 00:04:38 +0000</pubDate>
+      
+      <guid>/posts/2008-02-25-ata-security/</guid>
+      <description>On the security topic Heise.de tested it, and found that it was not enough to remove the circuit board and replace it with a board from an unlocked drive. So password data is stored on the drive platters as well.</description>
+    </item>
+    
+    <item>
+      <title>DRAM data rentention</title>
+      <link>/posts/2008-02-24-dram-data-rentention/</link>
+      <pubDate>Sun, 24 Feb 2008 23:51:59 +0000</pubDate>
+      
+      <guid>/posts/2008-02-24-dram-data-rentention/</guid>
+      <description>Researchers from Princeton recently published an article about the possibility to extract information from RAM even after the PC has been turned on.
+In short, modern RAM contrary to popular belief does not instantly loose its contents, it degrades gradually over time.</description>
+    </item>
+    
+    <item>
+      <title>Dir /R</title>
+      <link>/posts/2008-02-01-dir-r/</link>
+      <pubDate>Fri, 01 Feb 2008 12:30:35 +0000</pubDate>
+      
+      <guid>/posts/2008-02-01-dir-r/</guid>
+      <description>While I was looking for information about streams in NTFS I found this little gem that I did not know, in Vista the dir command has be upgraded to be able to show streams as well.</description>
+    </item>
+    
+    <item>
+      <title>Annoying Security warning in Posh</title>
+      <link>/posts/2008-02-01-annoying-security-warning-in-posh/</link>
+      <pubDate>Fri, 01 Feb 2008 12:25:46 +0000</pubDate>
+      
+      <guid>/posts/2008-02-01-annoying-security-warning-in-posh/</guid>
+      <description>As I wrote in an earlier post I am using PowerTabs in Powershell.. I recently upgraded to version 0.99 Beta 2 and it would come up with:
+ Security WarningRun only scripts that you trust.</description>
+    </item>
+    
+    <item>
+      <title>BiBoB GPRS Internet</title>
+      <link>/posts/2008-01-02-bibob-gprs-internet/</link>
+      <pubDate>Wed, 02 Jan 2008 15:09:49 +0000</pubDate>
+      
+      <guid>/posts/2008-01-02-bibob-gprs-internet/</guid>
+      <description>Efter jeg er flyttet har jeg ikke fået bestilt internet i god nok tid :(
+ Hvad skal man da bruge al den tid til&amp;hellip; Så tænkte jeg, at jeg ville bruge min nye Nokia mobil til at gå på nettet på (E65).</description>
+    </item>
+    
+    <item>
+      <title>April 2008</title>
+      <link>/posts/2007-11-01-april-2008/</link>
+      <pubDate>Thu, 01 Nov 2007 02:03:05 +0000</pubDate>
+      
+      <guid>/posts/2007-11-01-april-2008/</guid>
+      <description>What are you doing between April 20 and April 23rd ??? You don&amp;rsquo;t know ??
+Well if you are the least bit interested in computers, there is only one place to be&amp;hellip; The Minasi Forum meet 2008</description>
+    </item>
+    
+    <item>
+      <title>PoSH add-on PowerTab</title>
+      <link>/posts/2007-10-02-posh-add-on-powertab/</link>
+      <pubDate>Tue, 02 Oct 2007 13:37:51 +0000</pubDate>
+      
+      <guid>/posts/2007-10-02-posh-add-on-powertab/</guid>
+      <description>Just been playing with PowerTabs for PowerShell, it is kinda like M$ Intellisence code completion, but for your PowerShell command prompt. Let me tell you, it rocks&amp;hellip; Just type get- &amp;lt; T A B&amp;gt; and you get all your cmdlets that starts with get-</description>
+    </item>
+    
+    <item>
+      <title>Playing around with profiles.</title>
+      <link>/posts/2007-07-10-playing-around-with-profiles/</link>
+      <pubDate>Tue, 10 Jul 2007 11:08:02 +0000</pubDate>
+      
+      <guid>/posts/2007-07-10-playing-around-with-profiles/</guid>
+      <description>In PowerShell you have the option create custom profiles that you can use, in the profiles you can create different aliases, change the prompt and a lot of other things, today we will look at adding some info to prompt.</description>
+    </item>
+    
+    <item>
+      <title>A little more fun with the eventlog in PowerShell</title>
+      <link>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</link>
+      <pubDate>Thu, 28 Jun 2007 19:37:25 +0000</pubDate>
+      
+      <guid>/posts/2007-06-28-a-little-more-fun-with-the-eventlog-in-powershell/</guid>
+      <description>Imagine that you want to list, the last 15 events in all the eventlogs on the system, do you have to write several lines of codes to do that, like this below?</description>
+    </item>
+    
+    <item>
+      <title>Getting info from the eventlog with PowerShell</title>
+      <link>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</link>
+      <pubDate>Mon, 18 Jun 2007 15:14:13 +0000</pubDate>
+      
+      <guid>/posts/2007-06-18-getting-info-from-the-eventlog-with-powershell/</guid>
+      <description>Started playing around with PowerShell, so I thought I would post a few simple things on the blog, maybe you won&amp;rsquo;t find it interesting, but it is a good way for me to remember, so BLAH!</description>
+    </item>
+    
+    <item>
+      <title>Very good beginners guide to PowerShell</title>
+      <link>/posts/2007-06-13-very-good-beginners-guide-to-powershell/</link>
+      <pubDate>Wed, 13 Jun 2007 16:59:32 +0000</pubDate>
+      
+      <guid>/posts/2007-06-13-very-good-beginners-guide-to-powershell/</guid>
+      <description>I recently stumbled upon this little e-book about PowerShell, I have&amp;rsquo;nt read it from end to end yet, but from what I have read so far, it seems very good&amp;hellip; So if you are interested in starting to learn some PowerShell this is a good place to start.</description>
+    </item>
+    
+    <item>
+      <title>Very nice collection of free Microsoft tools</title>
+      <link>/posts/2007-06-12-very-nice-collection-of-free-microsoft-tools/</link>
+      <pubDate>Tue, 12 Jun 2007 03:24:11 +0000</pubDate>
+      
+      <guid>/posts/2007-06-12-very-nice-collection-of-free-microsoft-tools/</guid>
+      <description>It happens once in a while that Microsoft releases some really good free tools, a guy named Blake Handler decided to try to make a list of all these tools, to make it easier for people to find them&amp;hellip;.</description>
+    </item>
+    
+    <item>
+      <title>Virtualisering og hvorfor det er nødvendigt.</title>
+      <link>/posts/2007-05-11-virtualisering-og-hvorfor-det-er-n%C3%B8dvendigt/</link>
+      <pubDate>Fri, 11 May 2007 00:59:02 +0000</pubDate>
+      
+      <guid>/posts/2007-05-11-virtualisering-og-hvorfor-det-er-n%C3%B8dvendigt/</guid>
+      <description>Nathan Winters holdt et excellent foredrag om hvad og hvorfor man skal begynde at overveje at bruge virtualisering, jeg vil her prøve at opsummere nogle af de ting, som han lagde vægt på under sit foredrag.</description>
+    </item>
+    
+  </channel>
+</rss>

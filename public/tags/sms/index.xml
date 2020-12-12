@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>sms on XenoBlog</title>
+    <link>/tags/sms/</link>
+    <description>Recent content in sms on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 09 Feb 2011 21:55:42 +0000</lastBuildDate><atom:link href="/tags/sms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Send SMS through bibob with Powershell</title>
+      <link>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</link>
+      <pubDate>Wed, 09 Feb 2011 21:55:42 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-through-bibob-with-powershell/</guid>
+      <description>I thought I had posted this script more than a year ago, but apparently I have not. It is quite similar to the script, I posted recently sending SMS messages through unwire, this just allows bibob customers to send messages through bibobs online gateway.</description>
+    </item>
+    
+    <item>
+      <title>Send SMS from Powershell through Unwire</title>
+      <link>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</link>
+      <pubDate>Wed, 09 Feb 2011 14:38:39 +0000</pubDate>
+      
+      <guid>/posts/2011-02-09-send-sms-from-powershell-through-unwire/</guid>
+      <description>At work we have bought an SMS gateway service through the danish company Unwire, so after we the deal was signed we got the information on how to send email through their services, so in order to test I wrote a quick Powershell script to test it.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Back on XenoBlog</title>
+    <link>/tags/back/</link>
+    <description>Recent content in Back on XenoBlog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 17 Dec 2008 23:00:39 +0000</lastBuildDate><atom:link href="/tags/back/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I am back</title>
+      <link>/posts/2008-12-17-i-am-back/</link>
+      <pubDate>Wed, 17 Dec 2008 23:00:39 +0000</pubDate>
+      
+      <guid>/posts/2008-12-17-i-am-back/</guid>
+      <description>Have you missed me ??
+I know I have been away for a while, but between becoming a dad, starting a new job, having to get deep knowledge of several different enterprise products that I have not worked with before has taken some time&amp;hellip; But now things are looking a little less hectic, so I hope to get some good PowerShell posts written up in the near future.</description>
+    </item>
+    
+  </channel>
+</rss>
