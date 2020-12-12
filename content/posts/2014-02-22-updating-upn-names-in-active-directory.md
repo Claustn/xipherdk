@@ -24,6 +24,8 @@ title: Updating UPN names in Active Directory
 <p><a href="http://www.xipher.dk/assets/images/UPNChanger.jpg"><img src="/assets/images/UPNChanger-258x300.jpg" alt="UPNChanger" width="258" height="300" class="alignnone size-medium wp-image-747" /></a></p>
 <p>The treeview code is based on code from Thepip3r:<br />
 http://thepip3r.blogspot.dk/2011/06/powershell-guis-active-directory.html</p>
+
+{{< highlight powershell "linenos=table,linenostart=1" >}}
 <pre class="lang:ps decode:true ">#------------------------------------------------------------------------
 # Source File Information (DO NOT MODIFY)
 # Source ID: c420d64b-72fd-475f-8ca7-939cd9a6285e
@@ -761,3 +763,4 @@ AT8E/wH8AT8B/AE/Cw=='))
 	#----------------------------------------------
 #Save the initial state of the form $InitialFormWindowState = $formChangeUPNNames.WindowState #Init the OnLoad event to correct the initial state of the form $formChangeUPNNames.add\_Load($Form\_StateCorrection\_Load) #Clean up the control events $formChangeUPNNames.add\_FormClosed($Form\_Cleanup\_FormClosed) #Show the Form return $formChangeUPNNames.ShowDialog() } #End Function #Call OnApplicationLoad to initialize if((OnApplicationLoad) -eq $true) { #Call the form Call-OU\_Picker\_pff | Out-Null #Perform cleanup OnApplicationExit }
 
+{{< / highlight >}}
