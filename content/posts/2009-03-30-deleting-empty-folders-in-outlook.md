@@ -22,7 +22,7 @@ He asked if it was possible to write a script that would delete all the empty fo
 So I started looking for ways to manipulate data in Outlook and found out that the Outlook.Application COM object allowed me to manipulate folders and messages within Outlook.. Did some quick testing, told my friend that it should be possible, and that I would get back to him...
 
 After some mucking around here is what I ended up with.  
-[ps]  
+```powershell  
 $olApp = new-object -com Outlook.Application  
 $namespace = $olApp.GetNamespace("MAPI")  
 #Root folder to match, look in your outlook and look at what folders you have.  
@@ -74,11 +74,11 @@ While ($Global:StopValue -eq 0) {
 $Global:StopValue = 1  
 Listempty($RootFolders)  
 }
+```
 
-[/ps]
 
 I start by initializing the Outlook COM object, and declaring some variables  
-[ps]  
+```powershell
 $olApp = new-object -com Outlook.Application  
 $namespace = $olApp.GetNamespace("MAPI")  
 #Root folder to match, look in your outlook and look at what folders you have.  
@@ -86,14 +86,14 @@ $namespace = $olApp.GetNamespace("MAPI")
 $RootfolderToMatch = "Inbox"
 
 $Global:StopValue = 1  
-[/ps]
+```
 
 I then create a function that takes an Outlook folder as a parameter.  
 I then loop through each subfolder, and checks to see if each folder contains any files or other folders, if it finds a folder that does not contain any files/folders it then checks to see if the folder name is something like "outbox, sent items, Journal etc etc." The reason I do this is because these are system folders, and cannot be deleted, so if the script tried to delete one of them, it would come back with an error.
 
 So if the folder that is currently being checked is empty and is not a system folder it will be deleted.(Actually the line where the folder is deleted is commented out, just to make sure there is not accidental deletions) The script then recurses through all subfolders to check for empty folders.
 
-[ps]
+```powershell
 
 Function ListEmpty {  
 Param ($infolder)  
@@ -130,24 +130,23 @@ ListEmpty($fldr)}
 
 }
 
-[/PS]
+```
 
 Rootfolders is the initial "path"/folder that the scripts starts to look for empty folders from.  
 $namespace.folders is the highest folder level in Outlook, it contains the user mailbox, public folders and any mapped in .pst files, so what I do here is match a single top level folder.
 
 Here is an example, lets say I have opened a .pst file called BusinessCases09, I would set $RootfolderToMatch equal to \<em\>BusinessCases09\</em\> (This is set at the beginning of the script), that means when the ListEmpty function is called for the first time, it will scan through all subfolders of the .pst file.  
-[ps]
+```powershell
 
 $RootFolders = $namespace.Folders | ?{$\_.name -match $RootfolderToMatch}
 
 Listempty($RootFolders)
 
-[/ps]
+```
 
 In order to make sure the script runs to all empty folders is deleted, I have set up a while loop to call function until no more empty folders are found.  
-[ps]  
+```powershell
 While ($Global:StopValue -eq 0) {  
 $Global:StopValue = 1  
 Listempty($RootFolders)  
-[/ps]
-
+```
