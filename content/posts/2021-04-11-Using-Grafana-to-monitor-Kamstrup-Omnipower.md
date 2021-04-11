@@ -25,7 +25,7 @@ Next things to install are the InfluxDB and Grafana Add-ons, these 2 require min
 
 My primary system is Windows so in order to test that MQTT works I am using *MQTT Explorer* from http://mqtt-explorer.com/ which I find very usefull when troubleshooting and testing, since you can both see incoming values and inject data.
 
-[![MQTT Explorer](/assets/images/2021-04-11-23-27-10.png)](https://xipher.dk/static/assets/images/2021-04-11-23-27-10.png)
+[![MQTT Explorer](https://xipher.dk/static/assets/images/2021-04-11-23-27-10.png)](https://xipher.dk/static/assets/images/2021-04-11-23-27-10.png)
 
 At this point I had to make a decision, since Grafana cannot graph data directly from MQTT, you have to decide on how to get the data from MQTT into InfluxDB, and there are multiple ways to do this. In my initial HA setup from last year, I setup an instance of Telegraf (https://www.influxdata.com/time-series-platform/telegraf/) to get data from MQTT into InfluxDB, this worked really well, the "downside" of this, is that the data is not directly available inside of Home Assistant, only in InfluxDB/Grafana
 
