@@ -12,9 +12,7 @@ Finally got a chance to write this long overdue blog post about getting the Kams
 
 I lost the instance of HA, where I had the previous Grafana installation and all the data, so my current setup has very limited data at the moment (Something something about real men and backups :smirk:).
 
-
-![<img src="https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png">](https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png)
-
+[![Grafana Dashboard](https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png)](https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png)
 Be warned this is a work in progess :smiley:
 
 A little bit of background, I am currently running all my home automations in Home Assistant(HA), and I wanted this to be part of HA as well, this will not be a full guide on how to install Add-Ons in Home Assistant, but more on setting up the integrations inside of HA.
@@ -50,7 +48,7 @@ Then you have to restart HA, and you should start seeing data flowing into Influ
 
 Then it was time to create the sensors inside of HA, this can be done on MQTT topics, for the purpose of testing I added **all the things**, you might want to remove the ones you do not care about, to preserve resources. (Particularly if you do not produce energy yourself, there are several topics you can ignore)
 
-[![](/assets/images/2021-04-11-23-53-24.png)](https://xipher.dk/static/assets/images/2021-04-11-23-53-24.png)
+[![Power Info](https://xipher.dk/static/assets/images/2021-04-11-23-53-24.png)](https://xipher.dk/static/assets/images/2021-04-11-23-53-24.png)
 
 Here you can see the *activePower**Minus*** values are **0**, because I do not produce any power
 
@@ -181,8 +179,7 @@ sensor:
 ```
 Doing it this way means that all the Kamstrup meter data will show up as sensors in HA, and you can use them in your automations
 
-[![](/assets/images/2021-04-11-23-41-28.png)](https://xipher.dk/static/assets/images/2021-04-11-23-41-28.png)
-
+[![HA Sensors](https://xipher.dk/static/assets/images/2021-04-11-23-41-28.png)](https://xipher.dk/static/assets/images/2021-04-11-23-41-28.png)
 
 I published the grafana Dashboard json [here](https://github.com/Claustn/esp8266-kamstrup-mqtt/blob/master/Grafana/power_usage_info.json)
 
