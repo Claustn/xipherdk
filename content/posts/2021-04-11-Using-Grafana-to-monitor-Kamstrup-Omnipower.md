@@ -12,7 +12,8 @@ Finally got a chance to write this long overdue blog post about getting the Kams
 
 I lost the instance of HA, where I had the previous Grafana installation and all the data, so my current setup has very limited data at the moment (Something something about real men and backups :smirk:).
 
-[![](/assets/images/2021-04-11-23-08-53.png)](https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png)
+[<img src="https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png">](https://xipher.dk/static/assets/images/2021-04-11-23-08-53.png)
+
 
 Be warned this is a work in progess :smiley:
 
