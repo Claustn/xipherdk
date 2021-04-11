@@ -52,7 +52,7 @@ Then it was time to create the sensors inside of HA, this can be done on MQTT to
 
 Here you can see the *activePower**Minus*** values are **0**, because I do not produce any power
 
-Here is a sensor config that incluces everything, this can also be found [here](https://github.com/Claustn/esp8266-kamstrup-mqtt/blob/master/Home_Assistant/sensors.yml)
+Here is a sensor config that includes everything, this can also be found [here](https://github.com/Claustn/esp8266-kamstrup-mqtt/blob/master/Home_Assistant/sensors.yml)
 
 ```
 sensor:  
