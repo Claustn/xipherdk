@@ -5,7 +5,7 @@ date: "2021-04-11T12:58:34Z"
 meta: null
 status: publish
 tags: []
-title: Using Grafana to monitor powerusage on Kamstrup Power meter
+title: Using Grafana to monitor power usage on Kamstrup Power meter
 ---
 
 Finally got a chance to write this long overdue blog post about getting the Kamstrup meter data into InfluxDB and graphing it using Grafana.
