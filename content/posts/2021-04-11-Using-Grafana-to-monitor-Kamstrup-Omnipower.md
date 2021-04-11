@@ -12,7 +12,7 @@ Finally got a chance to write this long overdue blog post about getting the Kams
 
 I lost the instance of HA, where I had the previous Grafana installation and all the data, so my current setup has very limited data at the moment (Something something about real men and backups :smirk:).
 
-![](/static/assets/images/2021-04-11-23-08-53.png)
+![](/assets/images/2021-04-11-23-08-53.png)
 
 Be warned this is a work in progess :smiley:
 
@@ -24,7 +24,7 @@ Next things to install are the InfluxDB and Grafana Add-ons, these 2 require min
 
 My primary system is Windows so in order to test that MQTT works I am using *MQTT Explorer* from http://mqtt-explorer.com/ which I find very usefull when troubleshooting and testing, since you can both see incoming values and inject data.
 
-![](/static/assets/images/2021-04-11-23-27-10.png)
+![](/assets/images/2021-04-11-23-27-10.png)
 
 At this point I had to make a decision, since Grafana cannot graph data directly from MQTT, you have to decide on how to get the data from MQTT into InfluxDB, and there are multiple ways to do this. In my initial HA setup from last year, I setup an instance of Telegraf (https://www.influxdata.com/time-series-platform/telegraf/) to get data from MQTT into InfluxDB, this worked really well, the "downside" of this, is that the data is not directly available inside of Home Assistant, only in InfluxDB/Grafana
 
@@ -49,7 +49,7 @@ Then you have to restart HA, and you should start seeing data flowing into Influ
 
 Then it was time to create the sensors inside of HA, this can be done on MQTT topics, for the purpose of testing I added **all the things**, you might want to remove the ones you do not care about, to preserve resources. (Particularly if you do not produce energy yourself, there are several topics you can ignore)
 
-![](/static/assets/images/2021-04-11-23-53-24.png)
+![](/assets/images/2021-04-11-23-53-24.png)
 
 Here you can see the *activePower**Minus*** values are **0**, because I do not produce any power
 
@@ -180,7 +180,7 @@ sensor:
 ```
 Doing it this way means that all the Kamstrup meter data will show up as sensors in HA, and you can use them in your automations
 
-![](/static/assets/images/2021-04-11-23-41-28.png)
+![](/assets/images/2021-04-11-23-41-28.png)
 
 
 I published the grafana Dashboard json [here](https://github.com/Claustn/esp8266-kamstrup-mqtt/blob/master/Grafana/power_usage_info.json)
