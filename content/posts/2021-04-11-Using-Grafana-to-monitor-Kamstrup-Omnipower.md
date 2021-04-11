@@ -10,7 +10,7 @@ title: Using Grafana to monitor powerusage on Kamstrup Power meter
 
 Finally got a chance to write this long overdue blog post about getting the Kamstrup meter data into InfluxDB and graphing it using Grafana.
 
-I lost the instance of HA, where I had the previous Grafana installation and all the data, so my current setup has very limited data at the moment (Something something about real men and backups :smirk:)
+I lost the instance of HA, where I had the previous Grafana installation and all the data, so my current setup has very limited data at the moment (Something something about real men and backups :smirk:).
 
 ![](../static/assets/images/2021-04-11-23-08-53.png)
 
