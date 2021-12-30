@@ -8,12 +8,14 @@ tags: []
 title: Running HomeAssistant on  TrueNAS Scale
 ---
 What is a christmas without breaking stuff (In the last week my battery died in the car, pipe burst inside our washing machine and had central heating issues)
-So I though why not mess with HomeAssistant as well 😏 I have a small SuperMicro server that I have not used for a while, so I decided I wanted to try an run UnRaid on it.
+
+So I though why not mess with HomeAssistant as well 😏 I have a small SuperMicro server that I have not used for a while, so I decided I wanted to try an run UnRaid on it to move my HomeAssistant from my Raspberry PI 4.
 
 
 ![](../static/assets/images/2021-12-30-15-43-47.png)
 
 But after some research I discovered that some people claimed that issues could occur running UnRaid on a machine that purely has SSD's because of some TRIM issues with BTRFS.
+
 So I decided to try out the new **TrueNAS Scale** which runs on Debian so I could use KVM and Docker instead of Bhyve and Jails (Be aware it is still only a Release Candidate)
 
 This is not a guide on how to use **TrueNAS Scale** this is just getting HomeAssistant running as a VM inside of TrueNAS
@@ -31,7 +33,7 @@ Then you give it a name and a size and decide what other ZFS features you want t
 ![](../static/assets/images/2021-12-30-15-54-00.png)
 
 
-Then I had to go to the shell under **System Settings**
+Then I had to go to the **shell** under **System Settings**
 
 First I had to download the HassOS image (I have recently done some converting from vmdk to Qemu/KVM at work, so I chose to download the .ova file, because I knew the commands to convert it)
 
@@ -73,8 +75,8 @@ Next step you go to **Virtualization** in the left menu and click the blue **Add
 6) **Confirm Options** - Just click save
    
 
-Now I was able to boot HomeAssistant by starting the machine, but I still needed to load my Slaesh Zigbee stick
-I tried running **lsusb** from the shell, but that was not installed, so I had to try and fig out the data from **dmesg**
+Now I was able to boot HomeAssistant by starting the VM, but I still needed to load my Slaesh Zigbee stick
+I tried running **lsusb** from the shell, but that was not installed, so I had to try and figure out the USB information from **dmesg**
 
 ```
 dmesg | greb usb
@@ -84,7 +86,7 @@ In order to map it into the machine I need the idVendor and idProduct
 
 ![](../static/assets/images/2021-12-30-16-17-53.png)
 
-Then I created the an addusb.xml file containing
+Then I created the an **addusb.xml** file containing
 
 ```
 <hostdev mode='subsystem' type='usb'>
@@ -95,7 +97,7 @@ Then I created the an addusb.xml file containing
 </hostdev>
 ```
 
-Since libvirt is not running on the default socket in TrueNAS Scale I have created this alias for _virsh_
+Since libvirt is not running on the default socket in **TrueNAS Scale** I have created this alias for _virsh_
 
 ```
 alias virsh='virsh -c "qemu+unix:///system?socket=/run/truenas_libvirt/libvirt-sock" $1'
@@ -106,12 +108,13 @@ Then I needed to figure out the name of the VM
 ```
 virsh list
 ```
+Then we have to run the virsh command to tell it to map the USB to the VM ( vmname = 1_homeassistant)
 
 ```
 virsh attach-device 1_homeassistant --file /root/addusb.xml --config --persistent
 ```
 
-This made the Slaesh USB stick show up inside the VM and I could configure it for test use with HA
+This made the Slaesh USB stick show up inside the VM and I could configure it for use with HA
 
 Currently it seems as when TrueNAS restarts the VM it will overwrite the config, meaning that the USB device will be disconnected, and will have to be connected again.
 
