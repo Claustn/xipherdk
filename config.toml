@@ -1,6 +1,7 @@
 ## Basic Configuration
 baseurl = "/"
 languageCode = "en-us"
+canonifyURLs: true
 
 title = "XenoBlog"
 theme = "hyde-hyde"
