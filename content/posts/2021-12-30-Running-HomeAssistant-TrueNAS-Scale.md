@@ -12,7 +12,7 @@ What is a christmas without breaking stuff (In the last week my battery died in 
 So I though why not mess with HomeAssistant as well 😏 I have a small SuperMicro server that I have not used for a while, so I decided I wanted to try an run UnRaid on it to move my HomeAssistant from my Raspberry PI 4.
 
 
-![](../static/assets/images/2021-12-30-15-43-47.png)
+![](content/static/assets/images/2021-12-30-15-43-47.png)
 
 But after some research I discovered that some people claimed that issues could occur running UnRaid on a machine that purely has SSD's because of some TRIM issues with BTRFS.
 
