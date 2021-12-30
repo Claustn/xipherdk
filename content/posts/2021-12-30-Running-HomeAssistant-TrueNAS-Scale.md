@@ -12,7 +12,7 @@ What is a christmas without breaking stuff (In the last week my battery died in 
 So I though why not mess with HomeAssistant as well 😏 I have a small SuperMicro server that I have not used for a while, so I decided I wanted to try an run UnRaid on it to move my HomeAssistant from my Raspberry PI 4.
 
 
-![](content/static/assets/images/2021-12-30-15-43-47.png)
+![](https://xipher.dk/static/assets/images/2021-12-30-15-43-47.png)
 
 But after some research I discovered that some people claimed that issues could occur running UnRaid on a machine that purely has SSD's because of some TRIM issues with BTRFS.
 
@@ -25,12 +25,12 @@ _(Word of warning I am not a Linux guy, so I might have overlooked something tha
 
 Under storage you have to create a new **zvol**
 
-![](../static/assets/images/2021-12-30-15-52-02.png)
+![](https://xipher.dk/static/assets/images/2021-12-30-15-52-02.png)
 
 Then you give it a name and a size and decide what other ZFS features you want to enable... (I have just left them with their default values)
 
 
-![](../static/assets/images/2021-12-30-15-54-00.png)
+![](https://xipher.dk/static/assets/images/2021-12-30-15-54-00.png)
 
 
 Then I had to go to the **shell** under **System Settings**
@@ -68,7 +68,7 @@ Next step you go to **Virtualization** in the left menu and click the blue **Add
 2) **CPU and Memory** -  Decide the amount of resources your machine needs
 3) **Disks** - Here you select **Use Existing Disk** and the size of your disk, and then point it to the **zvol** you created earlier
 
-![](../static/assets/images/2021-12-30-16-06-49.png)
+![](https://xipher.dk/static/assets/images/2021-12-30-16-06-49.png)
 
 4) **Network Interface** - Just left the default values
 5) **Installation Media** - Just left the default values
@@ -84,7 +84,7 @@ dmesg | greb usb
 
 In order to map it into the machine I need the idVendor and idProduct
 
-![](../static/assets/images/2021-12-30-16-17-53.png)
+![](https://xipher.dk/static/assets/images/2021-12-30-16-17-53.png)
 
 Then I created the an **addusb.xml** file containing
 
